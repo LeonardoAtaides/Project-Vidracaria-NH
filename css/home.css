@@ -1,0 +1,15 @@
+
+:root{
+    --bg-geral: #182C48;
+    --color-title: #ffff;
+    --color-title: #ffff;
+    --details-card: #FFC900;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: var(--bg-geral);
+}
