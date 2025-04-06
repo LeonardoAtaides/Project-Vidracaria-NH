@@ -7,6 +7,7 @@
     --details-hover: #FFC900;
     --color-btn: #FFC900;
     --details-card: #FFC900;
+    --btn-see-more: #FFC100;
 }
 
 /*CONF DO BODY*/
@@ -119,7 +120,7 @@ a:hover{
     gap: 8px;
     width: 377px;
     height: 55px;
-    font-size: 25px;
+    font-size: 24px;
     color: var(--color-title);
     text-transform: uppercase;
     font-weight: 700;
@@ -129,6 +130,7 @@ a:hover{
     cursor: pointer;
     transition: 0.4s;
     padding: 10px;
+    font-family: 'Montserrat', sans-serif;
     
 }
 
@@ -142,6 +144,11 @@ a:hover{
     color: var(--color-titles);
     font-size: 55px;
     text-align: center;
+}
+
+.ctn-service{
+    justify-content: center;
+    align-items: center;
 }
 
 .ctn-services{
@@ -194,3 +201,31 @@ a:hover{
 .link-card{
     text-decoration: none;
 }
+#btn-link-see{
+    margin-top: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /*TIRAR DEPOIS*/
+
+}
+#see-more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: var(--color-title);
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-radius: 8px;
+    border: 2px solid var(--color-btn);
+    background: var(--btn-see-more);
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 2px 12px 2px 12px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
