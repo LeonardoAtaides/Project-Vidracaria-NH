@@ -76,7 +76,7 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat    ,url(../Imgs/bg-home.png) center;
+    background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat, url(../Imgs/bg-princ.png) center;
     
 }
 
