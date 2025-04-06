@@ -207,9 +207,11 @@ a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px; /*TIRAR DEPOIS*/
-
+    margin-bottom: 60px; /*TIRAR DEPOIS*/
+    transition: 0.3s;
 }
+
+
 #see-more{
     display: flex;
     justify-content: center;
@@ -227,5 +229,9 @@ a:hover{
     padding: 2px 12px 2px 12px;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    transition: 0.3s;
 }
 
+#see-more:hover{
+    transform: scale(1.05);
+}
