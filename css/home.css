@@ -2,10 +2,11 @@
 :root{
     --bg-geral: #182C48;
     --color-title: #ffff;
-    --color-title: #ffff;
+    --color-titles: #ffff;
     --details-card: #FFC900;
     --details-hover: #FFC900;
     --color-btn: #FFC900;
+    --details-card: #FFC900;
 }
 
 /*CONF DO BODY*/
@@ -106,6 +107,7 @@ a:hover{
 /*-----------------------------*/
 
 
+/*botão de Orçamento*/
 .btn-link {
     text-decoration: none;
 }
@@ -131,5 +133,64 @@ a:hover{
 }
 
 .btn-orcamento:hover {
-    transform: scale(1.1);
+    transform: scale(1.08);
+}
+/*-----------------------------*/
+
+.titles{
+    text-transform: uppercase;
+    color: var(--color-titles);
+    font-size: 55px;
+    text-align: center;
+}
+
+.ctn-services{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-services-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    
+}
+
+.card {
+    width: 300px;
+    height: 280px;
+    background-color: transparent;
+    color: var(--color-title);
+    padding: 20px;
+    border-radius: 25px;
+    border: 3px solid var(--details-card);
+    border-bottom: 7px solid var(--details-card) ;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .card:hover {
+    transform: scale(0.96);
+    
+  }
+
+.title-card{
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.description{
+    margin: 0;
+    font-size:20px;
+}
+
+#icon-janela{
+    position: relative;
+    top: 9px;
+    margin-bottom: 10px;
+}
+
+.link-card{
+    text-decoration: none;
 }
