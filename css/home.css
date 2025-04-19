@@ -249,21 +249,45 @@ a:hover{
 }
 
 .grid-differences{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 90px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
 }
 
 .card-dif{
     width: 347px;
-    height: 300px;
+    height: 290px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: #ccc;
-    border-right: 4px solid #FFC900;
-    margin-bottom: 50px;
+    background: transparent;
+
+}
+
+.linha{
+    width: 5px;
+    height: 245px;
+    background: #FFC100;
+}
+
+.dif-texts{
+    display: flex;
+    color: var(--color-titles);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dif-texts .title-dif{
+    margin: 8px;
+    text-transform: uppercase;
+}
+
+.description-dif{
+    width: 82%;
+    margin: 0;
+    font-size:20px;
 }
 
 .circle{
