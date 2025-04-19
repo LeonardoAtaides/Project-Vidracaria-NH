@@ -299,3 +299,16 @@ a:hover{
     background-color: #FFC900;
     border-radius: 50%;
 }
+
+.icon-atend{
+    margin-top: 5px;
+}
+
+.icon-estrela{
+    margin-top: -6px;
+}
+
+.icon-entrega{
+    margin: 8px 12px 0 0;
+
+}
