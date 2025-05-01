@@ -3,6 +3,8 @@
     --bg-geral: #182C48;
     --color-title: #ffff;
     --color-titles: #ffff;
+    --color-titles-lines: #FFC900;
+    --lines: #FFC900;
     --details-card: #FFC900;
     --details-hover: #FFC900;
     --color-btn: #FFC900;
@@ -312,3 +314,46 @@ a:hover{
     margin: 8px 12px 0 0;
 
 }
+
+
+.container {
+    width: 100%;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
+
+.img-bg{
+    margin-top: -58px;
+    width: 100%;
+    height: 560px;
+    background:  linear-gradient(to bottom, rgba(0, 60, 255, 0.2) 70%, rgba(255, 201, 0, 0.5) 100%) ,url(../Imgs/teste.png)  center;
+}
+
+  .linha-com-texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-titles-lines); 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .linha-com-texto #hr1 {
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-right: 15px;
+  }
+
+  .linha-com-texto #hr2 {
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-left: 15px;
+  }
