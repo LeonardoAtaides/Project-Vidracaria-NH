@@ -272,7 +272,7 @@ a:hover{
 .linha{
     width: 5px;
     height: 245px;
-    background: #FFC100;
+    background: var(--lines);
 }
 
 .dif-texts{
