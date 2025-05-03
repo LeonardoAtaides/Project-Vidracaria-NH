@@ -318,12 +318,11 @@ a:hover{
 }
 
 
-.container {
+.ctn-num {
+    margin-top: -20px;
     width: 100%;
     text-align: center;
   }
-
-
 
   .linha-com-texto {
     display: flex;
