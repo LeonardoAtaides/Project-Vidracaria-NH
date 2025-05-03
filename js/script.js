@@ -1,3 +1,4 @@
+// ANIMAÇÃO CONTAGEM DOS NÚMEROS
 document.addEventListener("DOMContentLoaded", function () {
     const counters = document.querySelectorAll(".card-num-serv h2");
     let hasAnimated = false;
@@ -38,3 +39,4 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(container);
     }
 });
+// ---------------------------------//
