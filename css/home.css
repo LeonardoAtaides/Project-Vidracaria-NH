@@ -386,9 +386,9 @@ a:hover{
 }
 
 .p-ctn-contatos{
-     display: flex;
-    justify-content: space-evenly;
 
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -429,7 +429,7 @@ a:hover{
 
  .title-redes{
     color: var(--color-titles);
-    margin-top: 25px;
+    margin-top: 20px;
     text-transform: lowercase;
 }
 
