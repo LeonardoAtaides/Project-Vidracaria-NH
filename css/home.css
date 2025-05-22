@@ -7,6 +7,7 @@
     --color-titles-num: #FFC900;
     --color-titles-cont: #FFC900;
     --description-num: #ffff;
+    --description-foo: #ffff;
     --lines: #FFC900;
     --details-card: #FFC900;
     --details-hover: #FFC900;
@@ -472,11 +473,95 @@ a:hover{
     color: var(--color-titles);
 }
 
-.linha-com-texto #hr3{
-    flex: 1;
-    margin-top: 0px;
-    border: none;
+
+
+/* FOOTER */
+
+footer{
     width: 100%;
-    height: 5px;
-    background-color: var(--lines);
+    background: url(../Imgs/nuvem2.png) center no-repeat;
+    height:420px;
+    border-top: 5px solid var(--lines);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.footer-info{
+    width: 65%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-info-f{
+    width: 25%;
+    height: 200px;
+    align-items: center;
+    color: var(--description-foo); 
+}
+
+.card-info-f ul{
+    margin: 0;
+    list-style: none;
+    text-align: center;
+   
+}
+
+.card-info-f li a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.card-info-f li a:hover{
+    color: white;
+     transform: scale(1.02);
+}
+
+
+
+.card-info-f p{
+    margin: 0;
+    text-align: justify;
+    color: var(--description-foo);
+    font-size: 18px;
+
+}
+
+.title-footer{
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:25px;
+    color: var(--color-titles);
+}
+
+.redes-soc{
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.redes-soc a{
+    list-style: none;
+    transition: 0.3s;
+}
+
+.redes-soc a:hover{
+    transform: scale(1.05);
 }
