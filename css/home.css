@@ -16,14 +16,87 @@
     --btn-see-more: #FFC100;
 }
 
-/*CONF DO BODY*/
+/** CONFIGURAÇÕES PRINCIPAIS **/
 body{
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: var(--bg-geral);
 }
-/*-----------------------------------*/
+
+/* Titulos Principais*/
+.titles{
+    text-transform: uppercase;
+    color: var(--color-titles);
+    font-size: 55px;
+    text-align: center;
+}
+/*----------------------------*/
+
+/* direcionamento de link */
+.link-direct{
+    text-decoration: none;
+}
+/*----------------------------*/
+
+/* Botão de Orcamento*/
+.btn-orcamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 377px;
+    height: 55px;
+    font-size: 24px;
+    color: var(--color-title);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 60px;
+    border: 2px solid var(--color-btn);
+    background: var(--color-btn);
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+    .btn-orcamento:hover 
+    { transform: scale(1.08);}
+/*----------------------------*/
+
+/*Conf das Linhas com Texto*/
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-titles-lines); 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+    /*Linha a Esquerda*/
+    #lf{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-right: 15px;
+    }
+    /*Linha a Direita*/
+    #lr{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-left: 15px;
+    }
+/*----------------------------*/
+
+/************************************/
 
 /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
 .ctn-header{
@@ -73,9 +146,9 @@ ul a{
 a:hover{
     color: var(--details-hover);
 }
-/*--------------------------*/
+/*----------------------------*/
 
-/*CONTAINER DA APRESENTAÇÃO BREVE*/
+/** APRESENTAÇÃO BREVE **/
 .ctn-home{
     width: 100%;
     height:720px;
@@ -111,57 +184,22 @@ a:hover{
     font-size: 33px;
     font-weight:600;
 }
-/*-----------------------------*/
+/************************************/
 
 
-/*botão de Orçamento*/
-.btn-link {
-    text-decoration: none;
-}
-
-.btn-orcamento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 377px;
-    height: 55px;
-    font-size: 24px;
-    color: var(--color-title);
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 60px;
-    border: 2px solid var(--color-btn);
-    background: var(--color-btn);
-    cursor: pointer;
-    transition: 0.4s;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    
-}
-
-.btn-orcamento:hover {
-    transform: scale(1.08);
-}
-/*-----------------------------*/
-
-.titles{
-    text-transform: uppercase;
-    color: var(--color-titles);
-    font-size: 55px;
-    text-align: center;
-}
-
-.ctn-service{
+/** SERVIÇOS **/
+.section-services{
     justify-content: center;
     align-items: center;
 }
 
+/*Container de Serviços*/
 .ctn-services{
     display: flex;
     justify-content: center;
 }
 
+/*Grid de Serviços*/
 .grid-services-cards{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -169,7 +207,8 @@ a:hover{
     
 }
 
-.card {
+/*Card de Serviço*/
+.card-serv{
     width: 300px;
     height: 280px;
     background-color: transparent;
@@ -181,32 +220,31 @@ a:hover{
     text-align: center;
     transition: 0.3s;
   }
+    .card:hover 
+    {transform: scale(0.96);}
 
-  .card:hover {
-    transform: scale(0.96);
-    
-  }
 
-.title-card{
+/*Título do Serviço*/
+.title-serv{
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 15px;
 }
 
-.description{
+/*Descrição do Serviço*/
+.desc-serv{
     margin: 0;
     font-size:20px;
 }
 
+/*Icone de Janela*/
 #icon-janela{
     position: relative;
     top: 9px;
     margin-bottom: 10px;
 }
 
-.link-card{
-    text-decoration: none;
-}
+/*Botão Veja Mais*/
 #btn-link-see{
     margin-top: 25px;
     text-decoration: none;
@@ -215,7 +253,6 @@ a:hover{
     align-items: center;
     transition: 0.3s;
 }
-
 
 #see-more{
     display: flex;
@@ -236,29 +273,30 @@ a:hover{
     font-family: 'Montserrat', sans-serif;
     transition: 0.3s;
 }
+    #see-more:hover{ transform: scale(1.07);}
+/************************************/
 
-#see-more:hover{
-    transform: scale(1.07);
-}
-
-/*Container Diferencias*/
-.ctn-differences{
+/** DIFERENCIAS **/
+.section-differences{
     justify-content: center;
     align-items: center;
 }
 
-.p-ctn-differences{
+/*Ajuste de Posição */
+.align-ctn-dif{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.grid-differences{
+/*Grid para os Cards*/
+.grid-dif{
     display: flex;
     align-items: center;
     gap: 50px;
 }
 
+/*Cards*/
 .card-dif{
     width: 347px;
     height: 290px;
@@ -269,32 +307,8 @@ a:hover{
     background: transparent;
 }
 
-.linha{
-    width: 5px;
-    height: 245px;
-    background: var(--lines);
-}
-
-.dif-texts{
-    display: flex;
-    color: var(--color-titles);
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-}
-.dif-texts .title-dif{
-    margin: 8px;
-    text-transform: uppercase;
-}
-
-.description-dif{
-    width: 82%;
-    margin: 0;
-    font-size:20px;
-}
-
-.circle{
+/*Circulo de Fundo*/
+.circle-dif-bg{
     width: 110px;
     height: 110px;
     display: flex;
@@ -304,57 +318,51 @@ a:hover{
     border-radius: 50%;
 }
 
-.icon-atend{
-    margin-top: 5px;
+/*Container de Textos*/
+.ctn-texts-dif{
+    display: flex;
+    color: var(--color-titles);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.icon-estrela{
-    margin-top: -6px;
+/*Título de Diferencias*/
+.title-dif{
+    margin: 8px;
+    text-transform: uppercase;
 }
 
-.icon-entrega{
-    margin: 8px 12px 0 0;
-
+/*Descrição de Diferencias*/
+.desc-dif{
+    width: 82%;
+    margin: 0;
+    font-size:20px;
 }
 
+/*Linha Separadora dos Cards*/
+.sep-dif{
+    width: 5px;
+    height: 245px;
+    background: var(--lines);
+}
 
-.ctn-num {
+/*Ajustes Posição dos Icones*/
+.icon-atend{margin-top: 5px;}
+.icon-estrela{margin-top: -6px;}
+.icon-entrega{margin: 8px 12px 0 0;}
+
+
+/*NOSSOS NÚMEROS*/
+.section-counter {
     margin-top: -20px;
     width: 100%;
     text-align: center;
   }
 
-  .linha-com-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-titles-lines); 
-    font-size: 28px;
-    font-weight: bold;
-    text-transform: uppercase;
-    z-index: 2;
-  }
-
-
-  .linha-com-texto #hr1 {
-    flex: 1;
-    border: none;
-    width: 200px;
-    height: 5px;
-    background-color: var(--lines);
-    margin-right: 15px;
-  }
-
-  .linha-com-texto #hr2 {
-    flex: 1;
-    border: none;
-    width: 200px;
-    height: 5px;
-    background-color: var(--lines);
-    margin-left: 15px;
-  }
-
-.img-bg{
+/*Imagem de Fundo do Contador de Serviços*/
+.bg-counter{
     margin-top: -58px;
     width: 100%;
     height: 560px;
@@ -364,45 +372,53 @@ a:hover{
     background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 70%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/teste.png)  center;
 }
 
-.card-num-serv h2{
+/*Número do contador*/
+.card-counter h2{
     margin: 0;
     color: var(--color-titles-num);
     font-size: 120px;
 }
 
-.card-num-serv p{
+/*Descrição do contador*/
+.card-counter p{
     margin: 0;
     color: var(--description-num);
     font-size: 35px;
     
 }
+/************************************/
 
+/** CONTATO **/
 
-.ctn-contato .titles{
+/*Titulo de Contato*/
+.section-contact .titles{
     margin-bottom: 20px;
 }
 
-#contato{
+/*Subitulo de Contato*/
+#subtitle-contact{
     font-size: 38px;
     color: var(--color-title);
     text-align: center;
 }
 
-.p-ctn-contatos{
-
+/*Posição do Container de Contato*/
+.align-ctn-cont{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-     margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
-.grid-contatos{
+/*Grid de Contato*/
+.grid-contact{
     display: flex;
     align-items: center;
    
 }
 
-.card-contato{
+/*Card de Contato*/
+.card-contact{
     width: 100%;
     height: 1%;
     display: flex;
@@ -412,69 +428,64 @@ a:hover{
     background: transparent;
     transition: 0.4s;
 }
+    .card-contato:hover{transform: scale(1.05);}
 
-.card-contato:hover{
-    transform: scale(1.05);
-}
-
-.contato-text{
-    display: flex;
-    color: var(--color-titles);
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.title-cont{
+/*Texto de Contato*/
+.channel-cont{
     color: var(--color-titles);
     margin-top: 25px;
     text-transform: uppercase;
 }
 
- .title-redes{
+ .channel-cont-rs{
     color: var(--color-titles);
     margin-top: 20px;
     text-transform: lowercase;
 }
+/*----------------------------*/
 
-.linha-cont{
-     width: 5px;
+/*Linhas Separadoras*/
+.sep-line-cont{
+    width: 5px;
     height: 145px;
     background: var(--lines);
 }
 
-.subt-contato{
-    color: var(--color-titles);
-    margin: 0 0 15px 0;
-    font-size: 25px;
-    text-align: center;
-}
-
-.subt-contato b{
+/*Infomação de funcionamento e pagamento*/
+.info-operation b{
     color: var(--color-titles-cont);
 }
+    .info-operation{
+        color: var(--color-titles);
+        margin: 0 0 15px 0;
+        font-size: 25px;
+        text-align: center;
+    }
+/*----------------------------*/
 
-#localizaçao{
-    margin-top: -60px;
-    z-index: 0;
-}
-
-#text-end{
+/*Titulo Sobre a Localização*/
+#title-end{
+    color: var(--color-titles-cont);
     z-index: 1;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
-#end-completo{
+/*Localização*/
+#location{
+    margin-top: -60px;
+    z-index: 0;
+}
+
+/*Endereço Completo Descrito*/
+#full-adress{
     margin: 12px 0 ;
     font-size: 20px;
     text-align: center;
     color: var(--color-titles);
 }
+/************************************/
 
-
-
-/* FOOTER */
+/** FOOTER **/
 
 footer{
     width: 100%;
@@ -495,6 +506,7 @@ footer{
     
 }
 
+
 .footer-info{
     width: 65%;
     height: 200px;
@@ -504,6 +516,7 @@ footer{
     margin-bottom: 0px;
 }
 
+/*Card Footer*/
 .card-info-f{
     width: 25%;
     height: 200px;
@@ -511,11 +524,22 @@ footer{
     color: var(--description-foo); 
 }
 
+/*Titulo dos Cards*/
+.title-footer{
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:25px;
+    color: var(--color-titles);
+}
+
+
+/*CARD CONTATO*/
 .card-info-f ul{
     margin: 0;
     list-style: none;
     text-align: center;
-   
+
 }
 
 .card-info-f li a{
@@ -530,42 +554,39 @@ footer{
 .card-info-f li a:hover{
     color: var(--color-btn);
 }
+/*----------------------------*/
 
-
-
+/*CARD AGREDECIMENTO NH*/
 .card-info-f p{
     margin: 0;
     text-align: justify;
     color: var(--description-foo);
     font-size: 18px;
 
-}
+}    
+ /*----------------------------*/   
 
-.title-footer{
-    margin-bottom: 10px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size:25px;
-    color: var(--color-titles);
-}
-
-.redes-soc{
+/*CARD REDES SOCIAS*/
+.ctn-sm{
     margin-top: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
+    .ctn-sm a{list-style: none;
+        transition: 0.3s;
+    }
+    .ctn-sm a:hover{transform: scale(1.05);}
+ /*----------------------------*/   
 
-.redes-soc a{
-    list-style: none;
-    transition: 0.3s;
+
+/*Descrição Final*/
+.foo-descrition{
+    width: 40%;
 }
 
-.redes-soc a:hover{
-    transform: scale(1.05);
-}
-
+/*Copyright*/
 .foo-descrition p{
     font-size: 15px;
     margin: 5px 0;
@@ -573,18 +594,12 @@ footer{
     color: var(--color-titles);
 }
 
-.foo-descrition{
-    width: 40%;
-}
-
-#me {
+/*Direcionanto ao Dev*/
+#developer {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: 0.5s;
     display: inline-block; 
 }
-
-#me:hover {
-    text-decoration: underline;
-}
+    #developer:hover {text-decoration: underline;}
