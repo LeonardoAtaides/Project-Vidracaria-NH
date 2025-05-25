@@ -504,7 +504,6 @@ footer{
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .footer-cont{
@@ -512,7 +511,6 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 
 
@@ -989,5 +987,104 @@ footer{
     }
     /************************************/
 
+
+    /** FOOTER **/
+
+footer{
+    width: 100%;
+    background: url(../Imgs/nuvem-MB.png) center no-repeat;
+    height:auto;
+
+}
+
+.footer-cont{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    flex-direction: column;
+}
+    .footer-info {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        align-items: flex-start; /* Alinha os cards à esquerda */
+    }
+
+
+
+    .card-info-f {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #icon-sol{
+        width: 90px;
+        height: auto;
+    }
+
+    .title-footer {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .card-info-f ul {
+        padding: 10px 5px;
+    }
+    .card-info-f li a {
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    .card-info-f p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .ctn-sm {
+        gap: 15px;
+        margin-top: 0px;
+    }
+    .ctn-sm a img {
+        width: 45px;
+        height: auto;
+    }
+    #icon-insta{
+        width: 40px;
+        height: auto;
+    }
+
+    .foo-descrition {
+        width: 100%;
+        text-align: center;
+    }
+
+    .foo-descrition p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .p1{
+        order: 1;
+    }
+    .p2{
+        order: 2;
+    }
+    .p3{
+        order: 3;
+        
+    }
+
+/************************************/
 }
 
