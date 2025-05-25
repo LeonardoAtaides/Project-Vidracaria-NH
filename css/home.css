@@ -220,7 +220,7 @@ a:hover{
     text-align: center;
     transition: 0.3s;
   }
-    .card:hover 
+    .card-serv:hover 
     {transform: scale(0.96);}
 
 
@@ -428,7 +428,7 @@ a:hover{
     background: transparent;
     transition: 0.4s;
 }
-    .card-contato:hover{transform: scale(1.05);}
+    .card-contact:hover{transform: scale(1.05);}
 
 /*Texto de Contato*/
 .channel-cont{
