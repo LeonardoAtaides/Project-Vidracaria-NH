@@ -949,7 +949,6 @@ footer{
 
     /*Infomação de funcionamento e pagamento*/
     .info-operation b{
-        flex-direction: ;
         color: var(--color-titles-cont);
     }
         .info-operation{
@@ -990,31 +989,29 @@ footer{
 
     /** FOOTER **/
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-MB.png) center no-repeat;
-    height:auto;
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-MB.png) center no-repeat;
+        height:auto;
 
-}
+    }
 
-.footer-cont{
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: none;
-    flex-direction: column;
-}
+    .footer-cont{
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+        flex-direction: column;
+    }
     .footer-info {
         width: 100%;
         flex-direction: column;
         height: auto;
         gap: 0px;
-        align-items: flex-start; /* Alinha os cards à esquerda */
+        align-items: flex-start; 
     }
-
-
 
     .card-info-f {
         margin: 0;
