@@ -603,3 +603,107 @@ footer{
     display: inline-block; 
 }
     #developer:hover {text-decoration: underline;}
+
+
+/************************************/
+
+
+
+/*REPONSIVIDADE MOBILE*/
+
+@media (max-width: 540px) {
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 250px;
+        height: 35px;
+        font-size: 14px;
+        color: var(--color-title);
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 60px;
+        border: 2px solid var(--color-btn);
+        background: var(--color-btn);
+        cursor: pointer;
+        transition: 0.4s;
+        padding: 10px;
+        font-family: 'Montserrat', sans-serif;
+        
+    }
+        .btn-orcamento:hover 
+        { transform: scale(1.08);}
+    
+    #Icon-WhatsApp{
+        width: 25px;
+        height: auto;
+    }
+    /*----------------------------*/
+
+  /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content:start;
+        gap: 50%;
+        align-items: center;
+        background: url(../Imgs/Fundo\ header.png) repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img{
+        width:180px;
+        height: auto;
+    }
+
+    nav{
+        display: none;
+    }
+
+     /*----------------------------*/   
+
+     /** APRESENTAÇÃO BREVE **/
+    .ctn-home{
+        width: 100%;
+        height:290px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background: url(../Imgs/Detalhe-Onda-M.png) bottom , url(../Imgs/bg-princ-mobile.png) center no-repeat;
+        
+    }
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{
+        width: 100%;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    /*Logo*/
+    .logo-home img{
+    width: 90px;
+    height: auto;
+    }
+
+    /*Mensagem*/
+    #msg-logo{
+        width:100%;
+        text-align: center;
+        color: var(--color-title);
+        font-size: 15px;
+        font-weight:600;
+    }
+/************************************/
+    
+}
+
+/************************************/
