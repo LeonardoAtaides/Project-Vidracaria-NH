@@ -894,7 +894,7 @@ footer{
 
     /*Subitulo de Contato*/
     #subtitle-contact{
-        font-size: 24px;
+        font-size: 22px;
         color: var(--color-title);
         text-align: center;
     }
@@ -919,11 +919,11 @@ footer{
     }
 
     .card-contact img{
-        width: 55px;
+        width: 50px;
         height:auto;
     }
     #icon-email-cont{
-        width: 70px;
+        width: 62px;
         margin-bottom: 3px;
         height: auto;
     }
@@ -935,15 +935,13 @@ footer{
     
     /*Texto de Contato*/
     .channel-cont{
-        color: var(--color-titles);
         margin-top: 20px;
-        text-transform: uppercase;
+        font-size: 18px;
     }
 
     .channel-cont-rs{
-        color: var(--color-titles);
         margin-top: 20px;
-        text-transform: lowercase;
+        font-size: 18px;
     }
     /*----------------------------*/
 
