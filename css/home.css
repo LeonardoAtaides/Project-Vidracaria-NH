@@ -611,6 +611,17 @@ footer{
 /*REPONSIVIDADE MOBILE*/
 
 @media (max-width: 540px) {
+
+    /*Conf das Linhas com Texto*/
+    .line-text {
+        font-size: 20px;
+    }
+        /*Linha a Esquerda*/
+        #lf{margin-right: 5px;}
+        /*Linha a Direita*/
+        #lr{margin-left: 5px;}
+    /*----------------------------*/
+
     /* Titulos Principais*/
     .titles{
         font-size: 38px;
@@ -701,13 +712,13 @@ footer{
 
     /*Título do Serviço*/
     .title-serv{
-        font-size:24px;
+        font-size: 24px;
     }
 
     /*Descrição do Serviço*/
     .desc-serv{
         margin: 0;
-        font-size:18px;
+        font-size: 18px;
 
     }
     
@@ -768,6 +779,68 @@ footer{
     }
     /************************************/
 
+    /** DIFERENCIAS **/
+
+    /*Grid para os Cards*/
+    .grid-dif{
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    /*Cards*/
+    .card-dif{
+        height: 260px;
+    }
+
+    /*Título de Diferencias*/
+    .title-dif{
+        font-size: 24px;
+    }
+
+    /*Descrição de Diferencias*/
+    .desc-dif{
+        font-size: 18px;
+    }
+
+    /*Linha Separadora dos Cards*/
+    .sep-dif{
+        display: none;
+    }
+
+
+    /*NOSSOS NÚMEROS*/
+    .section-counter {
+        margin-top: -20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*Imagem de Fundo do Contador de Serviços*/
+    .bg-counter{
+        margin-top: -58px;
+        width: 100%;
+        height: 560px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 70%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/teste.png)  center;
+    }
+
+    /*Número do contador*/
+    .card-counter h2{
+        margin: 0;
+        color: var(--color-titles-num);
+        font-size: 50px;
+    }
+
+    /*Descrição do contador*/
+    .card-counter p{
+        margin: 0;
+        color: var(--description-num);
+        font-size: 35px;
+        
+    }
+    /************************************/  
     
 }
 
