@@ -38,7 +38,7 @@ body{
     position: absolute;
     top: 60px;
     right: 0;
-    transition: max-height 0.9s ease-in-out;
+    transition: max-height 0.7s ease-in-out;
     z-index: 1000;
 }
 
@@ -57,6 +57,7 @@ body{
     text-decoration: none;
     padding: 10px 15px;
     display: block;
+    font-size: 15px;
 }
 
 .nav-mobile li a:hover {
@@ -66,7 +67,7 @@ body{
 /* Botão mobile */
 .menu-toggle {
     display: none;
-    font-size: 22px;
+    font-size: 20px;
     background: none;
     border: none;
     color: white;
@@ -762,13 +763,13 @@ footer{
         height: 60px;
         display: flex;
         justify-content:center;
-        gap: 40%;
+        gap: 50%;
         background: url(../Imgs/Fundo-header-mb.png) repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
     .logo a img{
-        width:170px;
+        width:140px;
         height: auto;
     }
 
@@ -842,53 +843,53 @@ footer{
     }
     
     /*TAMANHO DOS ICONS*/  
-        /*Icone de Espelho*/
-        #icon-box{
-            width: 65px;
-            height: 70px;
-        }
+    /*Icone de Espelho*/
+    #icon-box{
+        width: 65px;
+        height: 70px;
+    }
 
-        /*Icone de Varanda*/
-        #icon-varanda{
-            width: 75px;
-            height: 70px;
-        }
+    /*Icone de Varanda*/
+    #icon-varanda{
+        width: 75px;
+        height: 70px;
+    }
 
-        /*Icone de Espelho*/
-        #icon-espelho{
-            width: 65px;
-            height: 70px;
-        }
+    /*Icone de Espelho*/
+    #icon-espelho{
+        width: 65px;
+        height: 70px;
+    }
 
-        /*Icone de Tampo de Mesa*/
-        #icon-tampo{
-            width: 70px;
-            height: 65px;
-        }
+    /*Icone de Tampo de Mesa*/
+    #icon-tampo{
+        width: 70px;
+        height: 65px;
+    }
 
-        /*Icone do Kit Pia*/
-        #icon-kitpia{
-            width: 75px;
-            height: 70px;
-        }
+    /*Icone do Kit Pia*/
+    #icon-kitpia{
+        width: 75px;
+        height: 70px;
+    }
 
-        /*Icone de Janela*/
-        #icon-janela{
-            width: 95px;
-            height: auto;
-        }
+    /*Icone de Janela*/
+    #icon-janela{
+        width: 95px;
+        height: auto;
+    }
 
-        /*Icone de Porta*/
-        #icon-porta{
-            width: 45px;
-            height: 70px;
-        }
+    /*Icone de Porta*/
+    #icon-porta{
+        width: 45px;
+        height: 70px;
+    }
 
-        /*Icone de Pergolado*/
-        #icon-pergolado{
-            width: 80px;
-            height: 70px;
-        }
+    /*Icone de Pergolado*/
+    #icon-pergolado{
+        width: 80px;
+        height: 70px;
+    }
     /*----------------------------*/   
 
 

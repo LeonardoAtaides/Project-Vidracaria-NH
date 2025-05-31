@@ -40,10 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // ---------------------------------//
+const toggleBtn = document.getElementById("menu-toggle");
+const mobileNav = document.getElementById("nav-mobile");
+const navLinks = mobileNav.querySelectorAll("a");
 
-  const toggleBtn = document.getElementById("menu-toggle");
-  const mobileNav = document.getElementById("nav-mobile");
+toggleBtn.addEventListener("click", () => {
+  mobileNav.classList.toggle("active");
+});
 
-  toggleBtn.addEventListener("click", () => {
-    mobileNav.classList.toggle("active");
+// Fecha o menu ao clicar em qualquer link
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    mobileNav.classList.remove("active");
   });
+});
