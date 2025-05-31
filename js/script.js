@@ -46,11 +46,19 @@ const navLinks = mobileNav.querySelectorAll("a");
 
 toggleBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
+
+  // Alternar o ícone do botão
+  if (mobileNav.classList.contains("active")) {
+    toggleBtn.textContent = "✖"; // ícone de X
+  } else {
+    toggleBtn.textContent = "☰"; // ícone de menu
+  }
 });
 
-// Fecha o menu ao clicar em qualquer link
+// Fecha o menu ao clicar em qualquer link e volta o ícone para ☰
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
+    toggleBtn.textContent = "☰";
   });
 });
