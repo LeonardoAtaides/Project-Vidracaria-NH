@@ -40,3 +40,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // ---------------------------------//
+
+  const toggleBtn = document.getElementById("menu-toggle");
+  const mobileNav = document.getElementById("nav-mobile");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileNav.classList.toggle("active");
+  });

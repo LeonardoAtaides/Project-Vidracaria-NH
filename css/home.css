@@ -24,6 +24,58 @@ body{
     background: var(--bg-geral);
 }
 
+/* Menu mobile: padrão escondido */
+.nav-mobile {
+    width: 100%; 
+    max-height: 0;
+    overflow: hidden;
+    background-color: #182C48;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transition: max-height 0.9s ease-in-out;
+    z-index: 1000;
+}
+
+/* Lista dentro do menu */
+.nav-mobile ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-mobile li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-mobile li a:hover {
+    color: #ffc800;
+}
+
+/* Botão mobile */
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Exibir e animar o menu mobile */
+.nav-mobile.active {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
 /* Titulos Principais*/
 .titles{
     text-transform: uppercase;
@@ -111,7 +163,7 @@ body{
     height: 128px;
     display: flex;
     justify-content:space-evenly;
-    gap: 50%;
+    gap: 58%;
     align-items: center;
     background: url(../Imgs/Fundo\ header.png) repeat-x;
 }
@@ -123,7 +175,7 @@ body{
 }
 
 /*Opções da Barra de Navegação*/
-nav ul{
+.nav ul{
     list-style: none;
     display: flex;
     margin: 0; 
@@ -132,25 +184,25 @@ nav ul{
     
 }
 
-nav ul li {
+.nav ul li {
     position: relative;
     padding-right: 15px; 
     border-right: 3px solid var(--details-hover); 
 }
 
 
-nav ul li:last-child {
+.nav ul li:last-child {
     border-right: none;
 }
 
-ul a{
+.nav ul a{
     text-decoration: none;
     color: var(--color-title);
     font-size: 21px;
     transition: 0.5s;
 }
 
-a:hover{
+.nav ul li a:hover{
     color: var(--details-hover);
 }
 /*----------------------------*/
@@ -695,8 +747,8 @@ footer{
         width: 100%;
         height: 60px;
         display: flex;
-        justify-content:start;
-        gap: 50%;
+        justify-content:center;
+        gap: 44%;
         background: url(../Imgs/Fundo\ header.png) repeat-x;
     }
 
@@ -706,9 +758,15 @@ footer{
         height: auto;
     }
 
-    nav{
+    .menu-toggle{
+            display: block;
+        }
+    .nav{
         display: none;
     }
+
+    
+
 
      /*----------------------------*/   
 
