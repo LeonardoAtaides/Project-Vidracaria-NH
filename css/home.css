@@ -17,8 +17,13 @@
 }
 
 /** CONFIGURAÇÕES PRINCIPAIS **/
+
+html {
+  scroll-behavior: smooth;
+}
+
 body{
-    padding: 0;
+    padding: 120px 0 0 0 ;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     background: var(--bg-geral);
@@ -160,18 +165,23 @@ body{
 
 /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
 .ctn-header{
+    position: fixed; /* <-- Fixa no topo */
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 128px;
+    height: 120px;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     gap: 58%;
     align-items: center;
-    background: url(../Imgs/Fundo\ header.png) repeat-x;
+    background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+    background-color: #182C48; /* cor de fallback, se a imagem não carregar */
+    z-index: 1100; /* fica acima do resto da página */
 }
 
 /*Logo da Barra de Navegação*/
 .logo a img{
-    width:355px;
+    width:300px;
     height: auto;
 }
 
@@ -677,6 +687,9 @@ footer{
 /*REPONSIVIDADE MOBILE*/
 
 @media (max-width: 540px) {
+    body{
+    padding: 60px 0 0 0 ;
+}
 
     .line-text{
         display: none;
@@ -1143,9 +1156,13 @@ footer{
 /*REPONSIVIDADE TABLET*/
 @media (min-width: 768px) and (max-width: 1023px) {
 
+    body{
+        padding: 90px 0 0 0 ;
+    }
+    
     /* Menu mobile*/
     .nav-mobile {
-        top: 128px;
+        top: 90px;
     }
 
     /* Lista dentro do menu */
@@ -1177,12 +1194,12 @@ footer{
         font-size: 32px;
     }
 
-/* Exibir e animar o menu mobile */
-.nav-mobile.active {
-    max-height: 500px;
-    opacity: 1;
-    pointer-events: auto;
-}
+    /* Exibir e animar o menu mobile */
+    .nav-mobile.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
 
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
@@ -1190,9 +1207,19 @@ footer{
         gap: 50%;
     }
 
+      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50%;
+        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+    }
+
     /*Logo da Barra de Navegação*/
     .logo a img{
-        width:270px;
+        width:260px;
         height: auto;
     }
 
