@@ -88,6 +88,7 @@ body{
 /* direcionamento de link */
 .link-direct{
     text-decoration: none;
+    color: #fff;
 }
 /*----------------------------*/
 
@@ -1519,8 +1520,6 @@ footer{
 .foo-descrition p{
     font-size: 18px;
 }
-
-
 
 
 /************************************/
