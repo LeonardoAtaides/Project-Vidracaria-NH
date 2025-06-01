@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 // ---------------------------------//
+// Menu ☰
 const toggleBtn = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("nav-mobile");
 const navLinks = mobileNav.querySelectorAll("a");
@@ -48,10 +49,28 @@ toggleBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
 });
 
-// Fecha o menu ao clicar em qualquer link e volta o ícone para ☰
+
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
     toggleBtn.textContent = "☰";
   });
 });
+// ---------------------------------//
+
+// Carossel de palavras
+const slide = document.getElementById("palavraSlide");
+  const palavras = slide.children;
+  const total = palavras.length;
+
+  let index = 0;
+
+  setInterval(() => {
+    index++;
+    if (index >= total) {
+      const clone = palavras[index - total].cloneNode(true);
+      slide.appendChild(clone);
+    }
+    slide.style.transform = `translateY(-${index * 1.2}em)`;
+  }, 3500); 
+// ---------------------------------//
