@@ -2021,7 +2021,7 @@ footer{
 }
 
 /*REPONSIVIDADE TABLET DEITADO*/
-@media (min-width: 1024px) and (max-width: 1279px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
 
     body{
         padding: 100px 0 0 0 ;
@@ -2399,8 +2399,8 @@ footer{
 /************************************/
 }
 
-/*REPONSIVIDADE TABLET DEITADO*/
-@media (min-width: 1280px) and (max-width: 1300px) {
+/*REPONSIVIDADE NOOTEBOOK*/
+@media (min-width: 1201px) and (max-width: 1550px) {
 
     .titles{
         font-size: 50px;
@@ -2446,7 +2446,7 @@ footer{
         height: 110px;
         display: flex;
         justify-content: space-evenly;
-        gap: 70%;
+        gap: 45%;
         background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
     }
 
@@ -2457,14 +2457,18 @@ footer{
     }
 
 
-
     /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
     .nav{
-        display: none;
+        display: block;
     }
+    .menu-toggle{
+            display: none;
+        }
+
+    .nav li a {
+        font-size: 20px;
+    }
+
 
 
     /** APRESENTAÇÃO BREVE **/
