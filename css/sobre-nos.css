@@ -3,7 +3,7 @@
     --bg-geral: #182C48;
     --color-title: #ffff;
     --color-titles: #ffff;
-    --color-titles-num: #FFC900;
+    --color-title-video: #FFC900;
     --color-titles-cont: #FFC900;
     --description-num: #ffff;
     --description-foo: #ffff;
@@ -110,6 +110,39 @@ body{
 }
     .btn-orcamento:hover 
     { transform: scale(1.08);}
+
+
+/*Conf das Linhas com Texto*/
+.line-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-title-video); 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+    /*Linha a Esquerda*/
+    #lf{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-right: 15px;
+    }
+    /*Linha a Direita*/
+    #lr{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-left: 15px;
+    }
 /*----------------------------*/
 
 /**/
@@ -240,13 +273,15 @@ body{
 }
 
 
-
-
-
-
 /************************************/
 
-
+.ctn-video{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
 
 /************************************/
 
