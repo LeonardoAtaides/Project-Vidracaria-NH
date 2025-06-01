@@ -3,7 +3,6 @@
     --bg-geral: #182C48;
     --color-title: #ffff;
     --color-titles: #ffff;
-    --color-titles-lines: #FFC900;
     --color-titles-num: #FFC900;
     --color-titles-cont: #FFC900;
     --description-num: #ffff;
@@ -127,7 +126,7 @@ body{
 /*Container da Logo e mensagem*/
 .ctn-contents{
     width: 100%;
-    margin-top: -200px;
+    margin-top: -90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,18 +136,114 @@ body{
 
 /*Logo*/
 .logo-sobre img{
-   width: 650px;
+   width: 600px;
    height: auto;
 }
 
 /*Mensagem*/
 #msg-logo{
-    width:50%;
-    text-align: center;
+    width:70%;
+    text-align: justify;
     color: var(--color-title);
-    font-size: 25px;
+    font-size:33px;
     font-weight:600;
+    text-indent: 1em;
 }
+
+.title{
+    color: var(--color-title);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60px;
+}
+
+
+/** OBJETIVOS DA EMPRESA **/
+.section-objectives{
+    justify-content: center;
+    align-items: center;
+}
+
+/*Ajuste de Posição */
+.align-ctn-obj{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*Grid para os Cards*/
+.grid-obj{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+/*Cards*/
+.card-obj{
+    width: 452px;
+    height: 209px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+}
+
+/*Circulo de Fundo*/
+.circle-obj-bg{
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC900;
+    border-radius: 50%;
+}
+
+/*Container de Textos*/
+.ctn-texts-obj{
+    display: flex;
+    color: var(--color-titles);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Título de Diferencias*/
+.title-obj{
+    margin: 8px;
+    text-transform: uppercase;
+}
+
+/*Descrição de Diferencias*/
+.desc-obj{
+    width: 100%;
+    margin: 0;
+    font-size:20px;
+}
+
+.ctn-texts-obj ul{
+    margin: 0;
+    text-align: start;
+}
+.ctn-texts-obj li{
+    margin: 0;
+    font-size:20px;
+}
+
+/*Linha Separadora dos Cards*/
+.sep-obj{
+    width: 5px;
+    height: 200px;
+    background: var(--lines);
+}
+
+
+
+
+
+
 /************************************/
 
 
