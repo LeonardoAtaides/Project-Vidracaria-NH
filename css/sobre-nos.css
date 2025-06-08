@@ -1273,6 +1273,83 @@ footer{
         font-size: 20px;
     }
 
+    /*CONTAINER SOBRE NÓS - EMPRESA*/
+    .ctn-sobre{
+        width: 100%;
+        height:550px;
+        background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat, url(../Imgs/Fundo-sobre-empresa.png) center;
+        
+    }
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{
+        width: 100%;
+        margin-top: -70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    /*Logo*/
+    .logo-sobre img{
+    width: 450px;
+    height: auto;
+    }
+
+    /*Mensagem*/
+    #msg-logo{
+        width: 90%;
+        text-align: justify;
+        color: var(--color-title);
+        font-size:25px;
+        font-weight:600;
+        text-indent: 1em;
+    }
+    /*----------------------------*/
+    /************************************/
+
+    /*TITULO PRINCIPAL*/
+    .title{
+        color: var(--color-title);
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 55px;
+    }
+
+    .section-objectives h1 {
+        display: flex;
+        align-items: center;
+    }
+    /** OBJETIVOS DA EMPRESA **/
+
+
+    /*Grid para os Cards*/
+    .grid-obj{
+        gap: 20px;
+    }
+
+    /*Cards*/
+    .card-obj{
+        width: 400px;
+        height: 209px;
+
+    }
+
+    /************************************/
+
+    /*CONTAINER DE VIDEO*/
+
+    /*tamanho do player*/
+    .ctn-video iframe{
+        width:95%;
+        height: 650px;
+    }
+
+    /************************************/     
+
+
 /** FOOTER **/
 footer{
     width: 100%;
