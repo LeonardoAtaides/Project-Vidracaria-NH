@@ -273,7 +273,7 @@ body{
     width: 70%;
     text-align: justify;
     color: var(--color-title);
-    font-size: 30px;
+    font-size: 33px;
     font-weight:600;
     text-indent: 1em;
 }
@@ -364,8 +364,8 @@ body{
 
 /*tamanhho do player*/
 .ctn-video iframe{
-    width: 900px;
-    height: 527px;
+    width: 1000px;
+    height: 550px;
 }
 
 /************************************/
@@ -1343,8 +1343,8 @@ footer{
 
     /*tamanho do player*/
     .ctn-video iframe{
-        width:95%;
-        height: 650px;
+        width:70%;
+        height: 500px;
     }
 
     /************************************/     

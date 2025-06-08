@@ -1766,14 +1766,16 @@ footer{
 
     /*Grid para os Cards*/
     .grid-dif{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
         gap: 35px;
     }
 
     /*Cards*/
     .card-dif{
         height: 260px;
+        margin: 0 55px;
     }
 
     /*Título de Diferencias*/
