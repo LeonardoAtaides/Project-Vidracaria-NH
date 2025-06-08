@@ -1240,8 +1240,40 @@ footer{
 
 /*REPONSIVIDADE NOOTEBOOK*/
 @media (min-width: 1280px) and (max-width: 1550px) {
-/** FOOTER **/
 
+        body{
+        padding: 110px 0 0 0 ;
+    }
+    
+      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header{
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 45%;
+        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img{
+        width:280px;
+        height: auto;
+    }
+
+    /*Opções da Barra de Navegação*/
+    .nav{
+        display: block;
+    }
+    .menu-toggle{
+            display: none;
+        }
+
+    .nav li a {
+        font-size: 20px;
+    }
+
+/** FOOTER **/
 footer{
     width: 100%;
     background: url(../Imgs/nuvem-1280x.png) center no-repeat;
