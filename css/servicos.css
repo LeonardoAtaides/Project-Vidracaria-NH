@@ -192,44 +192,30 @@ body{
 
 /*Mensagem*/
 .msg-logo{
-    margin-top:190px;
-    width:50%;
     text-align: center;
     color: var(--color-title);
     font-size: 33px;
     font-weight:600;
+    text-transform: uppercase;
 }
 .msg-logo h1{
-    text-transform: uppercase;
+    margin: 0;
+    font-size: 80px;
     color: var(--color-titles-princ);
-    
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 /************************************/
 
 /*NAVBAR SECUNDÁRIA*/
-.secondary-nav{
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    margin-top:250px;
-    color: white;
-}
-
-.secondary-nav ul{
-    display: flex;
-    font-size: 20px;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
-    gap:5px;
-}
 
 /************************************/
 
 
 /** APRESENTAÇÃO BREVE **/
 .ctn-serv{
+    margin-top: -40px;
     width: 100%;
-    height:720px;
+    height:550px;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -237,19 +223,6 @@ body{
     
 }
 
-/*Container da Logo e mensagem*/
-.ctn-contents{
-    width: 100%;
-    margin-top: -200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 20px;
-}
-
-
-/************************************/
 
 
 /** SERVIÇOS **/
