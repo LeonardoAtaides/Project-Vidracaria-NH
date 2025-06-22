@@ -204,10 +204,56 @@ body{
     color: var(--color-titles-princ);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
+
+/*Mensagem*/
+.desc-serv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.desc-serv h2{
+    margin: 0;
+    font-size:35px;
+    
+}
+
+.desc-serv img{
+    width: 15px;
+    height: auto;
+    
+}
 /************************************/
 
 /*NAVBAR SECUNDÁRIA*/
+.nav-secundary{ 
+    width: 100%;
+    position: absolute;
+    margin-top: -39px;
+    padding: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+}
 
+.nav-secundary li{
+    list-style: none;
+}
+
+.nav-secundary ul{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 5%;
+}
+
+.nav-secundary ul li a{
+    text-decoration: none;
+    color: white;
+}
 /************************************/
 
 
@@ -215,19 +261,16 @@ body{
 .ctn-serv{
     margin-top: -40px;
     width: 100%;
-    height:550px;
+    height: 490px;
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat, url(../Imgs/fundo-servicos.png) center;
+    background: url(../Imgs/fundo-servicos.png) center;
     
 }
 
 
-
-/** SERVIÇOS **/
-
-
+/** SERVIÇO **/
 
 
 /** FOOTER **/
