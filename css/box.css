@@ -3,6 +3,8 @@
     --bg-geral: #182C48;
     --color-title: #ffff;
     --color-titles: #ffff;
+    --color-sub: #FFC900;
+
     --color-titles-princ: #FFC900;
     --color-titles-num: #FFC900;
     --color-titles-cont: #FFC900;
@@ -106,9 +108,9 @@ body{
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: 377px;
-    height: 55px;
-    font-size: 24px;
+    width: 450px;
+    height: 60px;
+    font-size: 28px;
     color: var(--color-title);
     text-transform: uppercase;
     font-weight: 700;
@@ -274,6 +276,7 @@ body{
 
 /** SERVIÇO **/
 .ctn h1{
+    margin: 10px 0;
     color: var(--color-title);
     text-align: center;
     text-transform: uppercase;
@@ -286,13 +289,13 @@ body{
     width: 100%;
     color: var(--color-title);
     text-align: center;
-    font-size: 22px;
 }
 .description p{
     width: 96%;
+    margin: 0;
     text-align: justify;
     color: var(--color-title);
-    font-size: 22px;
+    font-size: 25px;
 }
 
 
@@ -319,10 +322,6 @@ body{
         margin-right: 5px;
     }
 
-    .line-text img{
-        width: 80px;
-    }
-    /*Linha a Direita*/
     #lr{
         flex: 1;
         border: none;
@@ -330,6 +329,34 @@ body{
         height: 5px;
         background-color: var(--lines);
         margin-left: 5px;
+    }
+    .line-text img{
+        width: 80px;
+        height: auto;
+    }
+    .line-text h2{
+        margin: 14px 0;
+        color: var(--color-sub);
+    }
+    /*Linha a Direita*/
+
+        /*Linha a Esquerda*/
+    #lft{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-right: 15px;
+    }
+
+    #lrt{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-left: 15px;
     }
     
 /*----------------------------*/
@@ -346,6 +373,23 @@ body{
     border-radius: 5%;
     background: #ccc;
 }
+
+.ctn-budget{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px;
+}
+
+.ctn-budget h2{
+    margin: -5px 0 0 0;
+    font-size: 40px;
+    color: var(--color-title);
+}
+
+
 /** SERVIÇO **/
 
 /** FOOTER **/
