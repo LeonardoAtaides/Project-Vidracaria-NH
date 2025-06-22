@@ -29,6 +29,8 @@ body{
     background: var(--bg-geral);
 }
 
+
+
 /* Menu mobile: padrão escondido */
 .nav-mobile {
     width: 100%; 
@@ -271,7 +273,80 @@ body{
 
 
 /** SERVIÇO **/
+.ctn h1{
+    color: var(--color-title);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+}
 
+.description{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--color-title);
+    text-align: center;
+    font-size: 22px;
+}
+.description p{
+    width: 96%;
+    text-align: justify;
+    color: var(--color-title);
+    font-size: 22px;
+}
+
+
+/*Linha com logo do Sol*/
+.line-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-titles-lines); 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+    /*Linha a Esquerda*/
+    #lf{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-right: 5px;
+    }
+
+    .line-text img{
+        width: 80px;
+    }
+    /*Linha a Direita*/
+    #lr{
+        flex: 1;
+        border: none;
+        width: 200px;
+        height: 5px;
+        background-color: var(--lines);
+        margin-left: 5px;
+    }
+    
+/*----------------------------*/
+
+.ctn-photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+.photo img{
+    width: 422px;
+    height: 516px;
+    border-radius: 5%;
+    background: #ccc;
+}
+/** SERVIÇO **/
 
 /** FOOTER **/
 
