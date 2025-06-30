@@ -369,17 +369,29 @@ body{
     
 /*----------------------------*/
 
+/** SERVIÇO **/
+
 .ctn-photos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
+    max-width:100%;
+    min-width: 350px;
+}
+.carrossel{
+    display:grid;
+    grid-auto-flow: column;
+    gap: 1.8rem;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    
 }
 .photo img{
-    width: 422px;
-    height: 516px;
+    width: 442px;
+    height: 560px;
     border-radius: 5%;
     background: #ccc;
+    scroll-snap-align: start;
 }
 
 .ctn-budget{
@@ -397,8 +409,6 @@ body{
     color: var(--color-title);
 }
 
-
-/** SERVIÇO **/
 
 /** FOOTER **/
 

@@ -74,3 +74,5 @@ const slide = document.getElementById("palavraSlide");
     slide.style.transform = `translateY(-${index * 1.2}em)`;
   }, 3500); 
 // ---------------------------------//
+
+
