@@ -5,7 +5,7 @@ const cards = document.querySelectorAll('.carousel-card');
 const indicators = document.querySelectorAll('.indicator');
 
 function updateCarousel() {
-    const cardWidth = 490;
+    const cardWidth = 500;
     const containerWidth = carouselWrapper.parentElement.offsetWidth;
     const totalWidth = cardWidth * totalSlides;
     const maxTranslateX = 0;
