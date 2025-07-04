@@ -76,3 +76,89 @@ const slide = document.getElementById("palavraSlide");
 // ---------------------------------//
 
 
+let currentSlide = 0;
+        const totalSlides = 4;
+        const carouselWrapper = document.getElementById('carouselWrapper');
+        const cards = document.querySelectorAll('.carousel-card');
+        const indicators = document.querySelectorAll('.indicator');
+
+        function updateCarousel() {
+            // Calcular a posição central
+            const cardWidth = 320; // 300px + 20px gap
+            const containerWidth = carouselWrapper.parentElement.offsetWidth;
+            const centerOffset = (containerWidth - cardWidth) / 2;
+            const translateX = centerOffset - (currentSlide * cardWidth);
+            
+            carouselWrapper.style.transform = `translateX(${translateX}px)`;
+            
+            // Atualizar classes ativas
+            cards.forEach((card, index) => {
+                card.classList.toggle('active', index === currentSlide);
+            });
+            
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Auto-play (opcional)
+        setInterval(nextSlide, 5000);
+
+        // Inicializar carrossel
+        window.addEventListener('load', updateCarousel);
+        window.addEventListener('resize', updateCarousel);
+
+        // Suporte para touch/swipe em dispositivos móveis
+        let startX = 0;
+        let isDragging = false;
+
+        carouselWrapper.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+            isDragging = true;
+        });
+
+        carouselWrapper.addEventListener('touchmove', (e) => {
+            if (!isDragging) return;
+            e.preventDefault();
+        });
+
+        carouselWrapper.addEventListener('touchend', (e) => {
+            if (!isDragging) return;
+            
+            const endX = e.changedTouches[0].clientX;
+            const diffX = startX - endX;
+            
+            if (Math.abs(diffX) > 50) {
+                if (diffX > 0) {
+                    nextSlide();
+                } else {
+                    prevSlide();
+                }
+            }
+            
+            isDragging = false;
+        });
+
+        // Navegação por teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
