@@ -332,7 +332,7 @@ body{
         width: 200px;
         height: 5px;
         background-color: var(--lines);
-        margin-right: 5px;
+        margin-right: 2px;
     }
 
     #lr{
@@ -341,10 +341,10 @@ body{
         width: 200px;
         height: 5px;
         background-color: var(--lines);
-        margin-left: 5px;
+        margin-left: 2px;
     }
     .line-text img{
-        width: 80px;
+        width: 110px;
         height: auto;
     }
     .line-text h2{
