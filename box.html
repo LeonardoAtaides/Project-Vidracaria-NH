@@ -82,28 +82,57 @@
             <img src="Imgs/Sol completo.png"  alt="mini logo sol">
             <hr id="lr">
         </div>
-                
+
         <div class="ctn-photos">
-        <!-- Botão para voltar -->
-        <button class="btn-prev">‹</button>
+            <div class="carousel-section">  
+                <div class="carousel-container">
+                    <button class="carousel-nav prev" onclick="prevSlide()">‹</button>
+                    <button class="carousel-nav next" onclick="nextSlide()">›</button>
+                    
+                    <div class="carousel-wrapper" id="carouselWrapper">
+                        <div class="carousel-card active">
+                            <img src="Imgs/box.webp" alt="Box">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="Imgs/box2.jpg" alt="Box">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="Imgs/box 3.jpg" alt="Box">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="Imgs/box 4.jpg" alt="Fachadas de Vidro">
+                        </div>
 
-        <!-- Carrossel -->
-        <div class="carrossel">
-            <div class="photo"><img src="Imgs/box.webp" alt=""></div>
-            <div class="photo"><img src="Imgs/box 4.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box 3.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box.webp" alt=""></div>
-            <div class="photo"><img src="Imgs/box 3.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box 4.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box.webp" alt=""></div>
-            <div class="photo"><img src="Imgs/box 3.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box 4.jpg" alt=""></div>
-            <div class="photo"><img src="Imgs/box.webp" alt=""></div>
-        </div>
+                        <div class="carousel-card">
+                            <img src="Imgs/box 4.jpg" alt="Fachadas de Vidro">
+                        </div>
 
-        <!-- Botão para avançar -->
-        <button class="btn-next">›</button>
+                        <div class="carousel-card">
+                            <img src="Imgs/box 4.jpg" alt="Fachadas de Vidro">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="Imgs/box 3.jpg" alt="Fachadas de Vidro">
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <span class="indicator" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator active" onclick="goToSlide(3)"></span>
+                    <span class="indicator" onclick="goToSlide(4)"></span>
+                    <span class="indicator" onclick="goToSlide(5)"></span>
+                    <span class="indicator" onclick="goToSlide(6)"></span>
+                </div>
+                </div>
         </div>
+                
+
 
         <div class="line-text">
             <hr id="lft">
@@ -187,6 +216,7 @@
         
     </footer>
 
+    <script src="js/ScriptServ.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html> 
