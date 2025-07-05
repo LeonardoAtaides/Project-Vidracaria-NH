@@ -184,6 +184,17 @@ body{
 /*----------------------------*/
 
 /** BANNER SERVIÇO **/
+/** APRESENTAÇÃO BREVE **/
+.ctn-serv{
+    margin-top: -40px;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(../Imgs/fundo-servicos.png) center top;
+    
+}
 
 /*Container da Logo e mensagem*/
 .ctn-contents{
@@ -240,6 +251,7 @@ body{
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 
 .nav-secundary li{
@@ -253,11 +265,14 @@ body{
     margin: 10px;
     justify-content: center;
     gap: 5%;
+    padding: 0;
+    list-style: none;
 }
 
 .nav-secundary ul li a{
     text-decoration: none;
     color: white;
+    white-space: nowrap; /* impede quebra de linha no mobile */
 }
 
 .nav-secundary  li:hover {
@@ -266,17 +281,7 @@ body{
 /************************************/
 
 
-/** APRESENTAÇÃO BREVE **/
-.ctn-serv{
-    margin-top: -40px;
-    width: 100%;
-    height: 490px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background: url(../Imgs/fundo-servicos.png) center top;
-    
-}
+
 
 
 /** SERVIÇO **/
@@ -695,9 +700,7 @@ footer{
     }
 
     /* Titulos Principais*/
-    .titles{
-        font-size: 38px;
-    }
+    .titles{font-size: 38px;}
 
     /* Botão de Orcamento*/
     .btn-orcamento {
@@ -728,283 +731,57 @@ footer{
         height: auto;
     }
 
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
-
+    .menu-toggle{display: block;}
+    .nav{display: none;}
      /*----------------------------*/   
 
-
-
-    /*Container da Logo e mensagem*/
-    .ctn-contents{
+   
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
         margin-top: -80px;
-        gap: 0px;
-    }
-
-    /*Logo*/
-    .logo-home img{
-    width: 90px;
-    height: auto;
-    }
+        height: 370px;
+        background: url(../Imgs/fundo-servicos.png) center top;
+        background-size: auto 400px, cover;
+        background-repeat: no-repeat;
+        background-position:bottom,center;
+        background-attachment: scroll;
+        
+    }  
+    /*Container da Logo e mensagem*/
+    .ctn-contents{margin-top: 70px;}
 
     /*Mensagem*/
-    #msg-logo{
-        width:100%;
-        font-size: 15px;
-    }
-    /************************************/
+    .msg-logo h1{font-size: 30px;}
 
-    /** SERVIÇOS **/
+    .desc-serv{gap: 10px;}
 
-    /*Grid de Serviços*/
-    .grid-services-cards{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 16px;
-        
-    }
+    .desc-serv h2{font-size:20px;}
 
-    /*Card de Serviço*/
-    .card-serv{
-        width: 250px;
-        height: 250px;
-
-    }
-
-    /*Título do Serviço*/
-    .title-serv{
-        font-size: 24px;
-    }
-
-    /*Descrição do Serviço*/
-    .desc-serv{
-        margin: 0;
-        font-size: 18px;
-
-    }
-    
-    /*TAMANHO DOS ICONS*/  
-    /*Icone de Espelho*/
-    #icon-box{
-        width: 65px;
-        height: 70px;
-    }
-
-    /*Icone de Varanda*/
-    #icon-varanda{
-        width: 75px;
-        height: 70px;
-    }
-
-    /*Icone de Espelho*/
-    #icon-espelho{
-        width: 65px;
-        height: 70px;
-    }
-
-    /*Icone de Tampo de Mesa*/
-    #icon-tampo{
-        width: 70px;
-        height: 65px;
-    }
-
-    /*Icone do Kit Pia*/
-    #icon-kitpia{
-        width: 75px;
-        height: 70px;
-    }
-
-    /*Icone de Janela*/
-    #icon-janela{
-        width: 95px;
-        height: auto;
-    }
-
-    /*Icone de Porta*/
-    #icon-porta{
-        width: 45px;
-        height: 70px;
-    }
-
-    /*Icone de Pergolado*/
-    #icon-pergolado{
-        width: 80px;
-        height: 70px;
-    }
+    .desc-serv img{width: 8px;}
     /*----------------------------*/   
-
-    /*Botão Veja Mais*/
-    #see-more{
-        font-size: 26px;
-    }
     /************************************/
 
-    /** DIFERENCIAS **/
-
-    /*Grid para os Cards*/
-    .grid-dif{
-        flex-direction: column;
-        gap: 35px;
-    }
-
-    /*Cards*/
-    .card-dif{
-        height: 260px;
-    }
-
-    /*Título de Diferencias*/
-    .title-dif{
-        font-size: 24px;
-    }
-
-    /*Descrição de Diferencias*/
-    .desc-dif{
-        font-size: 18px;
-    }
-
-    /*Linha Separadora dos Cards*/
-    .sep-dif{
-        display: none;
-    }
+  
+/*NAVBAR SECUNDÁRIA*/
+.nav-secundary{ 
+    justify-content: flex-start;
+    overflow: auto;
+    scrollbar-width: none;
+}
 
 
-    /*NOSSOS NÚMEROS*/
-    .section-counter {
-        margin-top: 0px;
-    }
+.nav-secundary ul{
+    width: max-content;
+    margin: 0px;
+    gap: 20px;
+    padding: 10px;
 
-    /*Imagem de Fundo do Contador de Serviços*/
-    .bg-counter{
-        margin-top: -41px;
-        height: 450px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/teste.png)  center;
-    }
+}
+/************************************/
 
-    .card-counter #eleven{
-        margin-top: 50px;
-    }
-    /*Número do contador*/
-    .card-counter h2{
-        font-size: 45px;
-    }
-
-    /*Descrição do contador*/
-    .card-counter p{
-        font-size: 30px;
-    }
-    /************************************/  
     
-    /** CONTATO **/
-
-    /*Titulo de Contato*/
-    .section-contact .titles{
-        margin-bottom: 20px;
-    }
-
-    /*Subitulo de Contato*/
-    #subtitle-contact{
-        font-size: 22px;
-        color: var(--color-title);
-        text-align: center;
-    }
-
-    /*Posição do Container de Contato*/
-    .align-ctn-cont{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        flex-direction: column;
-        gap: 20px;
-        margin-bottom: 0px;
-     
-    }
-
-    /*Grid de Contato*/
-    .grid-contact{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-    }
-
-    .card-contact img{
-        width: 40px;
-        height:auto;
-    }
-    #icon-email-cont{
-        width: 52px;
-        margin-bottom: 3px;
-        height: auto;
-    }
-
-        /*Linhas Separadoras*/
-    .sep-line-cont{
-        display: none;
-    }
-    
-    /*Texto de Contato*/
-    .channel-cont{
-        margin-top: 20px;
-        font-size: 17px;
-    }
-
-    .channel-cont-rs{
-        margin-top: 20px;
-        font-size: 17px;
-    }
-    /*----------------------------*/
-
-    /*Infomação de funcionamento e pagamento*/
-    .info-operation-mobile b{
-        color: var(--color-titles-cont);
-        font-size: 19px;
-    }
-        .info-operation-mobile{
-            flex-direction: column;
-            color: var(--color-titles);
-            font-size: 18px;
-            text-align: center;
-        }
-
-    #info-mb{
-        margin-bottom: 0px;
-    }
-    
-    /*----------------------------*/
-
-    /*Titulo Sobre a Localização*/
-    #title-end{
-        font-size: 28px;
-        color: var(--color-titles-cont);
-        z-index: 1;
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    }
-
-    /*Localização*/
-    #location{
-        margin-top: -40px;
-        z-index: 0;
-    }
-
-    #loc-mob{
-        height: 300px;
-    }
-
-    /*Endereço Completo Descrito*/
-    #full-adress{
-        margin: 12px 0 ;
-        font-size: 13px;
-        text-align: center;
-        color: var(--color-titles);
-    }
-    /************************************/
+   
 
     /** FOOTER **/
 
