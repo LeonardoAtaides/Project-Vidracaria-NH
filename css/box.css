@@ -335,6 +335,7 @@ body{
         margin-right: 2px;
     }
 
+    /*Linha a Direita*/
     #lr{
         flex: 1;
         border: none;
@@ -343,6 +344,8 @@ body{
         background-color: var(--lines);
         margin-left: 2px;
     }
+
+    /*logo Sol Pequena*/
     .line-text img{
         width: 110px;
         height: auto;
@@ -351,9 +354,8 @@ body{
         margin: 14px 0;
         color: var(--color-sub);
     }
-    /*Linha a Direita*/
 
-        /*Linha a Esquerda*/
+    /*Linha a Esquerda*/
     #lft{
         flex: 1;
         border: none;
@@ -362,7 +364,7 @@ body{
         background-color: var(--lines);
         margin-right: 15px;
     }
-
+    /*Linha a Direita*/
     #lrt{
         flex: 1;
         border: none;
@@ -373,147 +375,9 @@ body{
     }
     
 /*----------------------------*/
-        .carousel-section {
-            max-width: 1900px;
-            width: 100%;
-            text-align: center;
-        }
+/** CAROUSSEL DO SERVIÇO**/
 
-
-
-        .carousel-container {
- 
-            position: relative;
-            overflow: hidden;
-            padding: 0;
-        }
-
-        .carousel-wrapper {
-            display: flex;
-            transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            gap: 0px;
-            padding: 0;
-        }
-
-        .carousel-card {
-            flex: 0 0 500px;
-            height: 600px;
-            border-radius: 20px;
-            overflow: hidden;
-            position: relative;
-            cursor: pointer;
-            transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            transform: scale(0.8);
-            opacity: 0.6;
-        }
-
-        .carousel-card.active {
-            transform: scale(1);
-            opacity: 1;
-            
-        }
-
-        .carousel-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-card:hover img {
-            transform: scale(1.05);
-        }
-
-
-        .carousel-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background: transparent;
-            border: none;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: all 0.3s ease;
-            z-index: 10;
-        }
-
-        .carousel-nav:hover {
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .carousel-nav.prev {
-            left: 10px;
-        }
-
-        .carousel-nav.next {
-            right: 10px;
-        }
-
-        .carousel-indicators {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 30px;
-        }
-
-        .indicator {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            background: rgba(255,255,255,0.4);
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .indicator.active {
-            background: white;
-            transform: scale(1.2);
-        }
-
-        @media (max-width: 768px) {
-            .section-title {
-                font-size: 2rem;
-                margin-bottom: 2rem;
-            }
-
-            .carousel-card {
-                flex: 0 0 280px;
-                height: 350px;
-            }
-
-            .carousel-nav {
-                width: 40px;
-                height: 40px;
-                font-size: 1rem;
-            }
-
-            .carousel-nav.prev {
-                left: 10px;
-            }
-
-            .carousel-nav.next {
-                right: 10px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .carousel-card {
-                flex: 0 0 250px;
-                height: 320px;
-            }
-
-            .card-title {
-                font-size: 1.2rem;
-            }
-
-            .card-description {
-                font-size: 0.8rem;
-            }
-        }
-/** SERVIÇO **/
-
+/* Container Principal do Caroussel*/
 .ctn-photos{
     max-width:100%;
     display: flex;
@@ -521,25 +385,114 @@ body{
     align-items: center;
     margin: 0 10px;
 }
-.carrossel{
-    display:grid;
-    grid-auto-flow: column;
-    gap: 1.8rem;
-    overflow-x: auto;
-    overscroll-behavior-x: contain;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    scroll-behavior: smooth;
-    
-}
-.photo img{
-    width: 442px;
-    height: 560px;
-    border-radius: 5%;
-    background: #ccc;
-    scroll-snap-align: start;
+
+/* Container do Caroussel*/
+.carousel-section {
+    max-width: 1900px;
+    width: 100%;
+    text-align: center;
 }
 
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 0px;
+    padding: 0;
+}
+/*----------------------------*/
+
+/* Card do Caroussel*/
+.carousel-card {
+    flex: 0 0 500px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(0.8);
+    opacity: 0.6;
+}
+
+.carousel-card.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Imagem do Card*/
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card:hover img {
+    transform: scale(1.05);
+}
+/*----------------------------*/
+
+/* Seta Passar Imgs*/
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/*Margin para as Setas*/
+.carousel-nav.prev {left: 10px;}
+.carousel-nav.next {right: 10px;}
+
+
+/* Container Indicador de Imagem*/
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/*Indicador de Imagem*/
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: white;
+    transform: scale(1.2);
+}
+/*----------------------------*/
+
+/*----------------------------*/
+/************************************/
+
+
+/** PEÇA AGORA **/
+
+/*Container Peça Agora*/
 .ctn-budget{
     display: flex;
     flex-direction: column;
@@ -554,7 +507,7 @@ body{
     font-size: 40px;
     color: var(--color-title);
 }
-
+/************************************/
 
 /** FOOTER **/
 
