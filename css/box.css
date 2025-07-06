@@ -754,7 +754,7 @@ footer{
 
     /* Card do Caroussel*/
     .carousel-card {
-        flex: 0 0 350px;
+        flex: 0 0 360px;
         height: 580px;
     }
     /*----------------------------*/
@@ -985,7 +985,7 @@ footer{
         margin-top: -50px;
         height: 430px;
         background: url(../Imgs/fundo-servicos.png) center top;
-        background-size: auto 520px, cover;
+        background-size: auto 600px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
         background-attachment: scroll;
@@ -1043,7 +1043,7 @@ footer{
         align-items: center;
         justify-content: center;
         color: var(--color-titles-lines); 
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
         z-index: 2;
@@ -1076,8 +1076,8 @@ footer{
 
     /* Card do Caroussel*/
     .carousel-card {
-        flex: 0 0 450px;
-        height: 580px;
+        flex: 0 0 500px;
+        height: 600px;
     }
     /*----------------------------*/
 
@@ -1085,8 +1085,11 @@ footer{
     .carousel-nav.prev {left: 5px;}
     .carousel-nav.next {right: 5px;}
 
+    .carousel-nav.prev img {width: 25px; height: auto;}
+    .carousel-nav.next img {width: 25px; height: auto;}
+
     /* Container Indicador de Imagem*/
-    .carousel-indicators {margin-top: 20px;}
+    .carousel-indicators {margin-top: 30px;}
 
     /*Indicador de Imagem*/
     .indicator {
@@ -1104,22 +1107,22 @@ footer{
     /** PEÇA AGORA **/
 
     /*Container Peça Agora*/
-    .ctn-budget{margin-bottom:30px;}
+    .ctn-budget{margin-bottom:40px;}
 
         .ctn-budget h2{
             text-align: center;
             margin: -5px 0 0 0;
-            font-size: 22px;
+            font-size: 35px;
         }
 
     /* Botão de Orcamento*/
     .btn-orcamento {
-        width: 260px;
-        height: 40px;
-        font-size: 16px;
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
     }  
         #Icon-WhatsApp{
-            width: 25px;
+            width: 35px;
             height: auto;
         }
     /************************************/ 
