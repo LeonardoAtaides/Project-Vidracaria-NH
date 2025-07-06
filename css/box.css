@@ -33,7 +33,7 @@ body{
 
 
 
-/* Menu mobile: padrão escondido */
+/* Menu mobile*/
 .nav-mobile {
     width: 100%; 
     max-height: 0;
@@ -130,7 +130,7 @@ body{
 /************************************/
 /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
 .ctn-header{
-    position: fixed; /* <-- Fixa no topo */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -140,8 +140,8 @@ body{
     gap: 58%;
     align-items: center;
     background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
-    background-color: #182C48; /* cor de fallback, se a imagem não carregar */
-    z-index: 1100; /* fica acima do resto da página */
+    background-color: #182C48;
+    z-index: 1100; 
 }
 
 /*Logo da Barra de Navegação*/
@@ -192,8 +192,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/fundo-servicos.png) center top;
-    
+    background: url(../Imgs/fundo-servicos.png) center top no-repeat;  
 }
 
 /*Container da Logo e mensagem*/
@@ -376,6 +375,7 @@ body{
     }
     
 /*----------------------------*/
+
 /** CAROUSSEL DO SERVIÇO**/
 
 /* Container Principal do Caroussel*/
@@ -485,8 +485,6 @@ body{
     background: white;
     transform: scale(1.2);
 }
-/*----------------------------*/
-
 /*----------------------------*/
 /************************************/
 
@@ -627,88 +625,18 @@ footer{
     display: inline-block; 
 }
     #developer:hover {text-decoration: underline;}
-
-
 /************************************/
-
-#canal-d{
- display: flex;
-}
-
-.info-operation-mobile{
-    display: none;
-}
-
-#canal-m{
- display: none;
-}
 
 /*REPONSIVIDADE MOBILE*/
 @media (max-width: 540px){
  
-    .info-operation-mobile{
-    display: block;
-    }
-    .info-operation{
-    display: none;
-    }
     body{
     padding: 60px 0 0 0 ;
-    }
-
-    .line-text{
-        display: none;
-    }
-
-    .line-text-mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-titles-lines); 
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    z-index: 2;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
-    }
-    .line-text-mobile h2 {
-    font-size: 28px;
-    }
-
-    /*Linha a Esquerda*/
-    #lf{
-        flex: 1;
-        border: none;
-        width: 200px;
-        height: 5px;
-        background-color: var(--lines);
-        margin-right: 5px;
-    }
-    /*Linha a Direita*/
-    #lr{
-        flex: 1;
-        border: none;
-        width: 200px;
-        height: 5px;
-        background-color: var(--lines);
-        margin-left: 5px;
     }
 
     /* Titulos Principais*/
     .titles{font-size: 38px;}
 
-    /* Botão de Orcamento*/
-    .btn-orcamento {
-        width: 250px;
-        height: 35px;
-        font-size: 14px;
-    }
-
-    #Icon-WhatsApp{
-        width: 25px;
-        height: auto;
-    }
     /*----------------------------*/
 
   /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
@@ -731,34 +659,33 @@ footer{
     .nav{display: none;}
      /*----------------------------*/   
 
-   
     /** BANNER SERVIÇO **/
     /*Container da Img Fundo*/
     .ctn-serv{
-        margin-top: -80px;
-        height: 370px;
+        margin-top: -50px;
+        height: 350px;
         background: url(../Imgs/fundo-servicos.png) center top;
-        background-size: auto 400px, cover;
+        background-size: auto 300px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
         background-attachment: scroll;
         
     }  
     /*Container da Logo e mensagem*/
-    .ctn-contents{margin-top: 70px;}
+    .ctn-contents{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 39px;}
 
     /*Mensagem*/
     .msg-logo h1{font-size: 33px;}
-
     .desc-serv{gap: 10px;}
-
     .desc-serv h2{font-size:22px;}
-
     .desc-serv img{width: 8px;}
     /*----------------------------*/   
-    /************************************/
 
-    
+    /************************************/
     /*NAVBAR SECUNDÁRIA*/
     .nav-secundary{ 
         justify-content: flex-start;
@@ -766,13 +693,11 @@ footer{
         scrollbar-width: none;
     }
 
-
     .nav-secundary ul{
         width: max-content;
         margin: 0px;
         gap: 20px;
         padding: 10px;
-
     }
     /************************************/
 
@@ -859,17 +784,22 @@ footer{
     /*Container Peça Agora*/
     .ctn-budget{margin-bottom:30px;}
 
-    .ctn-budget h2{
-        text-align: center;
-        margin: -5px 0 0 0;
-        font-size: 22px;
-    }
+        .ctn-budget h2{
+            text-align: center;
+            margin: -5px 0 0 0;
+            font-size: 22px;
+        }
 
     /* Botão de Orcamento*/
     .btn-orcamento {
         width: 260px;
+        height: 40px;
         font-size: 16px;
-    }
+    }  
+        #Icon-WhatsApp{
+            width: 25px;
+            height: auto;
+        }
     /************************************/ 
 
     /** FOOTER **/
