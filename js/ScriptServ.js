@@ -5,11 +5,13 @@ const cards = document.querySelectorAll('.carousel-card');
 const indicators = document.querySelectorAll('.indicator');
 
 function updateCarousel() {
-    const cardWidth = 500;
+    const isMobile = window.innerWidth <= 768;
+    const cardWidth = isMobile ? 380 : 500;
+
     const containerWidth = carouselWrapper.parentElement.offsetWidth;
     const totalWidth = cardWidth * totalSlides;
     const maxTranslateX = 0;
-    const minTranslateX = containerWidth - totalWidth; 
+    const minTranslateX = containerWidth - totalWidth;
     let translateX = (containerWidth - cardWidth) / 2 - (currentSlide * cardWidth);
 
     if (translateX > maxTranslateX) translateX = maxTranslateX;
@@ -82,7 +84,6 @@ carouselWrapper.addEventListener('touchend', (e) => {
     isDragging = false;
 });
 
-// Navegação por teclado
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
         prevSlide();
