@@ -979,7 +979,7 @@ footer{
 
     /************************************/
 
-     /** BANNER SERVIÇO **/
+    /** BANNER SERVIÇO **/
     /*Container da Img Fundo*/
     .ctn-serv{
         margin-top: -50px;
@@ -1069,11 +1069,9 @@ footer{
         #lft{margin-right: 5px;}
         /*Linha a Direita*/
         #lrt{margin-left: 5px;}
-        
     /*----------------------------*/
 
     /** CAROUSSEL DO SERVIÇO**/
-
     /* Card do Caroussel*/
     .carousel-card {
         flex: 0 0 500px;
@@ -1103,9 +1101,7 @@ footer{
     }
     /*----------------------------*/
 
-
     /** PEÇA AGORA **/
-
     /*Container Peça Agora*/
     .ctn-budget{margin-bottom:40px;}
 
@@ -1127,54 +1123,50 @@ footer{
         }
     /************************************/ 
   
- 
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-tablet.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+    .footer-info{
+        width: 100%;
+    }
 
-.footer-info{
-    width: 100%;
-}
+    /*Card Footer*/
+    .card-info-f{
+        width: 100%;
+    }
 
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
+    /*CARD CONTATO*/
+    .card-info-f ul{
+        padding: 0 0 0 60px;
+    }
 
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 60px;
-}
+    /*----------------------------*/
 
-/*----------------------------*/
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{
+        font-size: 18px;
 
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
+    }    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{
+        width: 70%;
+    }
 
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
+    /*Copyright*/
+    .foo-descrition p{
+        font-size: 18px;
+    }
+    /************************************/
 }
 
 /*REPONSIVIDADE TABLET DEITADO*/
@@ -1556,17 +1548,12 @@ footer{
 }
 
 /*REPONSIVIDADE NOOTEBOOK*/
-@media (min-width: 1280px) and (max-width: 1550px) {
-
-    
+@media (min-width: 1280px) and (max-width: 1550px) { 
     body{
         padding: 110px 0 0 0 ;
     }
     
-
-      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-
-
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     /*Logo da Barra de Navegação*/
     .logo a img{
         width:280px;
@@ -1586,8 +1573,6 @@ footer{
     }
 
     /** APRESENTAÇÃO BREVE **/
-
-
     /*Container da Logo e mensagem*/
     .ctn-contents{
         width: 100%;
