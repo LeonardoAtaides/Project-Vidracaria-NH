@@ -754,7 +754,7 @@ footer{
 
     /* Card do Caroussel*/
     .carousel-card {
-        flex: 0 0 380px;
+        flex: 0 0 350px;
         height: 580px;
     }
     /*----------------------------*/
@@ -937,7 +937,6 @@ footer{
 
     /* Botão mobile */
     .menu-toggle {
-
         font-size: 32px;
     }
 
@@ -978,30 +977,152 @@ footer{
         display: none;
     }
 
+    /************************************/
+
+     /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 430px;
+        background: url(../Imgs/fundo-servicos.png) center top;
+        background-size: auto 520px, cover;
+        background-repeat: no-repeat;
+        background-position:bottom,center;
+        background-attachment: scroll;
+        
+    }  
     /*Container da Logo e mensagem*/
     .ctn-contents{
-        width: 100%;
-        margin-top: -110px;
-        display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    /*Logo*/
-    .logo-home img{
-    width: 150px;
-    }
+        display: flex;
+        margin-top: 30px;}
 
     /*Mensagem*/
-    #msg-logo{
-        width:100%;
-        font-size: 30px;
+    .msg-logo h1{font-size: 55px;}
+    .desc-serv{gap: 10px;}
+    .desc-serv h2{font-size:32px;}
+    .desc-serv img{width: 14px;}
+    /*----------------------------*/   
 
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary{ 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-top: -43px;
+    }
+
+    .nav-secundary ul{
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+        font-size: 18.5px;
     }
     /************************************/
 
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail{
+        height: 80px;
+        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1{font-size: 37px;}
+
+    .description p{
+        width: 90%;
+        font-size: 20px;
+    }
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+        /*Linha a Esquerda*/
+        #lf{margin-right: 0px;}
+
+        /*Linha a Direita*/
+        #lr{ margin-left: 0px;}
+
+        /*logo Sol Pequena*/
+        .line-text img{
+            width: 100px;
+        }
+        .line-text h2{
+            margin: 14px 0;
+            color: var(--color-sub);
+        }
+
+        /*Linha a Esquerda*/
+        #lft{margin-right: 5px;}
+        /*Linha a Direita*/
+        #lrt{margin-left: 5px;}
+        
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+
+    /* Card do Caroussel*/
+    .carousel-card {
+        flex: 0 0 450px;
+        height: 580px;
+    }
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 20px;}
+
+    /*Indicador de Imagem*/
+    .indicator {
+        width: 11px;
+        height: 11px;
+    }
+
+    .indicator.active {
+        background: white;
+        transform: scale(1.2);
+    }
+    /*----------------------------*/
+
+
+    /** PEÇA AGORA **/
+
+    /*Container Peça Agora*/
+    .ctn-budget{margin-bottom:30px;}
+
+        .ctn-budget h2{
+            text-align: center;
+            margin: -5px 0 0 0;
+            font-size: 22px;
+        }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 260px;
+        height: 40px;
+        font-size: 16px;
+    }  
+        #Icon-WhatsApp{
+            width: 25px;
+            height: auto;
+        }
+    /************************************/ 
   
  
 /** FOOTER **/
