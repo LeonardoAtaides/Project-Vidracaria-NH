@@ -192,7 +192,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/fundo-servicos.png) center top no-repeat;  
+    background: url(../Imgs/fundo-servicos.png) center no-repeat;   
 }
 
 /*Container da Logo e mensagem*/
@@ -665,7 +665,7 @@ footer{
         margin-top: -50px;
         height: 350px;
         background: url(../Imgs/fundo-servicos.png) center top;
-        background-size: auto 300px, cover;
+        background-size: auto 355px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
         background-attachment: scroll;
@@ -679,9 +679,9 @@ footer{
         margin-top: 39px;}
 
     /*Mensagem*/
-    .msg-logo h1{font-size: 33px;}
+    .msg-logo h1{font-size: 32px;}
     .desc-serv{gap: 10px;}
-    .desc-serv h2{font-size:22px;}
+    .desc-serv h2{font-size:20px;}
     .desc-serv img{width: 8px;}
     /*----------------------------*/   
 
