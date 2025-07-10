@@ -515,7 +515,7 @@ body{
 
 footer{
     width: 100%;
-    background: url(../Imgs/nuvem2.png) center no-repeat;
+    background: url(../Imgs/nuvem.png) center no-repeat;
     height:420px;
     border-top: 5px solid var(--lines);
     align-items: center;
@@ -1363,7 +1363,6 @@ footer{
     footer{
         width: 100%;
         background: url(../Imgs/nuvem-1024x.png) center no-repeat;
-        background-size: auto 1200px, cover;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
@@ -1407,7 +1406,7 @@ footer{
     }
 
 /*REPONSIVIDADE NOOTEBOOK*/
-@media (min-width: 1280px) and (max-width: 1550px) { 
+@media (min-width: 1280px) and (max-width: 1598px) { 
        
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
