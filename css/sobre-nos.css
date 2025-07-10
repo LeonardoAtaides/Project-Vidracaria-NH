@@ -16,7 +16,6 @@
 }
 
 /** CONFIGURAÇÕES PRINCIPAIS **/
-
 html {
   scroll-behavior: smooth;
 }
@@ -81,10 +80,7 @@ body{
 }
 
 /* direcionamento de link */
-.link-direct{
-    text-decoration: none;
-    color: #fff;
-}
+.link-direct{text-decoration: none; color: #fff;}
 /*----------------------------*/
 
 /* Botão de Orcamento*/
@@ -105,11 +101,9 @@ body{
     cursor: pointer;
     transition: 0.4s;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    
+    font-family: 'Montserrat', sans-serif;  
 }
-    .btn-orcamento:hover 
-    { transform: scale(1.08);}
+.btn-orcamento:hover{ transform: scale(1.08);}
 
 
 /*Conf das Linhas com Texto*/
@@ -125,24 +119,24 @@ body{
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
-    /*Linha a Esquerda*/
-    #lf{
-        flex: 1;
-        border: none;
-        width: 200px;
-        height: 5px;
-        background-color: var(--lines);
-        margin-right: 15px;
-    }
-    /*Linha a Direita*/
-    #lr{
-        flex: 1;
-        border: none;
-        width: 200px;
-        height: 5px;
-        background-color: var(--lines);
-        margin-left: 15px;
-    }
+/*Linha a Esquerda*/
+#lf{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-right: 15px;
+}
+/*Linha a Direita*/
+#lr{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-left: 15px;
+}
 /*----------------------------*/
 
 /*TITULO PRINCIPAL*/
@@ -185,9 +179,10 @@ body{
   gap: 9px;
 }
 /************************************/
+
 /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
 .ctn-header{
-    position: fixed; /* <-- Fixa no topo */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -197,8 +192,8 @@ body{
     gap: 58%;
     align-items: center;
     background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
-    background-color: #182C48; /* cor de fallback, se a imagem não carregar */
-    z-index: 1100; /* fica acima do resto da página */
+    background-color: #182C48; 
+    z-index: 1100; 
 }
 
 /*Logo da Barra de Navegação*/
@@ -213,8 +208,7 @@ body{
     display: flex;
     margin: 0; 
     padding: 0;
-    gap: 20px;
-    
+    gap: 20px;    
 }
 
 .nav ul li {
@@ -223,10 +217,7 @@ body{
     border-right: 3px solid var(--details-hover); 
 }
 
-
-.nav ul li:last-child {
-    border-right: none;
-}
+.nav ul li:last-child { border-right: none;}
 
 .nav ul a{
     text-decoration: none;
@@ -235,9 +226,7 @@ body{
     transition: 0.5s;
 }
 
-.nav ul li a:hover{
-    color: var(--details-hover);
-}
+.nav ul li a:hover{color: var(--details-hover);}
 /*----------------------------*/
 
 /*CONTAINER SOBRE NÓS - EMPRESA*/
@@ -311,7 +300,6 @@ body{
     background: transparent;
 }
 
-
 /*Container de Textos*/
 .ctn-texts-obj{
     display: flex;
@@ -371,7 +359,6 @@ body{
 /************************************/
 
 /** FOOTER **/
-
 footer{
     width: 100%;
     background: url(../Imgs/nuvem.png) center no-repeat;
@@ -388,7 +375,6 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-
 
 .footer-info{
     width: 75%;
@@ -416,14 +402,12 @@ footer{
     color: var(--color-titles);
 }
 
-
 /*CARD CONTATO*/
 .card-info-f ul{
     padding: 0 0 0 80px;
     margin: 0;
     list-style: none;
     text-align: center;
-
 }
 
 .card-info-f li a{
@@ -446,7 +430,6 @@ footer{
     text-align: justify;
     color: var(--description-foo);
     font-size: 18px;
-
 }    
  /*----------------------------*/   
 
@@ -458,12 +441,9 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-    .ctn-sm a{list-style: none;
-        transition: 0.3s;
-    }
-    .ctn-sm a:hover{transform: scale(1.05);}
+.ctn-sm a{list-style: none;transition: 0.3s;}
+.ctn-sm a:hover{transform: scale(1.05);}
  /*----------------------------*/   
-
 
 /*Descrição Final*/
 .foo-descrition{
@@ -486,29 +466,19 @@ footer{
     transition: 0.5s;
     display: inline-block; 
 }
-    #developer:hover {text-decoration: underline;}
-
-
+#developer:hover {text-decoration: underline;}
 /************************************/
 
-.line-text-mobile{
-        display: none;
-    }
+.line-text-mobile{display: none;}
 
 
 /*REPONSIVIDADE MOBILE*/
 @media (max-width: 540px){
-    body{
-    padding: 60px 0 0 0 ;
-    }
+    body{padding: 60px 0 0 0 ;}
 
     /*Conf das Linhas com Texto*/
-    .line-text-mobile{
-        display: block;
-    }
-    .line-text {
-        display: none;
-    }
+    .line-text-mobile {display: block;}
+    .line-text {display: none;}
 
     .line-text-mobile {
     display: flex;
@@ -522,14 +492,10 @@ footer{
     z-index: 2;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     }
-    .line-text-mobile h2 {
-    font-size: 28px;
-    }
-
-
-/*----------------------------*/
+    .line-text-mobile h2 {font-size: 28px;}
+    /*----------------------------*/
     
-  /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
         width: 100%;
         height: 60px;
@@ -540,26 +506,20 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:140px;
-        height: auto;
-    }
+    .logo a img {width:140px; height: auto;}
 
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
+    /*Config da Barra de Navegação*/
+    .menu-toggle{display: block;}
+    .nav{display: none;}
     /*----------------------------*/   
     
     /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 445px;
-            background:
-            url('../Imgs/Detalhe Onda.png') bottom no-repeat,
-            url('../Imgs/Fundo-sobre-empresa.png') center no-repeat;
+        background:
+        url(../Imgs/Detalhe\ Onda.png) bottom no-repeat,
+        url(../Imgs/Fundo-sobre-empresa.png) center no-repeat;
         background-size: auto 290px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
@@ -568,16 +528,10 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -40px;
-        gap: 0px;
-    }
+    .ctn-contents {margin-top: -40px; gap: 0px;}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 200px;
-    height: auto;
-    }
+    .logo-sobre img {width: 200px; height: auto;}
 
     /*Mensagem*/
     #msg-logo{
@@ -592,38 +546,21 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 26.5px;
-    }
+    .title {font-size: 26.5px;}
 
-    .section-objectives h1 {
-    display: flex;
-    flex-direction: column;
-    }
-
+    .section-objectives h1 {display: flex; flex-direction: column;}
 
     /** OBJETIVOS DA EMPRESA **/
 
     /*Grid para os Cards*/
-    .grid-obj{
-        flex-direction: column;
-        gap: 50px;
-    }
+    .grid-obj {flex-direction: column; gap: 50px;}
 
     /*Cards*/
-    .card-obj{
-        width: 350px;
-        height: 180px;
-    }
+    .card-obj{width: 350px; height: 180px;}
 
-    .card-obj img{
-        width: 70px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 95px;
-        height: auto;
-    }
+    .card-obj img {width: 70px; height: auto;}
+
+    #icon-valores {width: 95px; height: auto;}
 
     /*Container de Textos*/
     .ctn-texts-obj{
@@ -636,10 +573,7 @@ footer{
     }
 
     /*Subtítulos de Objetivos*/
-    .title-obj{
-        margin: 8px;
-        text-transform: uppercase;
-    }
+    .title-obj {margin: 8px; text-transform: uppercase;}
 
     /*Descrição de Diferencias*/
     .desc-obj{
@@ -648,20 +582,12 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj ul{
-        margin: 0;
-        text-align: start;
-    }
-    .ctn-texts-obj li{
-        margin: 0;
-        font-size:18px;
-    }
+    .ctn-texts-obj ul {margin: 0; text-align: start;}
+    .ctn-texts-obj li {margin: 0; font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: none;
-    }
+    .sep-obj {display: none;}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -674,20 +600,14 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:95%;
-        height: 200px;
-    }
-
+    .ctn-video iframe {width:95%; height: 200px;}
     /************************************/
 
     /** FOOTER **/
-
     footer{
         width: 100%;
         background: url(../Imgs/nuvem-mobile.png) center no-repeat;
         height:auto;
-
     }
 
     .footer-cont{
@@ -719,79 +639,38 @@ footer{
         align-items: flex-start;
     }
 
-    #icon-sol{
-        width: 90px;
-        height: auto;
-    }
+    #icon-sol {width: 90px; height: auto;}
 
-    .title-footer {
-        font-size: 20px;
-        text-align: left;
-    }
+    .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {
-        padding: 10px 5px;
-    }
-    .card-info-f li a {
-        justify-content: flex-start;
-        font-size: 16px;
-    }
+    .card-info-f ul {padding: 10px 5px;}
 
-    .card-info-f p {
-        font-size: 16px;
-        text-align: left;
-    }
+    .card-info-f li a {justify-content: flex-start;font-size: 16px;}
 
-    .ctn-sm {
-        gap: 15px;
-        margin-top: 0px;
-    }
-    .ctn-sm a img {
-        width: 45px;
-        height: auto;
-    }
-    #icon-insta{
-        width: 40px;
-        height: auto;
-    }
+    .card-info-f p {font-size: 16px; text-align: left;}
 
-    .foo-descrition {
-        width: 100%;
-        text-align: center;
-    }
+    .ctn-sm {gap: 15px; margin-top: 0px;}
 
-    .foo-descrition p {
-        font-size: 13px;
-        text-align: center;
-    }
+    .ctn-sm a img {width: 45px; height: auto;}
 
-    .p1{
-        order: 1;
-    }
-    .p2{
-        order: 2;
-    }
-    .p3{
-        order: 3;
-        
-    }
+    #icon-insta {width: 40px; height: auto;}
 
+    .foo-descrition {width: 100%; text-align: center;}
+
+    .foo-descrition p {font-size: 13px;text-align: center;}
+
+    .p1{order: 1;}
+    .p2{order: 2;}
+    .p3{order: 3;}
 /************************************/
 }
-
 /*REPONSIVIDADE 541 até 766*/
 @media (min-width: 541px) and (max-width: 766px) {
-    body{
-    padding: 60px 0 0 0 ;
-    }
+    body{padding: 60px 0 0 0 ;}
 
     /*Conf das Linhas com Texto*/
-    .line-text-mobile{
-        display: block;
-    }
-    .line-text {
-        display: none;
-    }
+    .line-text-mobile{display: block;}
+    .line-text {display: none;}
 
     .line-text-mobile {
     display: flex;
@@ -805,12 +684,10 @@ footer{
     z-index: 2;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     }
-    .line-text-mobile h2 {
-    font-size: 28px;
-    }
-/*----------------------------*/
+    .line-text-mobile h2 {font-size: 28px;}
+    /*----------------------------*/
     
-  /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
         width: 100%;
         height: 60px;
@@ -821,44 +698,31 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:150px;
-        height: auto;
-    }
+    .logo a img {width:150px; height: auto;}
 
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
     /*----------------------------*/   
     
     /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 445px;
-            background:
-            url('../Imgs/Detalhe Onda.png') bottom no-repeat,
-            url('../Imgs/Fundo-sobre-empresa.png') center no-repeat;
+        background:
+        url(../Imgs/Detalhe\ Onda.png) bottom no-repeat,
+        url(../Imgs/Fundo-sobre-empresa.png) center no-repeat;
         background-size: auto 290px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
         background-attachment: scroll;
-        
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -40px;
-        gap: 0px;
-    }
+    .ctn-contents {margin-top: -40px;gap: 0px;}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 240px;
-    height: auto;
-    }
+    .logo-sobre img {width: 240px;height: auto;}
 
     /*Mensagem*/
     #msg-logo{
@@ -873,38 +737,19 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 38px;
-    }
+    .title {font-size: 38px;}
 
-    .section-objectives h1 {
-    display: flex;
-    flex-direction: column;
-    }
-
+    .section-objectives h1 {display: flex;flex-direction: column;}
 
     /** OBJETIVOS DA EMPRESA **/
-
     /*Grid para os Cards*/
-    .grid-obj{
-        flex-direction: column;
-        gap: 50px;
-    }
+    .grid-obj {flex-direction: column;gap: 50px;}
 
     /*Cards*/
-    .card-obj{
-        width:380px;
-        height: 180px;
-    }
+    .card-obj {width:380px;height: 180px;}
 
-    .card-obj img{
-        width: 70px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 95px;
-        height: auto;
-    }
+    .card-obj img {width: 70px;height: auto;}
+    #icon-valores {width: 95px;height: auto;}
 
     /*Container de Textos*/
     .ctn-texts-obj{
@@ -917,10 +762,7 @@ footer{
     }
 
     /*Subtítulos de Objetivos*/
-    .title-obj{
-        margin: 8px;
-        text-transform: uppercase;
-    }
+    .title-obj {margin: 8px;text-transform: uppercase;}
 
     /*Descrição de Diferencias*/
     .desc-obj{
@@ -929,20 +771,12 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj ul{
-        margin: 0;
-        text-align: start;
-    }
-    .ctn-texts-obj li{
-        margin: 0;
-        font-size:18px;
-    }
+    .ctn-texts-obj ul {margin: 0;text-align: start;}
+    .ctn-texts-obj li {margin: 0; font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: none;
-    }
+    .sep-obj {display: none}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -955,15 +789,10 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:95%;
-        height: 360px;
-    }
-
+    .ctn-video iframe {width:95%; height: 360px;}
     /************************************/
 
     /** FOOTER **/
-
     footer{
         width: 100%;
         background: url(../Imgs/nuvem-mobile.png) center no-repeat;
@@ -1000,76 +829,37 @@ footer{
         align-items: flex-start;
     }
 
-    #icon-sol{
-        width: 90px;
-        height: auto;
-    }
+    #icon-sol {width: 90px; height: auto;}
 
-    .title-footer {
-        font-size: 20px;
-        text-align: left;
-    }
+    .title-footer {font-size: 20px;text-align: left;}
 
-    .card-info-f ul {
-        padding: 10px 5px;
-    }
-    .card-info-f li a {
-        justify-content: flex-start;
-        font-size: 16px;
-    }
+    .card-info-f ul {padding: 10px 5px;}
 
-    .card-info-f p {
-        font-size: 16px;
-        text-align: left;
-    }
+    .card-info-f li a {justify-content: flex-start; font-size: 16px;}
 
-    .ctn-sm {
-        gap: 15px;
-        margin-top: 0px;
-    }
-    .ctn-sm a img {
-        width: 45px;
-        height: auto;
-    }
-    #icon-insta{
-        width: 40px;
-        height: auto;
-    }
+    .card-info-f p {font-size: 16px; text-align: left;}
 
-    .foo-descrition {
-        width: 100%;
-        text-align: center;
-    }
+    .ctn-sm {gap: 15px;margin-top: 0px;}
 
-    .foo-descrition p {
-        font-size: 13px;
-        text-align: center;
-    }
+    .ctn-sm a img {width: 45px; height: auto;}
 
-    .p1{
-        order: 1;
-    }
-    .p2{
-        order: 2;
-    }
-    .p3{
-        order: 3;
-        
-    }
+    #icon-insta {width: 40px; height: auto;}
 
+    .foo-descrition {width: 100%; text-align: center;}
+
+    .foo-descrition p {font-size: 13px; text-align: center;}
+
+    .p1 {order: 1;}
+    .p2 {order: 2;}
+    .p3 {order: 3;}
 /************************************/
 }
 /*REPONSIVIDADE TABLET*/
 @media (min-width: 767px) and (max-width: 900px) {
-
-    body{
-        padding: 90px 0 0 0 ;
-    }
+    body{ padding: 90px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 90px;
-    }
+    .nav-mobile {top: 90px;}
 
     /* Lista dentro do menu */
     .nav-mobile ul {
@@ -1089,23 +879,13 @@ footer{
         font-size: 20px;
     }
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-    
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-
-        font-size: 32px;
-    }
-
+    .menu-toggle {font-size: 32px;}
 
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
-        justify-content:space-evenly;
-        gap: 50%;
-    }
+    .ctn-header {justify-content:space-evenly; gap: 50%;}
 
       /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
@@ -1118,28 +898,19 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:260px;
-        height: auto;
-    }
-
-
+    .logo a img {width:260px; height: auto;}
 
     /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }  
+    .menu-toggle {display: block;}
+    .nav {display: none;}  
     
     /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 445px;
-            background:
-            url('../Imgs/Detalhe Onda.png') bottom no-repeat,
-            url('../Imgs/Fundo-sobre-empresa.png') center no-repeat;
+        background:
+        url(../Imgs/Detalhe\ Onda.png) bottom no-repeat,
+        url(../Imgs/Fundo-sobre-empresa.png) center no-repeat;
         background-size: auto 290px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
@@ -1148,15 +919,10 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -30px;
-        gap: 0px;
-    }
+    .ctn-contents{margin-top: -30px; gap: 0px;}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 360px;
-    height: auto;
+    .logo-sobre img {width: 360px; height: auto;
     }
 
     /*Mensagem*/
@@ -1170,9 +936,7 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 37px;
-    }
+    .title{font-size: 37px;}
 
     .section-objectives h1 {
         display: flex;
@@ -1181,7 +945,6 @@ footer{
     }
 
     /** OBJETIVOS DA EMPRESA **/
-
     /*Grid para os Cards*/
     .grid-obj{
         display: flex;
@@ -1190,25 +953,11 @@ footer{
     }
 
     /*Cards*/
-    .card-obj{
-        width: 260px;
-        height: 220px;
+    .card-obj{width: 260px; height: 220px;}
+    .card-obj img{width: 80px; height: auto;}
 
-    }
-     .card-obj img{
-        width: 80px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 106px;
-        height:81px;
-        
-    }
-    #text-valores{
-        margin: 0 0 20px 0;
-        text-transform: uppercase;
-    }
-
+    #icon-valores {width: 106px; height:81px;}
+    #text-valores{margin: 0 0 20px 0; text-transform: uppercase;}
 
     /*Descrição de Diferencias*/
     .desc-obj{
@@ -1216,17 +965,11 @@ footer{
         margin: 0;
         font-size:18px;
     }
-
-    .ctn-texts-obj li{
-    font-size:18px;
-
-    }
+    .ctn-texts-obj li{font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: none;
-    }
+    .sep-obj{display: none;}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -1239,73 +982,46 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:90%;
-        height: 400px;
-    }
-
+    .ctn-video iframe{width:90%; height: 400px;}
     /************************************/  
 
- 
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-tablet.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+    .footer-info{width: 100%;}
 
-.footer-info{
-    width: 100%;
-}
+    /*Card Footer*/
+    .card-info-f{width: 100%;}
 
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
 
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 60px;
-}
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
 
-/*----------------------------*/
-
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
 /************************************/
 }
 /*REPONSIVIDADE 901 até 1023*/
 @media (min-width: 901px) and (max-width: 1023px) {
 
-    body{
-        padding: 90px 0 0 0 ;
-    }
+    body{padding: 90px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 90px;
-    }
+    .nav-mobile {top: 90px;}
 
     /* Lista dentro do menu */
     .nav-mobile ul {
@@ -1325,23 +1041,13 @@ footer{
         font-size: 20px;
     }
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-    
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-
-        font-size: 32px;
-    }
-
+    .menu-toggle {font-size: 32px;}
 
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
-        justify-content:space-evenly;
-        gap: 50%;
-    }
+    .ctn-header {justify-content:space-evenly;gap: 50%;}
 
       /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
@@ -1354,28 +1060,19 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:260px;
-        height: auto;
-    }
+    .logo a img{width:260px;height: auto;}
 
-
-
-    /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }  
+    /*Config da Barra de Navegação*/
+    .menu-toggle{display: block;}
+    .nav{display: none;}  
     
     /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 445px;
-            background:
-            url('../Imgs/Detalhe Onda.png') bottom no-repeat,
-            url('../Imgs/Fundo-sobre-empresa.png') center no-repeat;
+        background:
+        url(../Imgs/Detalhe\ Onda.png) bottom no-repeat,
+        url(../Imgs/Fundo-sobre-empresa.png) center no-repeat;
         background-size: auto 290px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
@@ -1384,16 +1081,10 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -30px;
-        gap: 0px;
-    }
+    .ctn-contents{margin-top: -30px;gap: 0px;}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 360px;
-    height: auto;
-    }
+    .logo-sobre img{width: 360px;height: auto;}
 
     /*Mensagem*/
     #msg-logo{
@@ -1406,45 +1097,26 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 40px;
-    }
+    .title{font-size: 40px;}
 
     .section-objectives h1 {
         display: flex;
-        align-items: center;
-        font-size: 40px;
-    }
+        align-items: center;}
 
     /** OBJETIVOS DA EMPRESA **/
-
     /*Grid para os Cards*/
-    .grid-obj{
+    .grid-obj {
         display: flex;
         align-items: center;
         gap:5px;
     }
 
     /*Cards*/
-    .card-obj{
-        width: 260px;
-        height: 220px;
+    .card-obj {width: 260px; height: 220px;}
+    .card-obj img{width: 80px; height: auto}
 
-    }
-     .card-obj img{
-        width: 80px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 106px;
-        height:81px;
-        
-    }
-    #text-valores{
-        margin: 0 0 20px 0;
-        text-transform: uppercase;
-    }
-
+    #icon-valores {width: 106px; height:81px;   }
+    #text-valores {margin: 0 0 20px 0; text-transform: uppercase;}
 
     /*Descrição de Diferencias*/
     .desc-obj{
@@ -1453,16 +1125,11 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj li{
-    font-size:18px;
-
-    }
+    .ctn-texts-obj li {font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: none;
-    }
+    .sep-obj{display: none;}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -1475,89 +1142,54 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:90%;
-        height: 450px;
-    }
-
+    .ctn-video iframe {width:90%;height: 450px;}
     /************************************/  
 
- 
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-tablet.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    .footer-info{width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f{width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
+    /*----------------------------*/
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{ width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
 }
-
-.footer-info{
-    width: 100%;
-}
-
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
-
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 60px;
-}
-
-/*----------------------------*/
-
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
-}
-
 /*REPONSIVIDADE TABLET DEITADO*/
 @media (min-width: 1024px) and (max-width: 1100px) {
 
-    body{
-        padding: 100px 0 0 0 ;
-    }
+    body{padding: 100px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 100px;
-    }
+    .nav-mobile {top: 100px;}
 
-    .nav-mobile li a {
-        padding: 13px 15px;
-        font-size: 20px;
-    }
+    .nav-mobile li a {padding: 13px 15px;font-size: 20px;}
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-
-    }
+    .nav-mobile li a:hover { color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-        font-size: 32px;
-    }
+    .menu-toggle {font-size: 32px;}
 
     /* Exibir e animar o menu mobile */
     .nav-mobile.active {
@@ -1566,7 +1198,7 @@ footer{
         pointer-events: auto;
     }
 
-      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
         height: 100px;
         justify-content: space-evenly;
@@ -1575,21 +1207,14 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:240px;
-        height: auto;
+    .logo a img{width:240px;height: auto;
     }
 
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
 
-    /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
-
-/*CONTAINER SOBRE NÓS - EMPRESA*/
+    /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 500px;
@@ -1604,16 +1229,10 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -30px;
-        gap: 0px;
-    }
+    .ctn-contents {margin-top: -30px; gap: 0px}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 390px;
-    height: auto;
-    }
+    .logo-sobre img {width: 390px; height: auto;}
 
     /*Mensagem*/
     #msg-logo{
@@ -1626,17 +1245,11 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 45px;
-    }
+    .title{font-size: 45px;}
 
-    .section-objectives h1 {
-        display: flex;
-        align-items: center;
-    }
+    .section-objectives h1 {display: flex;align-items: center;}
 
     /** OBJETIVOS DA EMPRESA **/
-
     /*Grid para os Cards*/
     .grid-obj{
         display: flex;
@@ -1645,31 +1258,13 @@ footer{
     }
 
     /*Cards*/
-    .card-obj{
-        width: 320px;
-        height: 180px;
+    .card-obj {width: 320px; height: 180px;}
+    .card-obj img{width: 80px;height: auto;}
 
-    }
-     .card-obj img{
-        width: 80px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 106px;
-        height:81px; 
-    }
-    #icon-missao{
-        width: 84px;
-        height: auto;
-        
-    }
-
-    #text-missao{
-      margin: 12px 8px 8px 8px; 
-    }
+    #icon-valores {width: 106px; height:81px; }
+    #icon-missao {width: 84px;height: auto;}
+    #text-missao{margin: 12px 8px 8px 8px; }
     
-
-
     /*Descrição de Diferencias*/
     .desc-obj{
         width: 100%;
@@ -1677,15 +1272,11 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj li{
-    font-size:18px;
-    }
+    .ctn-texts-obj li {font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: block;
-    }
+    .sep-obj {display: block;}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -1698,88 +1289,52 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:95%;
-        height: 520px;
-    }
-
+    .ctn-video iframe {width:95%; height: 520px;}
     /************************************/     
  
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-1024x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-1024x.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    .footer-info{width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f{width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 90px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
 }
-
-.footer-info{
-    width: 100%;
-}
-
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
-
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 90px;
-}
-
-/*----------------------------*/
-
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
-}
-
 /*REPONSIVIDADE 1251 até 1279*/
 @media (min-width: 1101px) and (max-width: 1279px) {
 
-    body{
-        padding: 100px 0 0 0 ;
-    }
+    body{padding: 100px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 100px;
-    }
+    .nav-mobile {top: 100px;}
 
-    .nav-mobile li a {
-        padding: 13px 15px;
-        font-size: 20px;
-    }
+    .nav-mobile li a {padding: 13px 15px;font-size: 20px;}
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-        font-size: 32px;
-    }
+    .menu-toggle {font-size: 32px;}
 
     /* Exibir e animar o menu mobile */
     .nav-mobile.active {
@@ -1797,21 +1352,13 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:240px;
-        height: auto;
-    }
-
+    .logo a img{width:240px; height: auto;}
 
     /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
+    .menu-toggle{display: block;}
+    .nav{display: none;}
 
-/*CONTAINER SOBRE NÓS - EMPRESA*/
+    /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height: 500px;
@@ -1826,16 +1373,10 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
-        margin-top: -30px;
-        gap: 0px;
-    }
+    .ctn-contents{margin-top: -30px; gap: 0px;}
 
     /*Logo*/
-    .logo-sobre img{
-    width: 390px;
-    height: auto;
-    }
+    .logo-sobre img{width: 390px; height: auto;}
 
     /*Mensagem*/
     #msg-logo{
@@ -1848,17 +1389,11 @@ footer{
     /************************************/
 
     /*TITULO PRINCIPAL*/
-    .title{
-        font-size: 50px;
-    }
+    .title{font-size: 50px;}
 
-    .section-objectives h1 {
-        display: flex;
-        align-items: center;
-    }
+    .section-objectives h1 {display: flex; align-items: center;}
 
     /** OBJETIVOS DA EMPRESA **/
-
     /*Grid para os Cards*/
     .grid-obj{
         display: flex;
@@ -1867,31 +1402,14 @@ footer{
     }
 
     /*Cards*/
-    .card-obj{
-        width: 320px;
-        height: 180px;
+    .card-obj{width: 320px; height: 180px;
+    }
+     .card-obj img{width: 80px; height: auto;}
 
-    }
-     .card-obj img{
-        width: 80px;
-        height: auto;
-    }
-    #icon-valores{
-        width: 106px;
-        height:81px; 
-    }
-    #icon-missao{
-        width: 84px;
-        height: auto;
-        
-    }
-
-    #text-missao{
-      margin: 12px 8px 8px 8px; 
-    }
+    #icon-valores{width: 106px; height:81px;}
+    #icon-missao{width: 84px; height: auto;}
+    #text-missao{margin: 12px 8px 8px 8px; }
     
-
-
     /*Descrição de Diferencias*/
     .desc-obj{
         width: 100%;
@@ -1899,15 +1417,11 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj li{
-    font-size:18px;
-    }
+    .ctn-texts-obj li{font-size:18px;}
     /************************************/
 
     /*Linha Separadora dos Cards*/
-    .sep-obj{
-        display: block;
-    }
+    .sep-obj{display: block;}
     /************************************/
 
     /*CONTAINER DE VIDEO*/
@@ -1920,70 +1434,46 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe{
-        width:95%;
-        height: 520px;
-    }
-
+    .ctn-video iframe{width:95%; height: 520px;}
     /************************************/     
  
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-1024x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-1024x.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    .footer-info{width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f{width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 90px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+
+    /************************************/
 }
-
-.footer-info{
-    width: 100%;
-}
-
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
-
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 90px;
-}
-
-/*----------------------------*/
-
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
-}
-
 /*REPONSIVIDADE NOOTEBOOK*/
 @media (min-width: 1280px) and (max-width: 1550px) {
 
-        body{
-        padding: 110px 0 0 0 ;
-    }
+    body{ padding: 110px 0 0 0 ;}
     
-      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
         width: 100%;
         height: 110px;
@@ -1994,29 +1484,18 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:280px;
-        height: auto;
-    }
+    .logo a img{width:280px; height: auto;}
 
     /*Opções da Barra de Navegação*/
-    .nav{
-        display: block;
-    }
-    .menu-toggle{
-            display: none;
-        }
-
-    .nav li a {
-        font-size: 20px;
-    }
+    .nav{display: block;}
+    .menu-toggle{display: none;}
+    .nav li a {font-size: 20px;}
 
     /*CONTAINER SOBRE NÓS - EMPRESA*/
     .ctn-sobre{
         width: 100%;
         height:550px;
         background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat, url(../Imgs/Fundo-sobre-empresa.png) center;
-        
     }
 
     /*Container da Logo e mensagem*/
@@ -2031,9 +1510,7 @@ footer{
     }
 
     /*Logo*/
-    .logo-sobre img{
-    width: 450px;
-    height: auto;
+    .logo-sobre img{width: 450px; height: auto;
     }
 
     /*Mensagem*/
@@ -2045,7 +1522,6 @@ footer{
         font-weight:600;
         text-indent: 1em;
     }
-    /*----------------------------*/
     /************************************/
 
     /*TITULO PRINCIPAL*/
@@ -2056,81 +1532,53 @@ footer{
         font-size: 55px;
     }
 
-    .section-objectives h1 {
-        display: flex;
-        align-items: center;
+    .section-objectives h1 {display: flex; align-items: center;
     }
+
     /** OBJETIVOS DA EMPRESA **/
-
-
     /*Grid para os Cards*/
-    .grid-obj{
-        gap: 20px;
-    }
+    .grid-obj {gap: 20px;}
 
     /*Cards*/
-    .card-obj{
-        width: 400px;
-        height: 209px;
+    .card-obj {width: 400px; height: 209px;
 
     }
-
     /************************************/
 
     /*CONTAINER DE VIDEO*/
-
     /*tamanho do player*/
-    .ctn-video iframe{
-        width:70%;
-        height: 500px;
-    }
-
+    .ctn-video iframe {width:70%; height: 500px;}
     /************************************/     
 
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-1280x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-/** FOOTER **/
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-1280x.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+    .footer-info {width: 80%;}
 
-.footer-info{
-    width: 80%;
-}
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
 
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
+    /*CARD CONTATO*/
+    .card-info-f ul {padding: 0 0 0 90px;}
 
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 90px;
-}
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{ width: 50%;}
 
-/*----------------------------*/
+    /*Copyright*/
+    .foo-descrition p {font-size: 18px;} 
 
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 50%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
- /************************************/   
-}
+    /************************************/ 
 }
 
