@@ -632,6 +632,9 @@ footer{
 
 /*REPONSIVIDADE MOBILE*/
 @media (max-width: 540px){
+    body{
+        padding: 60px 0 0 0 ;
+    }
  
     html, body {
     overflow-x: hidden;
