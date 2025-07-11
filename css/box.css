@@ -827,6 +827,11 @@ footer{
 /************************************/
 }
 
+/*REPONSIVIDADE 541 até 650*/
+@media (min-width: 541px) and (max-width: 766px){
+
+}
+
 /*REPONSIVIDADE TABLET*/
 @media (min-width: 767px) and (max-width: 900px) {
 
