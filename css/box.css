@@ -830,14 +830,10 @@ footer{
 /*REPONSIVIDADE TABLET*/
 @media (min-width: 767px) and (max-width: 900px) {
 
-    body{
-        padding: 90px 0 0 0 ;
-    }
+    body{padding: 90px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 90px;
-    }
+    .nav-mobile {top: 90px;}
 
     /* Lista dentro do menu */
     .nav-mobile ul {
@@ -857,15 +853,10 @@ footer{
         font-size: 20px;
     }
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-    
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-        font-size: 32px;
-    }
+    .menu-toggle {font-size: 32px;}
 
     /* Exibir e animar o menu mobile */
     .nav-mobile.active {
@@ -875,13 +866,10 @@ footer{
     }
 
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
-        justify-content:space-evenly;
-        gap: 50%;
-    }
+    .ctn-header {justify-content:space-evenly; gap: 50%;}
 
       /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
+    .ctn-header {
         width: 100%;
         height: 90px;
         display: flex;
@@ -891,18 +879,14 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
+    .logo a img {
         width:260px;
         height: auto;
     }
 
-    /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
 
     /************************************/
 
@@ -913,35 +897,33 @@ footer{
         height: 430px;
         background: url(../Imgs/fundo-servicos.png) center top;
         background-size: auto 600px, cover;
-        background-repeat: no-repeat;
-        background-position:bottom,center;
-        background-attachment: scroll;
-        
     }  
+
     /*Container da Logo e mensagem*/
     .ctn-contents{
         justify-content: center;
         align-items: center;
         display: flex;
-        margin-top: 30px;}
+        margin-top: 30px;
+    }
 
     /*Mensagem*/
-    .msg-logo h1{font-size: 55px;}
-    .desc-serv{gap: 10px;}
-    .desc-serv h2{font-size:32px;}
-    .desc-serv img{width: 14px;}
+    .msg-logo h1 {font-size: 55px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2 {font-size:32px;}
+    .desc-serv img {width: 14px;}
     /*----------------------------*/   
 
     /************************************/
     /*NAVBAR SECUNDÁRIA*/
-    .nav-secundary{ 
+    .nav-secundary { 
         justify-content: flex-start;
         overflow: auto;
         scrollbar-width: none;
         margin-top: -43px;
     }
 
-    .nav-secundary ul{
+    .nav-secundary ul {
         width: max-content;
         margin: 0px;
         gap: 20px;
@@ -951,21 +933,18 @@ footer{
     /************************************/
 
     /**  DESCRIÇÃO DO SERVIÇO **/
-    .ctn #detail{
+    .ctn #detail {
         height: 80px;
         background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
-    .ctn h1{font-size: 37px;}
+    .ctn h1 {font-size: 37px;}
 
-    .description p{
-        width: 90%;
-        font-size: 20px;
-    }
+    .description p {width: 90%; font-size: 20px;}
     /************************************/
 
     /*Linha com logo do Sol*/
-    .line-text{
+    .line-text {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -977,33 +956,30 @@ footer{
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     }
 
-        /*Linha a Esquerda*/
-        #lf{margin-right: 0px;}
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
 
-        /*Linha a Direita*/
-        #lr{ margin-left: 0px;}
+    /*Linha a Direita*/
+    #lr {  margin-left: 0px;}
 
-        /*logo Sol Pequena*/
-        .line-text img{
-            width: 100px;
-        }
-        .line-text h2{
-            margin: 14px 0;
-            color: var(--color-sub);
-        }
+    /*logo Sol Pequena*/
+    .line-text img {
+        width: 100px;
+    }
+    .line-text h2 {
+        margin: 14px 0;
+        color: var(--color-sub);
+    }
 
-        /*Linha a Esquerda*/
-        #lft{margin-right: 5px;}
-        /*Linha a Direita*/
-        #lrt{margin-left: 5px;}
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
     /*----------------------------*/
 
     /** CAROUSSEL DO SERVIÇO**/
     /* Card do Caroussel*/
-    .carousel-card {
-        flex: 0 0 500px;
-        height: 600px;
-    }
+    .carousel-card {flex: 0 0 500px; height: 600px;}
     /*----------------------------*/
 
     /*Margin para as Setas*/
@@ -1017,26 +993,18 @@ footer{
     .carousel-indicators {margin-top: 30px;}
 
     /*Indicador de Imagem*/
-    .indicator {
-        width: 11px;
-        height: 11px;
-    }
-
-    .indicator.active {
-        background: white;
-        transform: scale(1.2);
-    }
+    .indicator {width: 11px;height: 11px;}
     /*----------------------------*/
 
     /** PEÇA AGORA **/
     /*Container Peça Agora*/
-    .ctn-budget{margin-bottom:40px;}
+    .ctn-budget {margin-bottom:40px;}
 
-        .ctn-budget h2{
-            text-align: center;
-            margin: -5px 0 0 0;
-            font-size: 35px;
-        }
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 35px;
+    }
 
     /* Botão de Orcamento*/
     .btn-orcamento {
@@ -1044,14 +1012,12 @@ footer{
         height: 55px;
         font-size: 24px;
     }  
-        #Icon-WhatsApp{
-            width: 35px;
-            height: auto;
-        }
+
+    #Icon-WhatsApp {width: 35px; height: auto;}
     /************************************/ 
   
     /** FOOTER **/
-    footer{
+    footer {
         width: 100%;
         background: url(../Imgs/nuvem-tablet.png) center no-repeat;
         height:420px;
@@ -1061,38 +1027,23 @@ footer{
         display: flex;
     }
 
-    .footer-info{
-        width: 100%;
-    }
+    .footer-info {width: 100%;}
 
     /*Card Footer*/
-    .card-info-f{
-        width: 100%;
-    }
+    .card-info-f {width: 100%;}
 
     /*CARD CONTATO*/
-    .card-info-f ul{
-        padding: 0 0 0 60px;
-    }
-
-    /*----------------------------*/
+    .card-info-f ul{padding: 0 0 0 60px;}
 
     /*CARD AGREDECIMENTO NH*/
-    .card-info-f p{
-        font-size: 18px;
-
-    }    
+    .card-info-f p{font-size: 18px;}    
     /*----------------------------*/   
     
     /*Descrição Final*/
-    .foo-descrition{
-        width: 70%;
-    }
+    .foo-descrition{width: 70%;}
 
     /*Copyright*/
-    .foo-descrition p{
-        font-size: 18px;
-    }
+    .foo-descrition p{font-size: 18px;}
     /************************************/
 }
 
@@ -1100,14 +1051,9 @@ footer{
 @media (min-width: 1024px) and (max-width: 1200px) {
 
     /* Menu mobile*/
-    .nav-mobile {
-        top: 100px;
-    }
+    .nav-mobile {top: 100px;}
 
-    .nav-mobile li a {
-        padding: 13px 15px;
-        font-size: 20px;
-    }
+    .nav-mobile li a {padding: 13px 15px;font-size: 20px;}
 
     .nav-mobile li a:hover {
         color: #ffc800;
