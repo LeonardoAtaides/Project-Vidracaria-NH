@@ -1481,6 +1481,7 @@ footer{
 @media (min-width: 1280px) and (max-width: 1550px) {
 
     body { padding: 110px 0 0 0 ;}
+    html, body {overflow-x: hidden;}
     
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header {
