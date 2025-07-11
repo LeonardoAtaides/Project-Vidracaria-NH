@@ -830,6 +830,204 @@ footer{
 /*REPONSIVIDADE 541 até 650*/
 @media (min-width: 541px) and (max-width: 766px){
 
+    body {padding: 60px 0 0 0 ;}
+ 
+    html, body {overflow-x: hidden;}
+
+    /* Titulos Principais*/
+    .titles {font-size: 38px;}
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content:center;
+        gap: 58%;
+        background: url(../Imgs/Fundo-header-mb.png) repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:150px;height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+     /*----------------------------*/   
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 350px;
+        background: url(../Imgs/fundo-servicos.png) center top;
+        background-size: auto 550px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 39px;
+    }
+
+    /*Mensagem*/
+    .msg-logo h1{font-size: 45px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2{font-size: 30px;}
+    .desc-serv img{width: 8px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 35px;}
+
+    .description p {width: 90%; font-size: 18px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr { margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {width: 80px;}
+    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 360px; height: 580px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 20px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 11px; height: 11px;}
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:30px;}
+
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 21px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 280px;
+        height: 40px;
+        font-size: 17px;
+    }  
+    #Icon-WhatsApp {width: 27px; height: auto;}
+    /************************************/ 
+
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/nuvem-mobile.png) center no-repeat;
+        height:auto;
+    }
+
+    .footer-cont {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+        flex-direction: column;
+    }
+    .footer-info {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        align-items: flex-start; 
+    }
+
+    .card-info-f {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #icon-sol {width: 90px; height: auto;}
+
+    .title-footer {font-size: 20px; text-align: left;}
+
+    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f li a {justify-content: flex-start; font-size: 16px;}
+
+    .card-info-f p {font-size: 16px; text-align: left;}
+
+    .ctn-sm {gap: 15px; margin-top: 0px;}
+    .ctn-sm a img {width: 45px; height: auto;}
+
+    #icon-insta {width: 40px; height: auto;}
+
+    .foo-descrition {width: 100%; text-align: center;}
+
+    .foo-descrition p {font-size: 13px; text-align: center;}
+
+    .p1 {order: 1;}
+    .p2 {order: 2;}
+    .p3 {order: 3;}
+
+/************************************/  
 }
 
 /*REPONSIVIDADE TABLET*/
