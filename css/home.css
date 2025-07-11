@@ -2690,14 +2690,10 @@ footer{
 /*REPONSIVIDADE NOOTEBOOK*/
 @media (min-width: 1280px) and (max-width: 1550px) {
 
+    body {padding: 110px 0 0 0 ;}
     
-    body{
-        padding: 110px 0 0 0 ;
-    }
-    
-
       /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
+    .ctn-header {
         width: 100%;
         height: 110px;
         display: flex;
@@ -2707,25 +2703,16 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:280px;
-        height: auto;
-    }
+    .logo a img{width:280px; height: auto;}
 
-    /*Opções da Barra de Navegação*/
-    .nav{
-        display: block;
-    }
-    .menu-toggle{
-            display: none;
-        }
+    /*Config da Barra de Navegação*/
+    .nav {display: block;}
+    .menu-toggle {display: none;}
 
-    .nav li a {
-        font-size: 20px;
-    }
+    .nav li a {font-size: 20px;}
 
     /** APRESENTAÇÃO BREVE **/
-    .ctn-home{
+    .ctn-home {
         width: 100%;
         height: 550px;
         display: flex;
@@ -2736,7 +2723,7 @@ footer{
     }
 
     /*Container da Logo e mensagem*/
-    .ctn-contents{
+    .ctn-contents {
         width: 100%;
         margin-top: -90px;
         display: flex;
@@ -2747,108 +2734,57 @@ footer{
     }
 
     /*Logo*/
-    .logo-home img{
-    width: 160px;
-    }
+    .logo-home img{width: 160px;}
 
     /*Mensagem*/
-    #msg-logo{
-        width:70%;
-        font-size: 30px;
-
-    }
+    #msg-logo {width:70%; font-size: 30px;}
     /************************************/
 
     /** SERVIÇOS **/
-
     /*Grid de Serviços*/
-    .grid-services-cards{
-        grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
-      
-    }
+    .grid-services-cards {grid-template-columns: repeat(4, 1fr); gap: 25px;}
 
     /*Card de Serviço*/
-    .card-serv{
-        width: 240px;
-        height: 240px;
-
-    }
+    .card-serv {width: 240px; height: 240px;}
 
     /*Título do Serviço*/
-    .title-serv{
-        font-size: 24px;
-    }
+    .title-serv {font-size: 24px;}
 
     /*Descrição do Serviço*/
-    .desc-serv{
-        margin: 0;
-        font-size: 18px;
-
-    }
+    .desc-serv {margin: 0;font-size: 18px;}
     
     /*TAMANHO DOS ICONS*/  
-        /*Icone de Espelho*/
-        #icon-box{
-            width: 60px;
-            height: 60px;
-        }
+    /*Icone de Espelho*/
+    #icon-box {width: 60px; height: 60px;}
 
-        /*Icone de Varanda*/
-        #icon-varanda{
-            width: 65px;
-            height: 60px;
-        }
+    /*Icone de Varanda*/
+    #icon-varanda {width: 65px; height: 60px;}
 
-        /*Icone de Espelho*/
-        #icon-espelho{
-            width: 55px;
-            height:60px;
-        }
+    /*Icone de Espelho*/
+    #icon-espelho {width: 55px; height:60px;}
 
-        /*Icone de Tampo de Mesa*/
-        #icon-tampo{
-            width: 65px;
-            height: 58px;
-        }
+    /*Icone de Tampo de Mesa*/
+    #icon-tampo {width: 65px; height: 58px;}
 
-        /*Icone do Kit Pia*/
-        #icon-kitpia{
-            width: 75px;
-            height: 60px;
-        }
+    /*Icone do Kit Pia*/
+    #icon-kitpia {width: 75px; height: 60px;}
 
-        /*Icone de Janela*/
-        #icon-janela{
-            width: 85px;
-            height: auto;
-        }
+    /*Icone de Janela*/
+    #icon-janela {width: 85px; height: auto;}
 
-        /*Icone de Porta*/
-        #icon-porta{
-            width: 42px;
-            height: 60px;
-        }
+    /*Icone de Porta*/
+    #icon-porta {width: 42px; height: 60px;}
 
-        /*Icone de Pergolado*/
-        #icon-pergolado{
-            width: 75px;
-            height: 60px;
-        }
+    /*Icone de Pergolado*/
+    #icon-pergolado {width: 75px; height: 60px;}
     /*----------------------------*/     
 
     /*Botão Veja Mais*/
-    #btn-link-see{
-        margin-top: 30px;
-    }
-    #see-more{
-        font-size: 26px;
-    }
+    #btn-link-see {margin-top: 30px;}
+    #see-more {font-size: 26px;}
     /************************************/
 
-
     /** DIFERENCIAS **/
-
     /*Grid para os Cards*/
     .grid-dif{
         display:flex;
@@ -2858,23 +2794,16 @@ footer{
     }
 
     /*Cards*/
-    .card-dif{
-        width: 300px;
-        height: 260px;
-    }
+    .card-dif {width: 300px;height: 260px;}
 
     /*Título de Diferencias*/
-    .title-dif{
-        font-size: 24px;
-    }
+    .title-dif {font-size: 24px;}
 
     /*Descrição de Diferencias*/
-    .desc-dif{
-        font-size: 18px;
-    }
+    .desc-dif {font-size: 18px;}
 
     /*Linha Separadora dos Cards*/
-    .sep-dif{
+    .sep-dif {
         width: 5px;
         height: 230px;
         background: var(--lines);
@@ -2898,30 +2827,21 @@ footer{
         background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/esplanadadf.png)  center;
     }
 
-     .card-counter #eleven{
-        margin-top: 60px;
-     }
+     .card-counter #eleven{margin-top: 60px;}
 
     /*Número do contador*/
-    .card-counter h2{
-        font-size: 60px;
-    }
+    .card-counter h2{font-size: 60px;}
 
     /*Descrição do contador*/
-    .card-counter p{
-        font-size: 40px;
-    }
+    .card-counter p{font-size: 40px;}
     /************************************/  
    
     /** CONTATO **/
-
     /*Titulo de Contato*/
-    .section-contact .titles{
-        margin-bottom: 0px;
-    }
+    .section-contact .titles {margin-bottom: 0px;}
 
     /*Subitulo de Contato*/
-    #subtitle-contact{
+    #subtitle-contact {
         font-size:32px;
         margin-bottom: 0;
         color: var(--color-title);
@@ -2929,7 +2849,7 @@ footer{
     }
 
     /*Posição do Container de Contato*/
-    .align-ctn-cont{
+    .align-ctn-cont {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -2937,62 +2857,45 @@ footer{
     }
 
     /*Grid de Contato*/
-    .grid-contact{
+    .grid-contact {
         display: flex;
         justify-content: center;
         align-items: center;
-    
     }
 
-    .card-contact img{
-        width: 72px;
-        height:auto;
-    }
-    #icon-email-cont{
+    .card-contact img {width: 72px;height:auto;}
+
+    #icon-email-cont {
         width: 92px;
         margin-bottom: 3px;
         height: auto;
     }
 
     /*Linhas Separadoras*/
-    .sep-line-cont{
-        display: block;
-    }
+    .sep-line-cont {display: block;}
     
     /*Texto de Contato*/
-    .channel-cont{
-        margin-top: 20px;
-        font-size: 20px;
-    }
+    .channel-cont {margin-top: 20px;font-size: 20px;}
 
-    .channel-cont-rs{
-        margin-top: 20px;
-        font-size: 20px;
-    }
+    .channel-cont-rs {margin-top: 20px;font-size: 20px;}
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
-        .info-operation{
-            flex-direction: column;
-            color: var(--color-titles);
-            margin: 10px 0 15px 0;
-            font-size: 27px;
-            text-align: center;
-        }
+    .info-operation {
+        flex-direction: column;
+        color: var(--color-titles);
+        margin: 10px 0 15px 0;
+        font-size: 27px;
+        text-align: center;
+    }
     /*----------------------------*/
 
     /* Localização*/
-    #location{
-        margin-top: -60px;
-        z-index: 0;
-    }
-
-    #loc-mob{
-        height: 470px;
-    }
+    #location {margin-top: -60px; z-index: 0;}
+    #loc-mob {height: 470px;}
 
     /*Endereço Completo Descrito*/
-    #full-adress{
+    #full-adress {
         margin: 12px 0 ;
         font-size: 18px;
         text-align: center;
@@ -3000,51 +2903,34 @@ footer{
     }
     /************************************/
  
-/** FOOTER **/
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/nuvem-1280x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-1280x.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+    .footer-info {width: 80%;}
 
-.footer-info{
-    width: 80%;
-}
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
 
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
+    /*CARD CONTATO*/
+    .card-info-f ul {padding: 0 0 0 90px;}
 
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 90px;
-}
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p  {font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition {width: 50%;}
 
-/*----------------------------*/
+    /*Copyright*/
+    .foo-descrition p {font-size: 18px;}
 
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 50%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
+    /************************************/
 }
