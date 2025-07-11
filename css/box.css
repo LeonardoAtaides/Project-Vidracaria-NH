@@ -594,12 +594,12 @@ footer{
     justify-content: center;
     gap: 30px;
 }
-    .ctn-sm a{list-style: none;
-        transition: 0.3s;
-    }
-    .ctn-sm a:hover{transform: scale(1.05);}
+.ctn-sm a{list-style: none;
+    transition: 0.3s;
+}
+.ctn-sm a:hover{transform: scale(1.05);}
  /*----------------------------*/   
- 
+
 /*Descrição Final*/
 .foo-descrition{
     width: 40%;
@@ -621,7 +621,7 @@ footer{
     transition: 0.5s;
     display: inline-block; 
 }
-    #developer:hover {text-decoration: underline;}
+#developer:hover {text-decoration: underline;}
 /************************************/
 
 /*REPONSIVIDADE MOBILE*/
