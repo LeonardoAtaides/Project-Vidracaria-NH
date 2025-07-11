@@ -2192,29 +2192,17 @@ footer{
 /*REPONSIVIDADE TABLET DEITADO*/
 @media (min-width: 1024px) and (max-width: 1250px) {
 
-    body{
-        padding: 100px 0 0 0 ;
-    }
+    body {padding: 100px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 100px;
-    }
+    .nav-mobile {top: 100px;}
 
-    .nav-mobile li a {
-        padding: 13px 15px;
-        font-size: 20px;
-    }
+    .nav-mobile li a {padding: 13px 15px; font-size: 20px;}
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-        font-size: 32px;
-    }
+    .menu-toggle {font-size: 32px;}
 
     /* Exibir e animar o menu mobile */
     .nav-mobile.active {
@@ -2232,20 +2220,11 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:240px;
-        height: auto;
-    }
+    .logo a img{width:240px; height: auto;}
 
-
-
-    /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
 
 
     /** APRESENTAÇÃO BREVE **/
@@ -2271,102 +2250,54 @@ footer{
     }
 
     /*Logo*/
-    .logo-home img{
-    width: 140px;
-    }
+    .logo-home img {width: 140px;}
 
     /*Mensagem*/
-    #msg-logo{
-        width:90%;
-        font-size: 30px;
-
-    }
+    #msg-logo {width:90%; font-size: 30px;}
     /************************************/
 
     /** SERVIÇOS **/
     /*Grid de Serviços*/
-    .grid-services-cards{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-      
-    }
+    .grid-services-cards {grid-template-columns: repeat(2, 1fr); gap:20px;}
 
     /*Card de Serviço*/
-    .card-serv{
-        width: 410px;
-        height: 210px;
-
-    }
+    .card-serv {width: 410px; height: 210px;}
 
     /*Título do Serviço*/
-    .title-serv{
-        font-size: 24px;
-    }
+    .title-serv {font-size: 24px;}
 
     /*Descrição do Serviço*/
-    .desc-serv{
-        margin: 0;
-        font-size: 18px;
-
-    }
+    .desc-serv {margin: 0; font-size: 18px;}
     
     /*TAMANHO DOS ICONS*/  
     /*Icone de Espelho*/
-    #icon-box{
-        width: 60px;
-        height: 60px;
-    }
+    #icon-box {width: 60px; height: 60px;}
 
     /*Icone de Varanda*/
-    #icon-varanda{
-        width: 65px;
-        height: 60px;
-    }
+    #icon-varanda {width: 65px; height: 60px;}
 
     /*Icone de Espelho*/
-    #icon-espelho{
-        width: 55px;
-        height:60px;
-    }
+    #icon-espelho {width: 55px; height:60px;}
 
     /*Icone de Tampo de Mesa*/
-    #icon-tampo{
-        width: 65px;
-        height: 58px;
-    }
+    #icon-tampo {width: 65px; height: 58px;}
 
     /*Icone do Kit Pia*/
-    #icon-kitpia{
-        width: 75px;
-        height: 60px;
-    }
+    #icon-kitpia {width: 75px; height: 60px;}
 
     /*Icone de Janela*/
-    #icon-janela{
-        width: 85px;
-        height: auto;
-    }
+    #icon-janela {width: 85px; height: auto;}
 
     /*Icone de Porta*/
-    #icon-porta{
-        width: 42px;
-        height: 60px;
-    }
+    #icon-porta {width: 42px; height: 60px;}
 
     /*Icone de Pergolado*/
-    #icon-pergolado{
-        width: 75px;
-        height: 60px;
-    }
+    #icon-pergolado {width: 75px; height: 60px;}
     /*----------------------------*/     
 
     /*Botão Veja Mais*/
-    #btn-link-see{
-        margin-top: 30px;
-    }
-    #see-more{
-        font-size: 35px;
-    }
+    #btn-link-see {margin-top: 30px;}
+    #see-more {font-size: 35px;}
     /************************************/
 
     /** DIFERENCIAS **/
@@ -2379,31 +2310,19 @@ footer{
     }
 
     /*Cards*/
-    .card-dif{
-        height: 260px;
-        margin: 0 55px;
-    }
+    .card-dif{height: 260px; margin: 0 55px;}
 
     /*Título de Diferencias*/
-    .title-dif{
-        font-size: 24px;
-    }
+    .title-dif{font-size: 24px;}
 
     /*Descrição de Diferencias*/
-    .desc-dif{
-        font-size: 18px;
-    }
+    .desc-dif{font-size: 18px;}
 
     /*Linha Separadora dos Cards*/
-    .sep-dif{
-        display: none;
-    }
+    .sep-dif{display: none;}
 
     /*NOSSOS NÚMEROS*/
-    .section-counter {
-        margin-top: 0px;
-        align-items: center;
-    }
+    .section-counter {margin-top: 0px; align-items: center;}
 
     /*Imagem de Fundo do Contador de Serviços*/
     .bg-counter{
@@ -2417,27 +2336,18 @@ footer{
         background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/esplanadadf.png)  center;
     }
 
-    .card-counter #eleven{
-        margin-top: 45px;
-    }
+    .card-counter #eleven{margin-top: 45px;}
 
     /*Número do contador*/
-    .card-counter h2{
-        font-size: 55px;
-    }
+    .card-counter h2{font-size: 55px;}
 
     /*Descrição do contador*/
-    .card-counter p{
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
+    .card-counter p{font-size: 40px; margin-bottom: 10px;}
     /************************************/  
    
     /** CONTATO **/
     /*Titulo de Contato*/
-    .section-contact .titles{
-        margin-bottom: 0px;
-    }
+    .section-contact .titles{margin-bottom: 0px;}
 
     /*Subitulo de Contato*/
     #subtitle-contact{
@@ -2455,7 +2365,6 @@ footer{
         flex-direction: column;
         gap: 20px;
         margin-bottom: 0px;
-     
     }
 
     /*Grid de Contato*/
@@ -2463,13 +2372,10 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
-    
     }
 
-    .card-contact img{
-        width: 65px;
-        height:auto;
-    }
+    .card-contact img{width: 65px; height:auto;}
+
     #icon-email-cont{
         width: 83px;
         margin-bottom: 3px;
@@ -2477,20 +2383,12 @@ footer{
     }
 
     /*Linhas Separadoras*/
-    .sep-line-cont{
-        display: none;
-    }
+    .sep-line-cont{display: none;}
     
     /*Texto de Contato*/
-    .channel-cont{
-        margin-top: 20px;
-        font-size: 20px;
-    }
+    .channel-cont{margin-top: 20px;  font-size: 20px;}
 
-    .channel-cont-rs{
-        margin-top: 20px;
-        font-size: 20px;
-    }
+    .channel-cont-rs{margin-top: 20px; font-size: 20px;}
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
@@ -2504,14 +2402,9 @@ footer{
     /*----------------------------*/
 
     /* Localização*/
-    #location{
-        margin-top: -60px;
-        z-index: 0;
-    }
+    #location {margin-top: -60px; z-index: 0;}
 
-    #loc-mob{
-        height: 470px;
-    }
+    #loc-mob{height: 470px;}
 
     /*Endereço Completo Descrito*/
     #full-adress{
@@ -2533,39 +2426,23 @@ footer{
         display: flex;
     }
 
-    .footer-info{
-        width: 100%;
-    }
+    .footer-info{width: 100%;}
 
     /*Card Footer*/
-    .card-info-f{
-        width: 100%;
-    }
+    .card-info-f{width: 100%;}
 
     /*CARD CONTATO*/
-    .card-info-f ul{
-        padding: 0 0 0 90px;
-    }
-
-    /*----------------------------*/
+    .card-info-f ul{padding: 0 0 0 90px;}
 
     /*CARD AGREDECIMENTO NH*/
-    .card-info-f p{
-        font-size: 18px;
-
-    }    
+    .card-info-f p{font-size: 18px;}    
     /*----------------------------*/   
     
     /*Descrição Final*/
-    .foo-descrition{
-        width: 70%;
-    }
+    .foo-descrition{width: 70%;}
 
     /*Copyright*/
-    .foo-descrition p{
-        font-size: 18px;
-    }
-
+    .foo-descrition p{font-size: 18px;}
 
     /************************************/
 }
