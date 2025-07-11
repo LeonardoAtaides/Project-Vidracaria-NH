@@ -626,21 +626,16 @@ footer{
 
 /*REPONSIVIDADE MOBILE*/
 @media (max-width: 540px){
-    body{
-        padding: 60px 0 0 0 ;
-    }
+
+    body {padding: 60px 0 0 0 ;}
  
-    html, body {
-    overflow-x: hidden;
-    }
+    html, body {overflow-x: hidden;}
 
     /* Titulos Principais*/
-    .titles{font-size: 38px;}
+    .titles {font-size: 38px;}
 
-    /*----------------------------*/
-
-  /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
         width: 100%;
         height: 60px;
         display: flex;
@@ -650,13 +645,11 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:140px;
-        height: auto;
-    }
+    .logo a img {width:140px;height: auto;}
 
-    .menu-toggle{display: block;}
-    .nav{display: none;}
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
      /*----------------------------*/   
 
     /** BANNER SERVIÇO **/
@@ -666,34 +659,32 @@ footer{
         height: 350px;
         background: url(../Imgs/fundo-servicos.png) center top;
         background-size: auto 355px, cover;
-        background-repeat: no-repeat;
-        background-position:bottom,center;
-        background-attachment: scroll;
-        
     }  
+
     /*Container da Logo e mensagem*/
     .ctn-contents{
         justify-content: center;
         align-items: center;
         display: flex;
-        margin-top: 39px;}
+        margin-top: 39px;
+    }
 
     /*Mensagem*/
     .msg-logo h1{font-size: 32px;}
-    .desc-serv{gap: 10px;}
+    .desc-serv {gap: 10px;}
     .desc-serv h2{font-size:20px;}
     .desc-serv img{width: 8px;}
     /*----------------------------*/   
 
     /************************************/
     /*NAVBAR SECUNDÁRIA*/
-    .nav-secundary{ 
+    .nav-secundary { 
         justify-content: flex-start;
         overflow: auto;
         scrollbar-width: none;
     }
 
-    .nav-secundary ul{
+    .nav-secundary ul {
         width: max-content;
         margin: 0px;
         gap: 20px;
@@ -702,17 +693,14 @@ footer{
     /************************************/
 
     /**  DESCRIÇÃO DO SERVIÇO **/
-    .ctn #detail{
+    .ctn #detail {
         height: 80px;
         background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
-    .ctn h1{font-size: 33px;}
+    .ctn h1 {font-size: 33px;}
 
-    .description p{
-        width: 90%;
-        font-size: 18px;
-    }
+    .description p {width: 90%; font-size: 18px;}
     /************************************/
 
     /*Linha com logo do Sol*/
@@ -728,35 +716,25 @@ footer{
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
     }
 
-        /*Linha a Esquerda*/
-        #lf{margin-right: 0px;}
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
 
-        /*Linha a Direita*/
-        #lr{ margin-left: 0px;}
+    /*Linha a Direita*/
+    #lr { margin-left: 0px;}
 
-        /*logo Sol Pequena*/
-        .line-text img{
-            width: 80px;
-        }
-        .line-text h2{
-            margin: 14px 0;
-            color: var(--color-sub);
-        }
+    /*logo Sol Pequena*/
+    .line-text img {width: 80px;}
+    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
 
-        /*Linha a Esquerda*/
-        #lft{margin-right: 5px;}
-        /*Linha a Direita*/
-        #lrt{margin-left: 5px;}
-        
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
     /*----------------------------*/
 
     /** CAROUSSEL DO SERVIÇO**/
-
     /* Card do Caroussel*/
-    .carousel-card {
-        flex: 0 0 360px;
-        height: 580px;
-    }
+    .carousel-card {flex: 0 0 360px; height: 580px;}
     /*----------------------------*/
 
     /*Margin para as Setas*/
@@ -767,28 +745,17 @@ footer{
     .carousel-indicators {margin-top: 20px;}
 
     /*Indicador de Imagem*/
-    .indicator {
-        width: 11px;
-        height: 11px;
-    }
-
-    .indicator.active {
-        background: white;
-        transform: scale(1.2);
-    }
-    /*----------------------------*/
-
+    .indicator {width: 11px; height: 11px;}
 
     /** PEÇA AGORA **/
-
     /*Container Peça Agora*/
-    .ctn-budget{margin-bottom:30px;}
+    .ctn-budget {margin-bottom:30px;}
 
-        .ctn-budget h2{
-            text-align: center;
-            margin: -5px 0 0 0;
-            font-size: 21px;
-        }
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 21px;
+    }
 
     /* Botão de Orcamento*/
     .btn-orcamento {
@@ -796,22 +763,17 @@ footer{
         height: 40px;
         font-size: 14px;
     }  
-        #Icon-WhatsApp{
-            width: 25px;
-            height: auto;
-        }
+    #Icon-WhatsApp {width: 25px; height: auto;}
     /************************************/ 
 
     /** FOOTER **/
-
-    footer{
+    footer {
         width: 100%;
         background: url(../Imgs/nuvem-mobile.png) center no-repeat;
         height:auto;
-
     }
 
-    .footer-cont{
+    .footer-cont {
         width: 100%;
         height: auto;
         margin-top: 20px;
@@ -840,62 +802,27 @@ footer{
         align-items: flex-start;
     }
 
-    #icon-sol{
-        width: 90px;
-        height: auto;
-    }
+    #icon-sol {width: 90px; height: auto;}
 
-    .title-footer {
-        font-size: 20px;
-        text-align: left;
-    }
+    .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {
-        padding: 10px 5px;
-    }
-    .card-info-f li a {
-        justify-content: flex-start;
-        font-size: 16px;
-    }
+    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f li a {justify-content: flex-start; font-size: 16px;}
 
-    .card-info-f p {
-        font-size: 16px;
-        text-align: left;
-    }
+    .card-info-f p {font-size: 16px; text-align: left;}
 
-    .ctn-sm {
-        gap: 15px;
-        margin-top: 0px;
-    }
-    .ctn-sm a img {
-        width: 45px;
-        height: auto;
-    }
-    #icon-insta{
-        width: 40px;
-        height: auto;
-    }
+    .ctn-sm {gap: 15px; margin-top: 0px;}
+    .ctn-sm a img {width: 45px; height: auto;}
 
-    .foo-descrition {
-        width: 100%;
-        text-align: center;
-    }
+    #icon-insta {width: 40px; height: auto;}
 
-    .foo-descrition p {
-        font-size: 13px;
-        text-align: center;
-    }
+    .foo-descrition {width: 100%; text-align: center;}
 
-    .p1{
-        order: 1;
-    }
-    .p2{
-        order: 2;
-    }
-    .p3{
-        order: 3;
-        
-    }
+    .foo-descrition p {font-size: 13px; text-align: center;}
+
+    .p1 {order: 1;}
+    .p2 {order: 2;}
+    .p3 {order: 3;}
 
 /************************************/
 }
