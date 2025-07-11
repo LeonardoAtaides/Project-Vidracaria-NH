@@ -1250,6 +1250,220 @@ footer{
     /************************************/
 }
 
+/*REPONSIVIDADE 901 até 1023*/
+@media (min-width: 901px) and (max-width: 1023px) {
+
+    body{padding: 90px 0 0 0 ;}
+    
+    /* Menu mobile*/
+    .nav-mobile {top: 90px;}
+
+    /* Lista dentro do menu */
+    .nav-mobile ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-mobile li a {
+        color: white;
+        text-decoration: none;
+        padding: 13px 15px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .nav-mobile li a:hover {color: #ffc800;}
+
+    /* Botão mobile */
+    .menu-toggle {font-size: 32px;}
+
+    /* Exibir e animar o menu mobile */
+    .nav-mobile.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {justify-content:space-evenly; gap: 50%;}
+
+      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50%;
+        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {
+        width:260px;
+        height: auto;
+    }
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+
+    /************************************/
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 430px;
+        background: url(../Imgs/fundo-servicos.png) center top;
+        background-size: auto 700px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 30px;
+    }
+
+    /*Mensagem*/
+    .msg-logo h1 {font-size: 56px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2 {font-size:33px;}
+    .desc-serv img {width: 14px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-top: -43px;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+        font-size: 18.5px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 39px;}
+
+    .description p {width: 90%; font-size: 20px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr {  margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {width: 100px;}
+    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 500px; height: 600px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    .carousel-nav.prev img {width: 25px; height: auto;}
+    .carousel-nav.next img {width: 25px; height: auto;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 30px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 11px;height: 11px;}
+    /*----------------------------*/
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:40px;}
+
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 35px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+
+    #Icon-WhatsApp {width: 35px; height: auto;}
+    /************************************/ 
+  
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
+}
 /*REPONSIVIDADE TABLET DEITADO*/
 @media (min-width: 1024px) and (max-width: 1200px) {
 
