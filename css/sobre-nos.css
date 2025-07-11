@@ -352,8 +352,8 @@ body{
 
 /*tamanhho do player*/
 .ctn-video iframe{
-    width: 1250px;
-    height: 680px;
+    width: 1000px;
+    height: 550px;
 }
 
 /************************************/
