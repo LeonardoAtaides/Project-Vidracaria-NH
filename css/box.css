@@ -955,9 +955,10 @@ footer{
     .ctn-budget {margin-bottom:30px;}
 
     .ctn-budget h2 {
+        width: 90%;
         text-align: center;
         margin: -5px 0 0 0;
-        font-size: 21px;
+        font-size: 28px;
     }
 
     /* Botão de Orcamento*/
@@ -1141,7 +1142,7 @@ footer{
         background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
-    .ctn h1 {font-size: 37px;}
+    .ctn h1 {font-size: 40px;}
 
     .description p {width: 90%; font-size: 20px;}
     /************************************/
@@ -1361,7 +1362,7 @@ footer{
         background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
-    .ctn h1 {font-size: 39px;}
+    .ctn h1 {font-size: 42px;}
 
     .description p {width: 90%; font-size: 20px;}
     /************************************/
@@ -1421,7 +1422,7 @@ footer{
     .ctn-budget h2 {
         text-align: center;
         margin: -5px 0 0 0;
-        font-size: 35px;
+        font-size:35px;
     }
 
     /* Botão de Orcamento*/
@@ -1528,7 +1529,7 @@ footer{
         justify-content: flex-start;
         overflow: auto;
         scrollbar-width: none;
-        margin-top: -43px;
+        margin-top: -40px;
     }
 
     .nav-secundary u l{
