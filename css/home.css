@@ -1914,14 +1914,10 @@ footer{
 /*REPONSIVIDADE 901 até 1023*/
 @media (min-width: 901px) and (max-width: 1023px) {
 
-    body{
-        padding: 90px 0 0 0 ;
-    }
+    body {padding: 90px 0 0 0 ;}
     
     /* Menu mobile*/
-    .nav-mobile {
-        top: 90px;
-    }
+    .nav-mobile {top: 90px;}
 
     /* Lista dentro do menu */
     .nav-mobile ul {
@@ -1941,16 +1937,10 @@ footer{
         font-size: 20px;
     }
 
-    .nav-mobile li a:hover {
-        color: #ffc800;
-    
-    }
+    .nav-mobile li a:hover {color: #ffc800;}
 
     /* Botão mobile */
-    .menu-toggle {
-
-        font-size: 32px;
-    }
+    .menu-toggle {font-size: 32px;}
 
     /* Exibir e animar o menu mobile */
     .nav-mobile.active {
@@ -1960,10 +1950,7 @@ footer{
     }
 
     /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
-    .ctn-header{
-        justify-content:space-evenly;
-        gap: 50%;
-    }
+    .ctn-header{justify-content:space-evenly;gap: 50%;}
 
       /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
     .ctn-header{
@@ -1976,21 +1963,11 @@ footer{
     }
 
     /*Logo da Barra de Navegação*/
-    .logo a img{
-        width:260px;
-        height: auto;
-    }
+    .logo a img{width:260px; height: auto;}
 
-
-
-    /*Opções da Barra de Navegação*/
-    .menu-toggle{
-            display: block;
-        }
-    .nav{
-        display: none;
-    }
-
+    /*Config da Barra de Navegação*/
+    .menu-toggle{display: block;}
+    .nav{display: none;}
 
     /** APRESENTAÇÃO BREVE **/
     .ctn-home{
@@ -2015,108 +1992,59 @@ footer{
     }
 
     /*Logo*/
-    .logo-home img{
-    width: 150px;
-    }
+    .logo-home img{width: 150px;}
 
     /*Mensagem*/
-    #msg-logo{
-        width:90%;
-        font-size: 30px;
-
-    }
+    #msg-logo {width:90%; font-size: 30px;}
     /************************************/
 
     /** SERVIÇOS **/
 
     /*Grid de Serviços*/
-    .grid-services-cards{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        
-    }
+    .grid-services-cards{grid-template-columns: repeat(2, 1fr); gap: 30px;}
 
     /*Card de Serviço*/
-    .card-serv{
-        width: 370px;
-        height: 220px;
-
-    }
+    .card-serv{width: 370px; height: 220px;}
 
     /*Título do Serviço*/
-    .title-serv{
-        font-size: 24px;
-    }
+    .title-serv{font-size: 24px;}
 
     /*Descrição do Serviço*/
-    .desc-serv{
-        margin: 0;
-        font-size: 18px;
-
-    }
+    .desc-serv{margin: 0; font-size: 18px;}
     
     /*TAMANHO DOS ICONS*/  
-        /*Icone de Espelho*/
-        #icon-box{
-            width: 70px;
-            height: 80px;
-        }
+    /*Icone de Espelho*/
+    #icon-box {width: 70px; height: 80px;}
 
-        /*Icone de Varanda*/
-        #icon-varanda{
-            width: 80px;
-            height: 80px;
-        }
+    /*Icone de Varanda*/
+    #icon-varanda {width: 80px; height: 80px;}
 
-        /*Icone de Espelho*/
-        #icon-espelho{
-            width: 72px;
-            height:80px;
-        }
+    /*Icone de Espelho*/
+    #icon-espelho {width: 72px; height:80px;}
 
-        /*Icone de Tampo de Mesa*/
-        #icon-tampo{
-            width: 72px;
-            height: 70px;
-        }
+    /*Icone de Tampo de Mesa*/
+    #icon-tampo {width: 72px; height: 70px;}
 
-        /*Icone do Kit Pia*/
-        #icon-kitpia{
-            width: 85px;
-            height: 80px;
-        }
+    /*Icone do Kit Pia*/
+    #icon-kitpia {width: 85px; height: 80px;}
 
-        /*Icone de Janela*/
-        #icon-janela{
-            width: 105px;
-            height: auto;
-        }
+    /*Icone de Janela*/
+    #icon-janela {width: 105px; height: auto;}
 
-        /*Icone de Porta*/
-        #icon-porta{
-            width: 50px;
-            height: 80px;
-        }
+    /*Icone de Porta*/
+    #icon-porta {width: 50px; height: 80px;}
 
-        /*Icone de Pergolado*/
-        #icon-pergolado{
-            width: 85px;
-            height: 80px;
-        }
+    /*Icone de Pergolado*/
+    #icon-pergolado {width: 85px; height: 80px;}
     /*----------------------------*/     
 
     /*Botão Veja Mais*/
-    #btn-link-see{
-        margin-top: 30px;
-    }
-    #see-more{
-        font-size: 35px;
-    }
+    #btn-link-see {margin-top: 30px;}
+    #see-more {font-size: 35px;}
     /************************************/
 
 
     /** DIFERENCIAS **/
-
     /*Grid para os Cards*/
     .grid-dif{
         display: grid;
@@ -2125,30 +2053,19 @@ footer{
     }
 
     /*Cards*/
-    .card-dif{
-        width: 400px;
-        height: 260px;
-    }
+    .card-dif {width: 400px; height: 260px;}
 
     /*Título de Diferencias*/
-    .title-dif{
-        font-size: 24px;
-    }
+    .title-dif {font-size: 24px;}
 
     /*Descrição de Diferencias*/
-    .desc-dif{
-        font-size: 18px;
-    }
+    .desc-dif {font-size: 18px;}
 
     /*Linha Separadora dos Cards*/
-    .sep-dif{
-        display: none;
-    }
+    .sep-dif{display: none;}
 
     /*NOSSOS NÚMEROS*/
-    .section-counter {
-        margin-top: 0px;
-    }
+    .section-counter {margin-top: 0px;}
 
     /*Imagem de Fundo do Contador de Serviços*/
     .bg-counter{
@@ -2161,27 +2078,18 @@ footer{
         background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/esplanadadf.png)  center;
     }
 
-    .card-counter #eleven{
-        margin-top: 50px;
-    }
+    .card-counter #eleven{margin-top: 50px;}
 
     /*Número do contador*/
-    .card-counter h2{
-        font-size: 60px;
-    }
+    .card-counter h2{font-size: 60px;}
 
     /*Descrição do contador*/
-    .card-counter p{
-        font-size: 45px;
-    }
+    .card-counter p{font-size: 45px;}
     /************************************/  
    
     /** CONTATO **/
-
     /*Titulo de Contato*/
-    .section-contact .titles{
-        margin-bottom: 0px;
-    }
+    .section-contact .titles{margin-bottom: 0px;}
 
     /*Subitulo de Contato*/
     #subtitle-contact{
@@ -2210,52 +2118,36 @@ footer{
     
     }
 
-    .card-contact img{
-        width: 70px;
-        height:auto;
-    }
+    .card-contact img{width: 70px; height:auto;}
+
     #icon-email-cont{
         width: 88px;
         margin-bottom: 3px;
         height: auto;
     }
 
-        /*Linhas Separadoras*/
-    .sep-line-cont{
-        display: none;
-    }
+    /*Linhas Separadoras*/
+    .sep-line-cont{display: none;}
     
     /*Texto de Contato*/
-    .channel-cont{
-        margin-top: 20px;
-        font-size: 19px;
-    }
+    .channel-cont{margin-top: 20px; font-size: 19px;}
 
-    .channel-cont-rs{
-        margin-top: 20px;
-        font-size: 19px;
-    }
+    .channel-cont-rs{margin-top: 20px; font-size: 19px;}
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
-        .info-operation{
-            flex-direction: column;
-            color: var(--color-titles);
-            margin: 10px 0 15px 0;
-            font-size: 23px;
-            text-align: center;
-        }
+    .info-operation{
+        flex-direction: column;
+        color: var(--color-titles);
+        margin: 10px 0 15px 0;
+        font-size: 23px;
+        text-align: center;
+    }
     /*----------------------------*/
 
     /* Localização*/
-    #location{
-        margin-top: -60px;
-        z-index: 0;
-    }
-
-    #loc-mob{
-        height: 450px;
-    }
+    #location{margin-top: -60px; z-index: 0;}
+    #loc-mob{height: 450px;}
 
     /*Endereço Completo Descrito*/
     #full-adress{
@@ -2266,53 +2158,36 @@ footer{
     }
     /************************************/
  
-/** FOOTER **/
+    /** FOOTER **/
+    footer{
+        width: 100%;
+        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
 
-footer{
-    width: 100%;
-    background: url(../Imgs/nuvem-tablet.png) center no-repeat;
-    height:420px;
-    border-top: 5px solid var(--lines);
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
+    .footer-info{width: 100%;}
 
-.footer-info{
-    width: 100%;
-}
+    /*Card Footer*/
+    .card-info-f{width: 100%;}
 
-/*Card Footer*/
-.card-info-f{
-    width: 100%;
-}
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
 
-/*CARD CONTATO*/
-.card-info-f ul{
-    padding: 0 0 0 60px;
-}
+    /*----------------------------*/
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
 
-/*----------------------------*/
-
-/*CARD AGREDECIMENTO NH*/
-.card-info-f p{
-    font-size: 18px;
-
-}    
- /*----------------------------*/   
- 
- /*Descrição Final*/
-.foo-descrition{
-    width: 70%;
-}
-
-/*Copyright*/
-.foo-descrition p{
-    font-size: 18px;
-}
-
-
-/************************************/
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
 }
 /*REPONSIVIDADE TABLET DEITADO*/
 @media (min-width: 1024px) and (max-width: 1250px) {
