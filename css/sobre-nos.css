@@ -609,6 +609,7 @@ footer{
     footer {
         width: 100%;
         background: url(../Imgs/nuvem-mobile.png) center no-repeat;
+        background-size: 775px auto;
         height:auto;
     }
 
