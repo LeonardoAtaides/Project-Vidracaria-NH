@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function animateCounter(counter) {
         const target = +counter.getAttribute("data-target");
-        const duration = 1500; // duração total da animação em ms
+        const duration = 1500;
         const startTime = performance.now();
 
         function update(currentTime) {
@@ -39,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(container);
     }
 });
+
 // ---------------------------------//
-// Menu ☰
+
+// Menu  Mobile 
 const toggleBtn = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("nav-mobile");
 const navLinks = mobileNav.querySelectorAll("a");
