@@ -361,7 +361,7 @@ body{
 /** FOOTER **/
 footer{
     width: 100%;
-    background: url(../Imgs/nuvem.png) center no-repeat;
+    background: url(../Imgs/Footer/nuvem.png) center no-repeat;
     height:420px;
     border-top: 5px solid var(--lines);
     align-items: center;
@@ -608,7 +608,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-mobile.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-mobile.png) center no-repeat;
         background-size: 775px auto;
         height:auto;
     }
@@ -800,7 +800,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-mobile.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-mobile.png) center no-repeat;
         height:auto;
 
     }
@@ -995,7 +995,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-tablet.png) center no-repeat;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
@@ -1156,7 +1156,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-tablet.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-tablet.png) center no-repeat;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
@@ -1304,7 +1304,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-1024x.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-1024x.png) center no-repeat;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
@@ -1450,7 +1450,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-1024x.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-1024x.png) center no-repeat;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
@@ -1564,7 +1564,7 @@ footer{
     /** FOOTER **/
     footer {
         width: 100%;
-        background: url(../Imgs/nuvem-1280x.png) center no-repeat;
+        background: url(../Imgs/Footer/nuvem-1280x.png) center no-repeat;
         height:420px;
         border-top: 5px solid var(--lines);
         align-items: center;
