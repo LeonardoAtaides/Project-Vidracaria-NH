@@ -135,7 +135,7 @@ body{
     justify-content: space-evenly;
     gap: 58%;
     align-items: center;
-    background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+    background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     background-color: #182C48;
     z-index: 1100; 
 }
@@ -187,7 +187,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/fundo-servicos.png) center no-repeat;   
+    background: url(../Imgs/Fundos/fundo-servicos.png) center no-repeat;   
 }
 
 /*Container da Logo e mensagem*/
@@ -281,7 +281,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/detalhe-onda-serv.png) center no-repeat;
+    background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat;
 }
 .ctn h1{
     margin: 10px 0 ;
@@ -642,7 +642,7 @@ footer{
         display: flex;
         justify-content:center;
         gap: 50%;
-        background: url(../Imgs/Fundo-header-mb.png) repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -658,7 +658,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/fundo-servicos.png) center top;
+        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
         background-size: auto 355px, cover;
     }  
 
@@ -691,7 +691,7 @@ footer{
     /**  DESCRIÇÃO DO SERVIÇO **/
     .ctn #detail {
         height: 80px;
-        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
     .ctn h1 {font-size: 33px;}
@@ -841,7 +841,7 @@ footer{
         display: flex;
         justify-content:center;
         gap: 58%;
-        background: url(../Imgs/Fundo-header-mb.png) repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -857,7 +857,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/fundo-servicos.png) center top;
+        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
         background-size: auto 550px, cover;
     }  
 
@@ -890,7 +890,7 @@ footer{
     /**  DESCRIÇÃO DO SERVIÇO **/
     .ctn #detail {
         height: 80px;
-        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
     .ctn h1 {font-size: 35px;}
@@ -1071,7 +1071,7 @@ footer{
         display: flex;
         justify-content: space-evenly;
         gap: 50%;
-        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -1091,7 +1091,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/fundo-servicos.png) center top;
+        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
         background-size: auto 600px, cover;
     }  
 
@@ -1126,7 +1126,7 @@ footer{
     /**  DESCRIÇÃO DO SERVIÇO **/
     .ctn #detail {
         height: 80px;
-        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
     .ctn h1 {font-size: 40px;}
@@ -1286,7 +1286,7 @@ footer{
         display: flex;
         justify-content: space-evenly;
         gap: 50%;
-        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -1306,7 +1306,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/fundo-servicos.png) center top;
+        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
         background-size: auto 700px, cover;
     }  
 
@@ -1341,7 +1341,7 @@ footer{
     /**  DESCRIÇÃO DO SERVIÇO **/
     .ctn #detail {
         height: 80px;
-        background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
         background-size: auto 100px, cover;
     }
     .ctn h1 {font-size: 42px;}
@@ -1472,7 +1472,7 @@ footer{
         height: 100px;
         justify-content: space-evenly;
         gap: 65%;
-        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -1487,7 +1487,7 @@ footer{
     .ctn-serv {
         margin-top: -50px;
         height: 445px;
-        background: url(../Imgs/fundo-servicos.png) center top;
+        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
         background-size: auto 900px, cover;
         background-repeat: no-repeat;     
     }  
@@ -1520,7 +1520,7 @@ footer{
     /************************************/
 
     /**  DESCRIÇÃO DO SERVIÇO **/
-    .ctn #detail {height: 90px; background: url(../Imgs/detalhe-onda-serv.png) center no-repeat top;}
+    .ctn #detail {height: 90px; background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;}
 
     .ctn h1 {font-size: 45px;}
 
@@ -1644,7 +1644,7 @@ footer{
         display: flex;
         justify-content: space-evenly;
         gap: 45%;
-        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
@@ -1663,7 +1663,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center; 
-        background: url(../Imgs/Detalhe\ Onda.png) bottom no-repeat, url(../Imgs/bg-princ.png) center;  
+        background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;  
     }
 
     /*Container da Logo e mensagem*/
@@ -1742,7 +1742,7 @@ footer{
         display: flex;
         justify-content: space-evenly;
         gap: 45%;
-        background: url(../Imgs/Fundo\ header.png) bottom repeat-x;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
     /*Logo da Barra de Navegação*/
