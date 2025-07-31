@@ -1,23 +1,16 @@
 /*CORES PADRÕES*/
 :root{
-    --bg-geral: #182C48;
+    --bg-body: #182C48;
+    --nav-hover: #FFC900;
+    --color-btn: #FFC900;
+    --btn-see-more: #FFC100;
+    --border-cards: #FFC900;
     --titles: #ffff;
     --subtitle: #ffff;
     --subtitles-line: #FFC900;
-    
+    --lines: #FFC900;
     --title-numbers: #FFC900;
     --description-num: #ffff;
-     
-    --subtitle-service: #FFC900;
-
-   
-    --lines: #FFC900;
-    
-    --nav-hover: #FFC900;
-    --color-btn: #FFC900;
-    --border-cards: #FFC900;
-    
-    --btn-see-more: #FFC100;
 }
 
 /** CONFIGURAÇÕES PRINCIPAIS **/
@@ -30,7 +23,7 @@ body{
     padding: 120px 0 0 0 ;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: var(--bg-geral);
+    background: var(--bg-body);
 }
 
 /* Menu mobile: padrão escondido */
@@ -550,7 +543,7 @@ body{
 
 /*Titulo Sobre a Localização*/
 #title-end{
-    color: var(--subtitle-service);
+    color: var(--subtitles-line);
     z-index: 1;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
