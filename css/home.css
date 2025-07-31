@@ -1,18 +1,22 @@
 /*CORES PADRÕES*/
 :root{
     --bg-geral: #182C48;
-    --color-title: #ffff;
-    --color-titles: #ffff;
-    --color-titles-lines: #FFC900;
-    --color-titles-num: #FFC900;
-    --color-titles-cont: #FFC900;
+    --titles: #ffff;
+    --subtitle: #ffff;
+    --subtitles-line: #FFC900;
+    
+    --title-numbers: #FFC900;
     --description-num: #ffff;
-    --description-foo: #ffff;
+     
+    --subtitle-service: #FFC900;
+
+   
     --lines: #FFC900;
-    --details-card: #FFC900;
-    --details-hover: #FFC900;
+    
+    --nav-hover: #FFC900;
     --color-btn: #FFC900;
-    --details-card: #FFC900;
+    --border-cards: #FFC900;
+    
     --btn-see-more: #FFC100;
 }
 
@@ -85,7 +89,7 @@ body{
 /* Titulos Principais*/
 .titles{
     text-transform: uppercase;
-    color: var(--color-titles);
+    color: var(--titles);
     font-size: 55px;
     text-align: center;
 }
@@ -94,7 +98,7 @@ body{
 /* direcionamento de link */
 .link-direct{
     text-decoration: none;
-    color: #fff;
+    color: var(--titles);
 }
 /*----------------------------*/
 
@@ -107,7 +111,7 @@ body{
     width: 377px;
     height: 55px;
     font-size: 24px;
-    color: var(--color-title);
+    color: var(--subtitle);
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 60px;
@@ -128,7 +132,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-titles-lines); 
+    color: var(--subtitles-line); 
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -196,7 +200,7 @@ body{
 .nav ul li {
     position: relative;
     padding-right: 15px; 
-    border-right: 3px solid var(--details-hover); 
+    border-right: 3px solid var(--nav-hover); 
 }
 
 .nav ul li:last-child {
@@ -205,13 +209,13 @@ body{
 
 .nav ul a{
     text-decoration: none;
-    color: var(--color-title);
+    color: var(--subtitle);
     font-size: 21px;
     transition: 0.5s;
 }
 
 .nav ul li a:hover{
-    color: var(--details-hover);
+    color: var(--nav-hover);
 }
 /*----------------------------*/
 
@@ -247,7 +251,7 @@ body{
 #msg-logo{
     width:50%;
     text-align: center;
-    color: var(--color-title);
+    color: var(--subtitle);
     font-size: 33px;
     font-weight:600;
 }
@@ -279,11 +283,10 @@ body{
     width: 300px;
     height: 280px;
     background-color: transparent;
-    color: var(--color-title);
     padding: 20px;
     border-radius: 25px;
-    border: 3px solid var(--details-card);
-    border-bottom: 7px solid var(--details-card) ;
+    border: 3px solid var(--border-cards);
+    border-bottom: 7px solid var(--border-cards) ;
     text-align: center;
     transition: 0.3s;
   }
@@ -291,6 +294,7 @@ body{
 
 /*Título do Serviço*/
 .title-serv{
+    color: var(--titles);
     text-transform: uppercase;
     margin-top: 10px;
     margin-bottom: 15px;
@@ -299,6 +303,7 @@ body{
 /*Descrição do Serviço*/
 .desc-serv{
     margin: 0;
+    color: var(--subtitle);
     font-size:20px;
 }
 
@@ -325,7 +330,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 30px;
-    color: var(--color-title);
+    color: var(--subtitle);
     text-transform: uppercase;
     font-weight: bolder;
     border-radius: 8px;
@@ -386,7 +391,7 @@ body{
 /*Container de Textos*/
 .ctn-texts-dif{
     display: flex;
-    color: var(--color-titles);
+    color: var(--titles);
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -404,6 +409,7 @@ body{
     width: 82%;
     margin: 0;
     font-size:20px;
+    color: var(--subtitle);
 }
 
 /*Linha Separadora dos Cards*/
@@ -440,7 +446,7 @@ body{
 /*Número do contador*/
 .card-counter h2{
     margin: 0;
-    color: var(--color-titles-num);
+    color: var(--title-numbers);
     font-size: 120px;
     text-shadow: 2px 2px 3px rgba(1, 1, 1, 0.8);
 }
@@ -464,7 +470,7 @@ body{
 /*Subitulo de Contato*/
 #subtitle-contact{
     font-size: 45px;
-    color: var(--color-title);
+    color: var(--subtitle);
     text-align: center;
     margin-bottom: 5px;
 }
@@ -499,13 +505,13 @@ body{
 
 /*Texto de Contato*/
 .channel-cont{
-    color: var(--color-titles);
+    color: var(--subtitle);
     margin-top: 25px;
     text-transform: uppercase;
 }
 
  .channel-cont-rs{
-    color: var(--color-titles);
+    color: var(--subtitle);
     margin-top: 20px;
     text-transform: lowercase;
 }
@@ -520,10 +526,10 @@ body{
 
 /*Infomação de funcionamento e pagamento*/
 .info-operation b{
-    color: var(--color-titles-cont);
+    color: var(--subtitle-service);
 }
 .info-operation{
-    color: var(--color-titles);
+    color: var(--subtitle);
     margin: 0 0 15px 0;
     font-size: 25px;
     text-align: center;
@@ -532,10 +538,10 @@ body{
 
 /*Infomação de funcionamento e pagamento*/
 .info-operation-mobile b{
-    color: var(--color-titles-cont);
+    color: var(--subtitle-service);
 }
 .info-operation-mobile{
-    color: var(--color-titles);
+    color: var(--subtitle);
     margin: 0 0 15px 0;
     font-size: 25px;
     text-align: center;
@@ -544,7 +550,7 @@ body{
 
 /*Titulo Sobre a Localização*/
 #title-end{
-    color: var(--color-titles-cont);
+    color: var(--subtitle-service);
     z-index: 1;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
@@ -560,7 +566,7 @@ body{
     margin: 12px 0 ;
     font-size: 20px;
     text-align: center;
-    color: var(--color-titles);
+    color: var(--subtitle);
 }
 /************************************/
 
@@ -595,8 +601,7 @@ footer{
 .card-info-f{
     width: 25%;
     height: 200px;
-    align-items: center;
-    color: var(--description-foo); 
+    align-items: center; 
 }
 
 /*Titulo dos Cards*/
@@ -605,7 +610,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
     font-size:25px;
-    color: var(--color-titles);
+    color: var(--titles);
 }
 
 /*CARD CONTATO*/
@@ -635,7 +640,7 @@ footer{
 .card-info-f p{
     margin: 0;
     text-align: justify;
-    color: var(--description-foo);
+    color: var(--subtitle);
     font-size: 18px;
 
 }    
@@ -663,7 +668,7 @@ footer{
     font-size: 15px;
     margin: 5px 0;
     text-align: center;
-    color: var(--color-titles);
+    color: var(--subtitle);
 }
 
 /*Direcionanto ao Dev*/
@@ -703,7 +708,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-titles-lines); 
+    color: var(--subtitles-line); 
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -875,7 +880,7 @@ footer{
     /*Subitulo de Contato*/
     #subtitle-contact {
         font-size: 22px;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -913,10 +918,9 @@ footer{
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
-    .info-operation-mobile b {color: var(--color-titles-cont); font-size: 19px;}
+    .info-operation-mobile b {color: var(--subtitle-service); font-size: 19px;}
     .info-operation-mobile {
         flex-direction: column;
-        color: var(--color-titles);
         font-size: 18px;
         text-align: center;
     }
@@ -928,7 +932,7 @@ footer{
     /*Titulo Sobre a Localização*/
     #title-end {
         font-size: 28px;
-        color: var(--color-titles-cont);
+        color: var(--subtitle-service);
         z-index: 1;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     }
@@ -943,7 +947,6 @@ footer{
         margin: 12px 0 ;
         font-size: 13px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
 
@@ -1187,7 +1190,7 @@ footer{
     /*Subitulo de Contato*/
     #subtitle-contact {
         font-size: 22px;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -1225,10 +1228,9 @@ footer{
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
-    .info-operation-mobile b {color: var(--color-titles-cont); font-size: 21px;}
+    .info-operation-mobile b {color: var(--subtitle-service); font-size: 21px;}
     .info-operation-mobile {
         flex-direction: column;
-        color: var(--color-titles);
         font-size: 19px;
         text-align: center;
     }
@@ -1238,7 +1240,7 @@ footer{
     /*Titulo Sobre a Localização*/
     #title-end {
         font-size: 28px;
-        color: var(--color-titles-cont);
+        color: var(--subtitle-service);
         z-index: 1;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     }
@@ -1253,7 +1255,6 @@ footer{
         margin: 12px 0 ;
         font-size: 15px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
 
@@ -1500,7 +1501,7 @@ footer{
     /*Subitulo de Contato*/
     #subtitle-contact{
         font-size: 22px;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -1538,10 +1539,9 @@ footer{
     /*----------------------------*/
 
     /*Infomação de funcionamento e pagamento*/
-    .info-operation-mobile b {color: var(--color-titles-cont);font-size: 21px;}
+    .info-operation-mobile b {color: var(--subtitle-service);font-size: 21px;}
     .info-operation-mobile {
         flex-direction: column;
-        color: var(--color-titles);
         font-size: 19px;
         text-align: center;
     }
@@ -1552,7 +1552,7 @@ footer{
     /*Titulo Sobre a Localização*/
     #title-end {
         font-size: 28px;
-        color: var(--color-titles-cont);
+        color: var(--subtitle-service);
         z-index: 1;
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
     }
@@ -1567,7 +1567,6 @@ footer{
         margin: 12px 0 ;
         font-size: 15px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
 
@@ -1816,7 +1815,7 @@ footer{
     #subtitle-contact {
         font-size:35px;
         margin-bottom: 0;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -1856,7 +1855,6 @@ footer{
     /*Infomação de funcionamento e pagamento*/
     .info-operation {
         flex-direction: column;
-        color: var(--color-titles);
         margin: 10px 0 15px 0;
         font-size: 23px;
         text-align: center;
@@ -1873,7 +1871,7 @@ footer{
         margin: 12px 0 ;
         font-size: 20px;
         text-align: center;
-        color: var(--color-titles);
+        color: var(--subtitle);
     }
     /************************************/
  
@@ -2092,7 +2090,7 @@ footer{
     #subtitle-contact {
         font-size:35px;
         margin-bottom: 0;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -2133,7 +2131,6 @@ footer{
     /*Infomação de funcionamento e pagamento*/
     .info-operation {
         flex-direction: column;
-        color: var(--color-titles);
         margin: 10px 0 15px 0;
         font-size: 23px;
         text-align: center;
@@ -2149,7 +2146,6 @@ footer{
         margin: 12px 0 ;
         font-size: 20px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
  
@@ -2348,7 +2344,7 @@ footer{
     #subtitle-contact {
         font-size: 32px;
         margin-bottom: 0;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -2389,7 +2385,6 @@ footer{
     /*Infomação de funcionamento e pagamento*/
     .info-operation {
         flex-direction: column;
-        color: var(--color-titles);
         margin: 10px 0 15px 0;
         font-size: 25px;
         text-align: center;
@@ -2406,7 +2401,6 @@ footer{
         margin: 12px 0 ;
         font-size: 20px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
  
@@ -2595,7 +2589,7 @@ footer{
     #subtitle-contact {
         font-size:32px;
         margin-bottom: 0;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -2633,7 +2627,6 @@ footer{
     /*Infomação de funcionamento e pagamento*/
     .info-operation {
         flex-direction: column;
-        color: var(--color-titles);
         margin: 10px 0 15px 0;
         font-size: 27px;
         text-align: center;
@@ -2649,7 +2642,6 @@ footer{
         margin: 12px 0 ;
         font-size: 18px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
  
@@ -2841,7 +2833,7 @@ footer{
     #subtitle-contact {
         font-size:32px;
         margin-bottom: 0;
-        color: var(--color-title);
+        color: var(--subtitle);
         text-align: center;
     }
 
@@ -2880,7 +2872,6 @@ footer{
     /*Infomação de funcionamento e pagamento*/
     .info-operation {
         flex-direction: column;
-        color: var(--color-titles);
         margin: 10px 0 15px 0;
         font-size: 27px;
         text-align: center;
@@ -2896,7 +2887,6 @@ footer{
         margin: 12px 0 ;
         font-size: 18px;
         text-align: center;
-        color: var(--color-titles);
     }
     /************************************/
  

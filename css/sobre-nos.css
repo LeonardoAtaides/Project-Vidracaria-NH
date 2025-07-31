@@ -1,8 +1,8 @@
 /*CORES PADRÕES*/
 :root{
-    --bg-geral: #182C48;
-    --color-title: #ffff;
-    --color-titles: #ffff;
+    --bg-body: #182C48;
+    --subtitle-white: #ffff;
+    --titles-white: #ffff;
     --color-title-video: #FFC900;
     --color-titles-cont: #FFC900;
     --description-num: #ffff;
@@ -24,7 +24,7 @@ body{
     padding: 120px 0 0 0 ;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: var(--bg-geral);
+    background: var(--bg-body);
 }
 
 /* Menu mobile: padrão escondido */
@@ -92,7 +92,7 @@ body{
     width: 377px;
     height: 55px;
     font-size: 24px;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 60px;
@@ -141,7 +141,7 @@ body{
 
 /*TITULO PRINCIPAL*/
 .title{
-    color: var(--color-title);
+    color: var(--subtitle-white);
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
@@ -221,7 +221,7 @@ body{
 
 .nav ul a{
     text-decoration: none;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     font-size: 21px;
     transition: 0.5s;
 }
@@ -261,7 +261,7 @@ body{
 #msg-logo{
     width: 70%;
     text-align: justify;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     font-size: 33px;
     font-weight:600;
     text-indent: 1em;
@@ -303,7 +303,7 @@ body{
 /*Container de Textos*/
 .ctn-texts-obj{
     display: flex;
-    color: var(--color-titles);
+    color: var(--titles-white);
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -399,7 +399,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
     font-size:25px;
-    color: var(--color-titles);
+    color: var(--titles-white);
 }
 
 /*CARD CONTATO*/
@@ -455,7 +455,7 @@ footer{
     font-size: 15px;
     margin: 5px 0;
     text-align: center;
-    color: var(--color-titles);
+    color: var(--titles-white);
 }
 
 /*Direcionanto ao Dev*/
@@ -539,7 +539,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 15px;
         font-weight:600;
         text-indent: 1em;
@@ -567,7 +567,7 @@ footer{
     /*Container de Textos*/
     .ctn-texts-obj {
         display: flex;
-        color: var(--color-titles);
+        color: var(--titles-white);
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -733,7 +733,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 16px;
         font-weight:600;
         text-indent: 1em;
@@ -759,7 +759,7 @@ footer{
     /*Container de Textos*/
     .ctn-texts-obj {
         display: flex;
-        color: var(--color-titles);
+        color: var(--titles-white);
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -936,7 +936,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 20px;
     }
     /*----------------------------*/
@@ -1098,7 +1098,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 20px;
     }
     /*----------------------------*/
@@ -1247,7 +1247,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 22px;
     }
     /*----------------------------*/
@@ -1392,7 +1392,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size: 22px;
     }
     /*----------------------------*/
@@ -1528,7 +1528,7 @@ footer{
     #msg-logo {
         width: 90%;
         text-align: justify;
-        color: var(--color-title);
+        color: var(--subtitle-white);
         font-size:25px;
         font-weight:600;
         text-indent: 1em;
@@ -1537,7 +1537,7 @@ footer{
 
     /*TITULO PRINCIPAL*/
     .title {
-        color: var(--color-title);
+        color: var(--subtitle-white);
         text-align: center;
         text-transform: uppercase;
         font-size: 55px;

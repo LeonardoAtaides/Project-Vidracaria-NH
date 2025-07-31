@@ -1,8 +1,8 @@
 /*CORES PADRÕES*/
 :root{
-    --bg-geral: #182C48;
-    --color-title: #ffff;
-    --color-titles: #ffff;
+    --bg-body: #182C48;
+    --subtitle-white: #ffff;
+    --titles-white: #ffff;
     --color-sub: #FFC900;
 
     --color-titles-princ: #FFC900;
@@ -27,7 +27,7 @@ body{
     padding: 120px 0 0 0 ;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background: var(--bg-geral);
+    background: var(--bg-body);
 }
 
 /* Menu mobile*/
@@ -85,7 +85,7 @@ body{
 /* Titulos Principais*/
 .titles{
     text-transform: uppercase;
-    color: var(--color-titles);
+    color: var(--titles-white);
     font-size: 55px;
     text-align: center;
 }
@@ -107,7 +107,7 @@ body{
     width: 450px;
     height: 60px;
     font-size: 28px;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 60px;
@@ -168,7 +168,7 @@ body{
 
 .nav ul a{
     text-decoration: none;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     font-size: 21px;
     transition: 0.5s;
 }
@@ -201,7 +201,7 @@ body{
 /*Mensagem*/
 .msg-logo{
     text-align: center;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     font-size: 33px;
     font-weight:600;
     text-transform: uppercase;
@@ -285,7 +285,7 @@ body{
 }
 .ctn h1{
     margin: 10px 0 ;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     text-align: center;
     text-transform: uppercase;
     font-size: 55px;
@@ -295,14 +295,14 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     text-align: center;
 }
 .description p{
     width: 96%;
     margin: 0;
     text-align: justify;
-    color: var(--color-title);
+    color: var(--subtitle-white);
     font-size: 25px;
 }
 /************************************/
@@ -503,7 +503,7 @@ body{
 .ctn-budget h2{
     margin: -5px 0 0 0;
     font-size: 40px;
-    color: var(--color-title);
+    color: var(--subtitle-white);
 }
 /************************************/
 
@@ -550,7 +550,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
     font-size:25px;
-    color: var(--color-titles);
+    color: var(--titles-white);
 }
 
 
@@ -611,7 +611,7 @@ footer{
     font-size: 15px;
     margin: 5px 0;
     text-align: center;
-    color: var(--color-titles);
+    color: var(--titles-white);
 }
 
 /*Direcionanto ao Dev*/
