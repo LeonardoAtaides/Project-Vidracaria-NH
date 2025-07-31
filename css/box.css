@@ -1,23 +1,13 @@
 /*CORES PADRÕES*/
 :root{
     --bg-body: #182C48;
+    --hover: #FFC900;    
+    --title-service: #FFC900;  
     --titles: #ffff;
     --subtitle: #ffff;
-    
-
-    --color-sub: #FFC900;
-
-    --color-titles-princ: #FFC900;
-    --color-titles-num: #FFC900;
-    --color-titles-cont: #FFC900;
-    --description-num: #ffff;
-    --description-foo: #ffff;
+    --subtitle-line: #FFC900;
     --lines: #FFC900;
-    --details-card: #FFC900;
-    --details-hover: #FFC900;
-    --color-btn: #FFC900;
-    --details-card: #FFC900;
-    --btn-see-more: #FFC100;
+    --color-btn: #FFC900;    
 }
 
 /** CONFIGURAÇÕES PRINCIPAIS **/
@@ -161,7 +151,7 @@ body{
 .nav ul li {
     position: relative;
     padding-right: 15px; 
-    border-right: 3px solid var(--details-hover); 
+    border-right: 3px solid var(--hover); 
 }
 
 .nav ul li:last-child {
@@ -176,7 +166,7 @@ body{
 }
 
 .nav ul li a:hover{
-    color: var(--details-hover);
+    color: var(--hover);
 }
 /*----------------------------*/
 
@@ -211,7 +201,7 @@ body{
 .msg-logo h1{
     margin: 0;
     font-size: 80px;
-    color: var(--color-titles-princ);
+    color: var(--title-service);
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -222,11 +212,12 @@ body{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color: var(--titles);
 }
 .desc-serv h2{
     margin: 0;
     font-size:35px;
-    
+    color: var(--titles);
 }
 
 .desc-serv img{
@@ -242,7 +233,6 @@ body{
     position: absolute;
     margin-top: -39px;
     padding: 0;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,7 +257,7 @@ body{
 
 .nav-secundary ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--subtitle);
     white-space: nowrap;
 }
 
@@ -287,7 +277,7 @@ body{
 }
 .ctn h1{
     margin: 10px 0 ;
-    color: var(--subtitle);
+    color: var(--titles);
     text-align: center;
     text-transform: uppercase;
     font-size: 55px;
@@ -349,7 +339,7 @@ body{
 }
 .line-text h2{
     margin: 14px 0;
-    color: var(--color-sub);
+    color: var(--subtitle-line);
 }
 
 /*Linha a Esquerda*/
@@ -583,7 +573,7 @@ footer{
 .card-info-f p{
     margin: 0;
     text-align: justify;
-    color: var(--description-foo);
+    color: var(--subtitle);
     font-size: 18px;
 
 }    
@@ -606,6 +596,7 @@ footer{
 /*Descrição Final*/
 .foo-descrition{
     width: 40%;
+    color: var(--subtitle)  ;
 }
 
 /*Copyright*/
@@ -722,7 +713,7 @@ footer{
 
     /*logo Sol Pequena*/
     .line-text img {width: 80px;}
-    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
 
     /*Linha a Esquerda*/
     #lft {margin-right: 5px;}
@@ -921,7 +912,7 @@ footer{
 
     /*logo Sol Pequena*/
     .line-text img {width: 80px;}
-    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
 
     /*Linha a Esquerda*/
     #lft {margin-right: 5px;}
@@ -1161,7 +1152,7 @@ footer{
     }
     .line-text h2 {
         margin: 14px 0;
-        color: var(--color-sub);
+        color: var(--subtitle-line);
     }
 
     /*Linha a Esquerda*/
@@ -1372,7 +1363,7 @@ footer{
 
     /*logo Sol Pequena*/
     .line-text img {width: 100px;}
-    .line-text h2 {margin: 14px 0; color: var(--color-sub);}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
 
     /*Linha a Esquerda*/
     #lft {margin-right: 5px;}
@@ -1554,7 +1545,7 @@ footer{
     }
     .line-text h2 {
         margin: 14px 0;
-        color: var(--color-sub);
+        color: var(--subtitle-line);
     }
 
     /*Linha a Esquerda*/
