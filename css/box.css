@@ -1,8 +1,10 @@
 /*CORES PADRÕES*/
 :root{
     --bg-body: #182C48;
-    --subtitle-white: #ffff;
-    --titles-white: #ffff;
+    --titles: #ffff;
+    --subtitle: #ffff;
+    
+
     --color-sub: #FFC900;
 
     --color-titles-princ: #FFC900;
@@ -85,7 +87,7 @@ body{
 /* Titulos Principais*/
 .titles{
     text-transform: uppercase;
-    color: var(--titles-white);
+    color: var(--titles);
     font-size: 55px;
     text-align: center;
 }
@@ -107,7 +109,7 @@ body{
     width: 450px;
     height: 60px;
     font-size: 28px;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     text-transform: uppercase;
     font-weight: 700;
     border-radius: 60px;
@@ -168,7 +170,7 @@ body{
 
 .nav ul a{
     text-decoration: none;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     font-size: 21px;
     transition: 0.5s;
 }
@@ -201,7 +203,7 @@ body{
 /*Mensagem*/
 .msg-logo{
     text-align: center;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     font-size: 33px;
     font-weight:600;
     text-transform: uppercase;
@@ -285,7 +287,7 @@ body{
 }
 .ctn h1{
     margin: 10px 0 ;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     text-align: center;
     text-transform: uppercase;
     font-size: 55px;
@@ -295,14 +297,14 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     text-align: center;
 }
 .description p{
     width: 96%;
     margin: 0;
     text-align: justify;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     font-size: 25px;
 }
 /************************************/
@@ -503,7 +505,7 @@ body{
 .ctn-budget h2{
     margin: -5px 0 0 0;
     font-size: 40px;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
 }
 /************************************/
 
@@ -550,7 +552,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
     font-size:25px;
-    color: var(--titles-white);
+    color: var(--titles);
 }
 
 
@@ -611,7 +613,7 @@ footer{
     font-size: 15px;
     margin: 5px 0;
     text-align: center;
-    color: var(--titles-white);
+    color: var(--titles);
 }
 
 /*Direcionanto ao Dev*/

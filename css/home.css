@@ -1,7 +1,7 @@
 /*CORES PADRÕES*/
 :root{
     --bg-body: #182C48;
-    --nav-hover: #FFC900;
+    --hover: #FFC900;
     --color-btn: #FFC900;
     --btn-see-more: #FFC100;
     --border-cards: #FFC900;
@@ -193,7 +193,7 @@ body{
 .nav ul li {
     position: relative;
     padding-right: 15px; 
-    border-right: 3px solid var(--nav-hover); 
+    border-right: 3px solid var(--hover); 
 }
 
 .nav ul li:last-child {
@@ -208,7 +208,7 @@ body{
 }
 
 .nav ul li a:hover{
-    color: var(--nav-hover);
+    color: var(--hover);
 }
 /*----------------------------*/
 
@@ -625,7 +625,7 @@ footer{
 }
 
 .card-info-f li a:hover{
-    color: var(--color-btn);
+    color: var(--hover);
 }
 /*----------------------------*/
 

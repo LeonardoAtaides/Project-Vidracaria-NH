@@ -1,18 +1,11 @@
 /*CORES PADRÕES*/
 :root{
     --bg-body: #182C48;
-    --subtitle-white: #ffff;
-    --titles-white: #ffff;
-    --color-title-video: #FFC900;
-    --color-titles-cont: #FFC900;
-    --description-num: #ffff;
-    --description-foo: #ffff;
+    --hover: #FFC900;
+    --titles: #ffff; 
+    --subtitle: #ffff;
+    --subtitle-line: #FFC900;
     --lines: #FFC900;
-    --details-card: #FFC900;
-    --details-hover: #FFC900;
-    --color-btn: #FFC900;
-    --details-card: #FFC900;
-    --btn-see-more: #FFC100;
 }
 
 /** CONFIGURAÇÕES PRINCIPAIS **/
@@ -83,27 +76,7 @@ body{
 .link-direct{text-decoration: none; color: #fff;}
 /*----------------------------*/
 
-/* Botão de Orcamento*/
-.btn-orcamento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 377px;
-    height: 55px;
-    font-size: 24px;
-    color: var(--subtitle-white);
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 60px;
-    border: 2px solid var(--color-btn);
-    background: var(--color-btn);
-    cursor: pointer;
-    transition: 0.4s;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;  
-}
-.btn-orcamento:hover{ transform: scale(1.08);}
+
 
 
 /*Conf das Linhas com Texto*/
@@ -111,7 +84,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-title-video); 
+    color: var(--subtitle-line); 
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -141,7 +114,7 @@ body{
 
 /*TITULO PRINCIPAL*/
 .title{
-    color: var(--subtitle-white);
+    color: var(--titles);
     text-align: center;
     text-transform: uppercase;
     font-size: 60px;
@@ -214,19 +187,19 @@ body{
 .nav ul li {
     position: relative;
     padding-right: 15px; 
-    border-right: 3px solid var(--details-hover); 
+    border-right: 3px solid var(--hover); 
 }
 
 .nav ul li:last-child { border-right: none;}
 
 .nav ul a{
     text-decoration: none;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     font-size: 21px;
     transition: 0.5s;
 }
 
-.nav ul li a:hover{color: var(--details-hover);}
+.nav ul li a:hover{color: var(--hover);}
 /*----------------------------*/
 
 /*CONTAINER SOBRE NÓS - EMPRESA*/
@@ -261,7 +234,7 @@ body{
 #msg-logo{
     width: 70%;
     text-align: justify;
-    color: var(--subtitle-white);
+    color: var(--subtitle);
     font-size: 33px;
     font-weight:600;
     text-indent: 1em;
@@ -303,7 +276,6 @@ body{
 /*Container de Textos*/
 .ctn-texts-obj{
     display: flex;
-    color: var(--titles-white);
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -314,6 +286,7 @@ body{
 .title-obj{
     margin: 8px;
     text-transform: uppercase;
+    color: var(--titles);
 }
 
 /*Descrição de Diferencias*/
@@ -321,9 +294,11 @@ body{
     width: 100%;
     margin: 0;
     font-size:20px;
+    color: var(--subtitle);
 }
 
 .ctn-texts-obj ul{
+    color: var(--subtitle);
     margin: 0;
     text-align: start;
 }
@@ -390,7 +365,6 @@ footer{
     width: 25%;
     height: 200px;
     align-items: center;
-    color: var(--description-foo); 
 }
 
 /*Titulo dos Cards*/
@@ -399,7 +373,7 @@ footer{
     text-align: center;
     text-transform: uppercase;
     font-size:25px;
-    color: var(--titles-white);
+    color: var(--titles);
 }
 
 /*CARD CONTATO*/
@@ -420,7 +394,7 @@ footer{
 }
 
 .card-info-f li a:hover{
-    color: var(--color-btn);
+    color: var(--hover);
 }
 /*----------------------------*/
 
@@ -428,7 +402,7 @@ footer{
 .card-info-f p{
     margin: 0;
     text-align: justify;
-    color: var(--description-foo);
+    color: var(--subtitle);
     font-size: 18px;
 }    
  /*----------------------------*/   
@@ -455,7 +429,7 @@ footer{
     font-size: 15px;
     margin: 5px 0;
     text-align: center;
-    color: var(--titles-white);
+    color: var(--subtitle);
 }
 
 /*Direcionanto ao Dev*/
@@ -486,7 +460,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-title-video); 
+    color: var(--subtitle-line); 
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -539,7 +513,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 15px;
         font-weight:600;
         text-indent: 1em;
@@ -567,7 +541,7 @@ footer{
     /*Container de Textos*/
     .ctn-texts-obj {
         display: flex;
-        color: var(--titles-white);
+        color: var(--titles);
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -681,7 +655,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--color-title-video); 
+    color: var(--subtitle-line); 
     font-size: 28px;
     font-weight: bold;
     text-transform: uppercase;
@@ -733,7 +707,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 16px;
         font-weight:600;
         text-indent: 1em;
@@ -759,7 +733,7 @@ footer{
     /*Container de Textos*/
     .ctn-texts-obj {
         display: flex;
-        color: var(--titles-white);
+        color: var(--titles);
         justify-content: center;
         text-align: center;
         align-items: center;
@@ -936,7 +910,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 20px;
     }
     /*----------------------------*/
@@ -1098,7 +1072,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 20px;
     }
     /*----------------------------*/
@@ -1247,7 +1221,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 22px;
     }
     /*----------------------------*/
@@ -1392,7 +1366,7 @@ footer{
     #msg-logo {
         width: 85%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size: 22px;
     }
     /*----------------------------*/
@@ -1528,7 +1502,7 @@ footer{
     #msg-logo {
         width: 90%;
         text-align: justify;
-        color: var(--subtitle-white);
+        color: var(--subtitle);
         font-size:25px;
         font-weight:600;
         text-indent: 1em;
@@ -1537,7 +1511,6 @@ footer{
 
     /*TITULO PRINCIPAL*/
     .title {
-        color: var(--subtitle-white);
         text-align: center;
         text-transform: uppercase;
         font-size: 55px;
