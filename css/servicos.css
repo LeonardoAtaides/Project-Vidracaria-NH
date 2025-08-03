@@ -192,7 +192,6 @@ body{
 
 /*Mensagem*/
 .msg-logo{
-    text-align: center;
     color: var(--subtitle);
     font-size: 33px;
     font-weight:600;
@@ -216,7 +215,7 @@ body{
 }
 .desc-serv h2{
     margin: 0;
-    font-size:35px;
+    font-size:40px;
     color: var(--titles);
 }
 
