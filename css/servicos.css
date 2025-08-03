@@ -179,7 +179,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/Fundos/fundo-servicos.png) center no-repeat;   
+    background: url(../Imgs/Fundos/fundo-box.png) center no-repeat;   
 }
 
 /*Container da Logo e mensagem*/
@@ -650,8 +650,8 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
-        background-size: auto 455px, cover;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 395px, cover;
     }  
 
     /*Container da Logo e mensagem*/
@@ -849,8 +849,8 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
-        background-size: auto 510px, cover;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 565px, cover;
     }  
 
     /*Container da Logo e mensagem*/
@@ -1083,8 +1083,8 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
-        background-size: auto 600px, cover;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 665px, cover;
     }  
 
     /*Container da Logo e mensagem*/
@@ -1298,8 +1298,8 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
-        background-size: auto 680px, cover;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 755px, cover;
     }  
 
     /*Container da Logo e mensagem*/
@@ -1479,8 +1479,8 @@ footer{
     .ctn-serv {
         margin-top: -50px;
         height: 445px;
-        background: url(../Imgs/Fundos/fundo-servicos.png) center top;
-        background-size: auto 840px, cover;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 925px, cover;
         background-repeat: no-repeat;     
     }  
     /*Container da Logo e mensagem*/
