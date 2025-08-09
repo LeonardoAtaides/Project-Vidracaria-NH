@@ -2561,22 +2561,21 @@ footer{
     /*Imagem de Fundo do Contador de Serviços*/
     .bg-counter {
         margin-top: -58px;
-        height: 550px;
+        height: 500px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 55px;
+        justify-content: space-evenly;
+        gap: 8%;
         background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/Fundos/esplanadadf.png)  center;
     }
 
      .card-counter #eleven {margin-top: 0px;}
 
     /*Número do contador*/
-    .card-counter h2{font-size: 60px;}
+    .card-counter h2{font-size: 90px;}
 
     /*Descrição do contador*/
-    .card-counter p{font-size: 40px;}
+    .card-counter p{font-size: 30px;}
     /************************************/  
    
     /** CONTATO **/
@@ -2806,22 +2805,21 @@ footer{
     /*Imagem de Fundo do Contador de Serviços*/
     .bg-counter{
         margin-top: -58px;
-        height: 550px;
+        height: 500px;
         display: flex;
-        flex-direction: column;
         align-items: center;
-        justify-content: center;
-        gap: 60px;
+        justify-content: space-evenly;
+        gap: 8%;
         background:  linear-gradient(to bottom, rgba(1, 26, 109, 0.2) 80%, rgba(255, 201, 0, 0.3) 100%) ,url(../Imgs/Fundos/esplanadadf.png)  center;
     }
 
      .card-counter #eleven{margin-top: 0px;}
 
     /*Número do contador*/
-    .card-counter h2{font-size: 60px;}
+    .card-counter h2{font-size: 95px;}
 
     /*Descrição do contador*/
-    .card-counter p{font-size: 40px;}
+    .card-counter p{font-size: 30px;}
     /************************************/  
    
     /** CONTATO **/
