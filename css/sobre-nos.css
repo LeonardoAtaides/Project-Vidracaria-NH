@@ -209,7 +209,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/Fundo-sobre-empresa.png) center;
+    background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/Fundo-sobre-empresa.png) top center;
     
 }
 
