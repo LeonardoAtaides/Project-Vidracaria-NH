@@ -1382,7 +1382,7 @@ footer{
         background:
         url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat,
         url(../Imgs/Fundos/bg-princ-mobile.png) center no-repeat;
-        background-size: auto 290px, cover;
+        background-size: auto 350px, cover;
         background-repeat: no-repeat;
         background-position:bottom,center;
         background-attachment: scroll;
@@ -1692,7 +1692,7 @@ footer{
         justify-content: center;
         align-items: center; 
         background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;
-        
+        background-size: auto 550px, cover;
     }
 
     /*Container da Logo e mensagem*/
@@ -1967,6 +1967,7 @@ footer{
         justify-content: center;
         align-items: center; 
         background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;
+        background-size: auto 500px, cover;
         
     }
 
@@ -2220,6 +2221,7 @@ footer{
         justify-content: center;
         align-items: center; 
         background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;
+        background-size: auto 500px, cover;
         
     }
 
@@ -2462,6 +2464,7 @@ footer{
         justify-content: center;
         align-items: center; 
         background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;  
+        background-size: auto 390px, cover;
     }
 
     /*Container da Logo e mensagem*/
@@ -2670,7 +2673,7 @@ footer{
     /************************************/
 }
 /*REPONSIVIDADE NOOTEBOOK*/
-@media (min-width: 1280px) and (max-width: 1550px) {
+@media (min-width: 1280px) and (max-width: 1599px) {
 
     body {padding: 110px 0 0 0 ;}
     html, body {overflow-x: hidden;}
@@ -2702,6 +2705,7 @@ footer{
         justify-content: center;
         align-items: center; 
         background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;
+        background-size: auto 450px, cover;
         
     }
 
