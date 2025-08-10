@@ -1453,7 +1453,7 @@ footer{
     /************************************/
 }
 /*REPONSIVIDADE NOOTEBOOK*/
-@media (min-width: 1280px) and (max-width: 1550px) {
+@media (min-width: 1280px) and (max-width: 1599px) {
 
     body { padding: 110px 0 0 0 ;}
     html, body {overflow-x: hidden;}
