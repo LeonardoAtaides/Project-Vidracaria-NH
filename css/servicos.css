@@ -59,8 +59,12 @@ body{
 
 /* Botão mobile */
 .menu-toggle {
-    display: none;
-    font-size: 20px;
+    display: block;          
+    width: 40px;            
+    height: 40px;            
+    font-size: 22px;         
+    line-height: 40px;      
+    text-align: center;      
     background: none;
     border: none;
     color: white;
@@ -615,6 +619,8 @@ footer{
     display: inline-block; 
 }
 #developer:hover {text-decoration: underline;}
+
+.menu-toggle{display: none;}
 /************************************/
 
 /*REPONSIVIDADE MOBILE*/

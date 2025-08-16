@@ -42,15 +42,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ---------------------------------//
 
-// Menu  Mobile 
+// Menu Mobile 
 const toggleBtn = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("nav-mobile");
 const navLinks = mobileNav.querySelectorAll("a");
 
 toggleBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
-});
 
+  if (mobileNav.classList.contains("active")) {
+    toggleBtn.textContent = "✖"; 
+  } else {
+    toggleBtn.textContent = "☰"; 
+  }
+});
 
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
