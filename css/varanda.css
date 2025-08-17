@@ -1,0 +1,1811 @@
+/*CORES PADRÕES*/
+:root{
+    --bg-body: #182C48;
+    --hover: #FFC900;    
+    --title-service: #FFC900;  
+    --titles: #ffff;
+    --subtitle: #ffff;
+    --subtitle-line: #FFC900;
+    --lines: #FFC900;
+    --color-btn: #FFC900;    
+}
+
+/** CONFIGURAÇÕES PRINCIPAIS **/
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    padding: 120px 0 0 0 ;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--bg-body);
+}
+
+/* Menu mobile*/
+.nav-mobile {
+    width: 100%; 
+    max-height: 0;
+    overflow: hidden;
+    background-color: #182C48;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    transition: max-height 0.7s ease-in-out;
+    z-index: 1000;
+}
+
+/* Lista dentro do menu */
+.nav-mobile ul {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-mobile li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-size: 15px;
+}
+
+.nav-mobile li a:hover {
+    color: #ffc800;
+}
+
+/* Botão mobile */
+.menu-toggle {
+    display: block;          
+    width: 40px;            
+    height: 40px;            
+    font-size: 22px;         
+    line-height: 40px;      
+    text-align: center;      
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Exibir e animar o menu mobile */
+.nav-mobile.active {
+    max-height: 500px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Titulos Principais*/
+.titles{
+    text-transform: uppercase;
+    color: var(--titles);
+    font-size: 55px;
+    text-align: center;
+}
+/*----------------------------*/
+
+/* direcionamento de link */
+.link-direct{
+    text-decoration: none;
+    color: #fff;
+}
+/*----------------------------*/
+
+/* Botão de Orcamento*/
+.btn-orcamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 450px;
+    height: 60px;
+    font-size: 28px;
+    color: var(--subtitle);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 60px;
+    border: 2px solid var(--color-btn);
+    background: var(--color-btn);
+    cursor: pointer;
+    transition: 0.4s;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+    .btn-orcamento:hover 
+    { transform: scale(1.08);}
+/*----------------------------*/
+
+/************************************/
+/*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+.ctn-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 58%;
+    align-items: center;
+    background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    background-color: #182C48;
+    z-index: 1100; 
+}
+
+/*Logo da Barra de Navegação*/
+.logo a img{
+    width:300px;
+    height: auto;
+}
+
+/*Opções da Barra de Navegação*/
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0; 
+    padding: 0;
+    gap: 20px;
+    
+}
+
+.nav ul li {
+    position: relative;
+    padding-right: 15px; 
+    border-right: 3px solid var(--hover); 
+}
+
+.nav ul li:last-child {
+    border-right: none;
+}
+
+.nav ul a{
+    text-decoration: none;
+    color: var(--subtitle);
+    font-size: 21px;
+    transition: 0.5s;
+}
+
+.nav ul li a:hover{
+    color: var(--hover);
+}
+/*----------------------------*/
+
+/** BANNER SERVIÇO **/
+/** APRESENTAÇÃO BREVE **/
+.ctn-serv{
+    margin-top: -40px;
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(../Imgs/Fundos/fundo-box.png) center no-repeat;   
+}
+
+/*Container da Logo e mensagem*/
+.ctn-contents{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Mensagem*/
+.msg-logo{
+    color: var(--subtitle);
+    font-size: 33px;
+    font-weight:600;
+    text-transform: uppercase;
+}
+.msg-logo h1{
+    margin: 0;
+    font-size: 80px;
+    color: var(--title-service);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/*Mensagem*/
+.desc-serv{
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--titles);
+}
+.desc-serv h2{
+    margin: 0;
+    font-size:40px;
+    color: var(--titles);
+}
+
+.desc-serv img{
+    width: 15px;
+    height: auto;
+    
+}
+/************************************/
+
+/*NAVBAR SECUNDÁRIA*/
+.nav-secundary{ 
+    width: 100%;
+    position: absolute;
+    margin-top: -39px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.nav-secundary li{
+    list-style: none;
+    transition: 0.6s;
+}
+
+.nav-secundary ul{
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    gap: 5%;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-secundary ul li a{
+    text-decoration: none;
+    color: var(--subtitle);
+    white-space: nowrap;
+}
+
+.nav-secundary  li:hover {
+    transform: scale(1.1);
+}
+/************************************/
+
+/**  DESCRIÇÃO DO SERVIÇO **/
+.ctn #detail{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat;
+}
+.ctn h1{
+    margin: 10px 0 ;
+    color: var(--titles);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: var(--subtitle);
+    text-align: center;
+}
+.description p{
+    width: 96%;
+    margin: 0;
+    text-align: justify;
+    color: var(--subtitle);
+    font-size: 25px;
+}
+/************************************/
+
+/*Linha com logo do Sol*/
+.line-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-titles-lines); 
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 2;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+/*Linha a Esquerda*/
+#lf{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-right: 2px;
+}
+
+/*Linha a Direita*/
+#lr{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-left: 2px;
+}
+
+/*logo Sol Pequena*/
+.line-text img{
+    width: 110px;
+    height: auto;
+}
+.line-text h2{
+    margin: 14px 0;
+    color: var(--subtitle-line);
+}
+
+/*Linha a Esquerda*/
+#lft{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-right: 15px;
+}
+/*Linha a Direita*/
+#lrt{
+    flex: 1;
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: var(--lines);
+    margin-left: 15px;
+}
+    
+/*----------------------------*/
+
+/** CAROUSSEL DO SERVIÇO**/
+
+/* Container Principal do Caroussel*/
+.ctn-photos{
+    max-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+}
+
+/* Container do Caroussel*/
+.carousel-section {
+    max-width: 1900px;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 0px;
+    padding: 0;
+}
+/*----------------------------*/
+
+/* Card do Caroussel*/
+.carousel-card {
+    flex: 0 0 500px;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(0.8);
+    opacity: 0.6;
+    background-color: #ffffff31;
+}
+
+.carousel-card.active {
+    transform: scale(1);
+    opacity: 1;
+}
+
+/* Imagem do Card*/
+.carousel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card:hover img {
+    transform: scale(1.05);
+}
+/*----------------------------*/
+
+/* Seta Passar Imgs*/
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+
+/*Margin para as Setas*/
+.carousel-nav.prev {left: 15px;}
+.carousel-nav.next {right: 15px;}
+
+/*Botões próximo Slide*/
+.carousel-nav.prev img {width: 24px; height: auto;}
+.carousel-nav.next img {width: 24px; height: auto;}
+
+/* Container Indicador de Imagem*/
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+/*Indicador de Imagem*/
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: white;
+    transform: scale(1.2);
+}
+/*----------------------------*/
+/************************************/
+
+
+/** PEÇA AGORA **/
+
+/*Container Peça Agora*/
+.ctn-budget{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:40px;
+}
+
+.ctn-budget h2{
+    margin: -5px 0 0 0;
+    font-size: 40px;
+    color: var(--subtitle);
+}
+/************************************/
+
+/** FOOTER **/
+
+footer{
+    width: 100%;
+    background: url(../Imgs/Footer/nuvem.png) center no-repeat;
+    height:420px;
+    border-top: 5px solid var(--lines);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.footer-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.footer-info{
+    width: 75%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+/*Card Footer*/
+.card-info-f{
+    width: 25%;
+    height: 200px;
+    align-items: center;
+    color: var(--description-foo); 
+}
+
+/*Titulo dos Cards*/
+.title-footer{
+    margin-bottom: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size:25px;
+    color: var(--titles);
+}
+
+
+/*CARD CONTATO*/
+.card-info-f ul{
+    padding: 0 0 0 80px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+
+}
+
+.card-info-f li a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.card-info-f li a:hover{
+    color: var(--color-btn);
+}
+/*----------------------------*/
+
+/*CARD AGREDECIMENTO NH*/
+.card-info-f p{
+    margin: 0;
+    text-align: justify;
+    color: var(--subtitle);
+    font-size: 18px;
+
+}    
+ /*----------------------------*/   
+
+/*CARD REDES SOCIAS*/
+.ctn-sm{
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.ctn-sm a{list-style: none;
+    transition: 0.3s;
+}
+.ctn-sm a:hover{transform: scale(1.05);}
+ /*----------------------------*/   
+
+/*Descrição Final*/
+.foo-descrition{
+    width: 40%;
+    color: var(--subtitle)  ;
+}
+
+/*Copyright*/
+.foo-descrition p{
+    font-size: 15px;
+    margin: 5px 0;
+    text-align: center;
+    color: var(--titles);
+}
+
+/*Direcionanto ao Dev*/
+#developer {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.5s;
+    display: inline-block; 
+}
+#developer:hover {text-decoration: underline;}
+
+.menu-toggle{display: none;}
+/************************************/
+
+/*REPONSIVIDADE MOBILE*/
+@media (max-width: 540px){
+
+    body {padding: 60px 0 0 0 ;}
+ 
+    html, body {overflow-x: hidden;}
+
+    /* Titulos Principais*/
+    .titles {font-size: 38px;}
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content:center;
+        gap: 50%;
+        background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:140px;height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+     /*----------------------------*/   
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 350px;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 395px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{margin-top: 45px;}
+
+    /*Mensagem*/
+    .msg-logo h1{font-size: 32px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2{font-size:20px;}
+    .desc-serv img{width: 8px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 33px;}
+
+    .description p {width: 90%; font-size: 18px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr { margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {width: 80px;}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 360px; height: 580px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 20px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 11px; height: 11px;}
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:30px;}
+
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 21px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 250px;
+        height: 40px;
+        font-size: 14px;
+    }  
+    #Icon-WhatsApp {width: 25px; height: auto;}
+    /************************************/ 
+
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-mobile.png) center no-repeat;
+        background-size: 775px auto;
+        height:auto;
+    }
+
+    .footer-cont {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+        flex-direction: column;
+    }
+    .footer-info {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        align-items: flex-start; 
+    }
+
+    .card-info-f {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #icon-sol {width: 90px; height: auto;}
+
+    .title-footer {font-size: 20px; text-align: left;}
+
+    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f li a {justify-content: flex-start; font-size: 16px;}
+
+    .card-info-f p {font-size: 16px; text-align: left;}
+
+    .ctn-sm {gap: 15px; margin-top: 0px;}
+    .ctn-sm a img {width: 45px; height: auto;}
+
+    #icon-insta {width: 40px; height: auto;}
+
+    .foo-descrition {width: 100%; text-align: center;}
+
+    .foo-descrition p {font-size: 13px; text-align: center;}
+
+    .p1 {order: 1;}
+    .p2 {order: 2;}
+    .p3 {order: 3;}
+
+/************************************/
+}
+
+/*REPONSIVIDADE 541 até 650*/
+@media (min-width: 541px) and (max-width: 766px){
+
+    body {padding: 60px 0 0 0 ;}
+ 
+    html, body {overflow-x: hidden;}
+
+    /* Titulos Principais*/
+    .titles {font-size: 38px;}
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content:center;
+        gap: 58%;
+        background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:150px;height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+     /*----------------------------*/   
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 350px;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 565px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{margin-top: 45px;}
+
+    /*Mensagem*/
+    .msg-logo h1{font-size: 45px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2{font-size: 30px;}
+    .desc-serv img{width: 8px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 35px;}
+
+    .description p {width: 90%; font-size: 18px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr { margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {width: 80px;}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 360px; height: 580px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 20px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 10px; height: 10px;}
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:30px;}
+
+    .ctn-budget h2 {
+        width: 90%;
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 28px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 280px;
+        height: 40px;
+        font-size: 17px;
+    }  
+    #Icon-WhatsApp {width: 27px; height: auto;}
+    /************************************/ 
+
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-mobile.png) center no-repeat;
+        height:auto;
+    }
+
+    .footer-cont {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: none;
+        flex-direction: column;
+    }
+    .footer-info {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 0px;
+        align-items: flex-start; 
+    }
+
+    .card-info-f {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        padding: 0 8px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    #icon-sol {width: 90px; height: auto;}
+
+    .title-footer {font-size: 20px; text-align: left;}
+
+    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f li a {justify-content: flex-start; font-size: 16px;}
+
+    .card-info-f p {font-size: 16px; text-align: left;}
+
+    .ctn-sm {gap: 15px; margin-top: 0px;}
+    .ctn-sm a img {width: 45px; height: auto;}
+
+    #icon-insta {width: 40px; height: auto;}
+
+    .foo-descrition {width: 100%; text-align: center;}
+
+    .foo-descrition p {font-size: 13px; text-align: center;}
+
+    .p1 {order: 1;}
+    .p2 {order: 2;}
+    .p3 {order: 3;}
+
+/************************************/  
+}
+
+/*REPONSIVIDADE TABLET*/
+@media (min-width: 767px) and (max-width: 900px) {
+
+    body{padding: 90px 0 0 0 ;}
+    
+    /* Menu mobile*/
+    .nav-mobile {top: 90px;}
+
+    /* Lista dentro do menu */
+    .nav-mobile ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-mobile li a {
+        color: white;
+        text-decoration: none;
+        padding: 13px 15px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .nav-mobile li a:hover {color: #ffc800;}
+
+    /* Botão mobile */
+    .menu-toggle {font-size: 32px;}
+
+    /* Exibir e animar o menu mobile */
+    .nav-mobile.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {justify-content:space-evenly; gap: 50%;}
+
+      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50%;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {
+        width:260px;
+        height: auto;
+    }
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+
+    /************************************/
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 430px;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 665px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents{margin-top: 42px;}
+
+    /*Mensagem*/
+    .msg-logo h1 {font-size: 55px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2 {font-size:32px;}
+    .desc-serv img {width: 14px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-top: -43px;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+        font-size: 18.5px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 40px;}
+
+    .description p {width: 90%; font-size: 20px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr {  margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {
+        width: 100px;
+    }
+    .line-text h2 {
+        margin: 14px 0;
+        color: var(--subtitle-line);
+    }
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 500px; height: 600px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    .carousel-nav.prev img {width: 25px; height: auto;}
+    .carousel-nav.next img {width: 25px; height: auto;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 30px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 11px;height: 11px;}
+    /*----------------------------*/
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:40px;}
+
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 35px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+
+    #Icon-WhatsApp {width: 35px; height: auto;}
+    /************************************/ 
+  
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
+}
+
+/*REPONSIVIDADE 901 até 1023*/
+@media (min-width: 901px) and (max-width: 1023px) {
+
+    body{padding: 90px 0 0 0 ;}
+    
+    /* Menu mobile*/
+    .nav-mobile {top: 90px;}
+
+    /* Lista dentro do menu */
+    .nav-mobile ul {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-mobile li a {
+        color: white;
+        text-decoration: none;
+        padding: 13px 15px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .nav-mobile li a:hover {color: #ffc800;}
+
+    /* Botão mobile */
+    .menu-toggle {font-size: 32px;}
+
+    /* Exibir e animar o menu mobile */
+    .nav-mobile.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {justify-content:space-evenly; gap: 50%;}
+
+      /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50%;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {
+        width:260px;
+        height: auto;
+    }
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+
+    /************************************/
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv{
+        margin-top: -50px;
+        height: 430px;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 755px, cover;
+    }  
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents {margin-top: 42px;}
+
+    /*Mensagem*/
+    .msg-logo h1 {font-size: 56px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2 {font-size:33px;}
+    .desc-serv img {width: 14px;}
+    /*----------------------------*/   
+
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary { 
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-top: -43px;
+    }
+
+    .nav-secundary ul {
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+        font-size: 18.5px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {
+        height: 80px;
+        background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;
+        background-size: auto 100px, cover;
+    }
+    .ctn h1 {font-size: 42px;}
+
+    .description p {width: 90%; font-size: 20px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 30px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 0px;}
+
+    /*Linha a Direita*/
+    #lr {  margin-left: 0px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {width: 100px;}
+    .line-text h2 {margin: 14px 0; color: var(--subtitle-line);}
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 5px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 5px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 500px; height: 600px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 5px;}
+    .carousel-nav.next {right: 5px;}
+
+    .carousel-nav.prev img {width: 25px; height: auto;}
+    .carousel-nav.next img {width: 25px; height: auto;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 30px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 11px;height: 11px;}
+    /*----------------------------*/
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:40px;}
+
+    .ctn-budget h2 {
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size:35px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+
+    #Icon-WhatsApp {width: 35px; height: auto;}
+    /************************************/ 
+  
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-tablet.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul{padding: 0 0 0 60px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p{font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+    /************************************/
+}
+/*REPONSIVIDADE TABLET DEITADO*/
+@media (min-width: 1024px) and (max-width: 1250px) {
+
+    /* Menu mobile*/
+    .nav-mobile {top: 100px;}
+
+    .nav-mobile li a {padding: 13px 15px;font-size: 20px;}
+
+    .nav-mobile li a:hover {color: #ffc800;}
+
+    /* Botão mobile */
+    .menu-toggle {font-size: 32px;}
+
+    /* Exibir e animar o menu mobile */
+    .nav-mobile.active {
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        height: 100px;
+        justify-content: space-evenly;
+        gap: 65%;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:240px; height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .menu-toggle {display: block;}
+    .nav {display: none;}
+
+    /** BANNER SERVIÇO **/
+    /*Container da Img Fundo*/
+    .ctn-serv {
+        margin-top: -50px;
+        height: 445px;
+        background: url(../Imgs/Fundos/fundo-box.png) center top;
+        background-size: auto 925px, cover;
+        background-repeat: no-repeat;     
+    }  
+    /*Container da Logo e mensagem*/
+    .ctn-contents {margin-top: 23px;}
+
+    /*Mensagem*/
+    .msg-logo h1 {font-size: 58px;}
+    .desc-serv {gap: 10px;}
+    .desc-serv h2 {font-size:34px;}
+    .desc-serv img {width: 13px;}
+    /*----------------------------*/   
+    /************************************/
+
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary{  
+        justify-content: flex-start;
+        overflow: auto;
+        scrollbar-width: none;
+        margin-top: -40px;
+    }
+
+    .nav-secundary u l{
+        width: max-content;
+        margin: 0px;
+        gap: 20px;
+        padding: 10px;
+        font-size: 18.2px;
+    }
+    /************************************/
+
+    /**  DESCRIÇÃO DO SERVIÇO **/
+    .ctn #detail {height: 90px; background: url(../Imgs/Waves/Detalhe-Onda-Serv.png) center no-repeat top;}
+
+    .ctn h1 {font-size: 45px;}
+
+    .description p{width: 95%; font-size: 20px;}
+    /************************************/
+
+    /*Linha com logo do Sol*/
+    .line-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-titles-lines); 
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        z-index: 2;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    }
+
+    /*Linha a Esquerda*/
+    #lf {margin-right: 2px;}
+
+    /*Linha a Direita*/
+    #lr { margin-left: 2px;}
+
+    /*logo Sol Pequena*/
+    .line-text img {
+        width: 100px;
+    }
+    .line-text h2 {
+        margin: 14px 0;
+        color: var(--subtitle-line);
+    }
+
+    /*Linha a Esquerda*/
+    #lft {margin-right: 15px;}
+    /*Linha a Direita*/
+    #lrt {margin-left: 15px;}
+    /*----------------------------*/
+
+    /** CAROUSSEL DO SERVIÇO**/
+    /* Card do Caroussel*/
+    .carousel-card {flex: 0 0 500px; height: 600px;}
+    /*----------------------------*/
+
+    /*Margin para as Setas*/
+    .carousel-nav.prev {left: 10px;}
+    .carousel-nav.next {right: 10px;}
+
+    .carousel-nav.prev img {width: 22px; height: auto;}
+    .carousel-nav.next img {width: 22px; height: auto;}
+
+    /* Container Indicador de Imagem*/
+    .carousel-indicators {margin-top: 30px;}
+
+    /*Indicador de Imagem*/
+    .indicator {width: 10px; height: 10px;}
+    /*----------------------------*/
+
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget {margin-bottom:36px;}
+
+    .ctn-budget h2 {
+        width: 100%;
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 31px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+    #Icon-WhatsApp {width: 35px; height: auto;
+    }
+    /************************************/ 
+ 
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-1024x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 100%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul {padding: 0 0 0 90px;}
+
+    /*----------------------------*/
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p {font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition {width: 70%;}
+
+    /*Copyright*/
+    .foo-descrition p {font-size: 18px;}
+    /************************************/
+}
+
+/*REPONSIVIDADE /*REPONSIVIDADE 1251 té 1279*/
+@media (min-width: 1251px) and (max-width: 1279px){
+    
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 45%;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:280px; height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .nav {display: block;}
+    .menu-toggle {display: none;}
+
+    .nav li a {font-size: 20px;}
+
+    /** APRESENTAÇÃO BREVE **/
+    .ctn-home {
+        width: 100%;
+        height: 550px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        background: url(../Imgs/Waves/Detalhe-Onda.png) bottom no-repeat, url(../Imgs/Fundos/bg-princ.png) center;  
+    }
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents {margin-top: 23px;}
+
+    /*Logo*/
+    .logo-home img{width: 160px;}
+
+    /*Mensagem*/
+    .msg-logo h1 {font-size: 80px;}
+    .desc-serv h2 {font-size:35px;}
+    /************************************/
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary ul{gap: 42px;}
+
+    /*Botões próximo slide*/
+    .carousel-nav.prev img {width: 23px; height: auto;}
+    .carousel-nav.next img {width: 23px; height: auto;}
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget h2{
+        width: 100%;
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 36px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+    #Icon-WhatsApp {width: 35px; height: auto;}
+    /************************************/ 
+
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-1280x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 80%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul {padding: 0 0 0 90px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p {font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 50%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+/************************************/
+
+}
+
+/*REPONSIVIDADE NOOTEBOOK*/
+@media (min-width: 1280px) and (max-width: 1598px) { 
+       
+    /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
+    .ctn-header {
+        width: 100%;
+        height: 110px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 45%;
+        background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
+    }
+
+    /*Logo da Barra de Navegação*/
+    .logo a img {width:280px; height: auto;}
+
+    /*Config da Barra de Navegação*/
+    .nav {display: block;}
+    .menu-toggle {display: none;}
+    .nav li a {font-size: 20px;}
+    /************************************/
+
+    /*Container da Logo e mensagem*/
+    .ctn-contents {margin-top: 23px;}
+
+    /*NAVBAR SECUNDÁRIA*/
+    .nav-secundary ul{gap: 42px;}
+
+    /*Botões próximo slide*/
+    .carousel-nav.prev img {width: 23px; height: auto;}
+    .carousel-nav.next img {width: 23px; height: auto;}
+    /** PEÇA AGORA **/
+    /*Container Peça Agora*/
+    .ctn-budget h2{
+        width: 100%;
+        text-align: center;
+        margin: -5px 0 0 0;
+        font-size: 36px;
+    }
+
+    /* Botão de Orcamento*/
+    .btn-orcamento {
+        width: 377px;
+        height: 55px;
+        font-size: 24px;
+    }  
+    #Icon-WhatsApp {width: 35px; height: auto;}
+    /************************************/ 
+
+    /** FOOTER **/
+    footer {
+        width: 100%;
+        background: url(../Imgs/Footer/nuvem-1280x.png) center no-repeat;
+        height:420px;
+        border-top: 5px solid var(--lines);
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .footer-info {width: 80%;}
+
+    /*Card Footer*/
+    .card-info-f {width: 100%;}
+
+    /*CARD CONTATO*/
+    .card-info-f ul {padding: 0 0 0 90px;}
+
+    /*CARD AGREDECIMENTO NH*/
+    .card-info-f p {font-size: 18px;}    
+    /*----------------------------*/   
+    
+    /*Descrição Final*/
+    .foo-descrition{width: 50%;}
+
+    /*Copyright*/
+    .foo-descrition p{font-size: 18px;}
+/************************************/
+}
