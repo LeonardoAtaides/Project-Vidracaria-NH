@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidraçaria Novo Horizonte</title>
+    <link rel="stylesheet" href="../css/kit_pia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../Imgs/FavIcon/favicon.ico"/>
+</head>
+<body>
+
+    <header class="ctn-header">
+        <div class="logo">
+            <a href="home.html">
+            <img src="../Imgs/Logos/Logo-Texto.png" alt="logo completa">  
+            </a>
+        </div>
+        
+        <!-- Menu para desktop -->
+        <nav class="nav">
+            <ul>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="#servico">Serviços</a></li>
+            </ul>  
+        </nav>
+
+       <!-- Menu para Mobile -->
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav class="nav-mobile" id="nav-mobile">
+            <ul>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="sobre-nos.html">Sobre nós</a></li>
+                <li><a href="#servico">Serviços</a></li>
+            </ul>  
+        </nav>
+    </header>
+
+    <section class="ctn-serv">
+        <div class="ctn-contents">
+            <div class="msg-logo"  id="servico">
+                <h1>Nossos Serviços</h1>
+                <div class="desc-serv">
+                   <h2>Serviços</h2>
+                   <img src="../Icons/Icon-Seta.png" alt="icone de seta"> 
+                   <h2>Kit em Pia</h2>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <nav class="nav-secundary">
+        <ul>
+            <li><a href="box.html">Box</a></li>
+            <li><a href="varanda.html">Varanda</a></li>
+            <li> <a href="espelho.html">Espelho</a></li>
+            <li> <a href="tampo_mesa.html">Tampo de Mesa</a></li>
+            <li><a href="janela.html">Janela</a></li>
+            <li> <a href="#">Kit em Pia</a></li>
+            <li><a href="porta.html">Porta</a></li>
+            <li><a href="teto.html">Teto</a></li>
+            <li><a href="pelicula.html">Pelicula</a></li>
+            <li><a href="vidro_fixo.html">Vidro Fixo</a></li>
+        </ul>
+    </nav>
+    
+    <section class="ctn">
+        <div id="detail"></div>
+        <h1>Kit em Pia</h1>
+        <div class="description">
+            <p>
+            Transforme sua cozinha com os kits de pia em vidro, que unem modernidade e design sofisticado. Além de proporcionar resistência e fácil manutenção, o vidro valoriza o ambiente com leveza e transparência. Elegantes e versáteis, se adaptam a diferentes estilos de decoração, tornando o espaço mais prático e aconchegante. Uma escolha ideal para quem busca unir beleza, durabilidade e inovação em cada detalhe do lar.
+            </p>            
+        </div>
+
+        <div class="line-text">
+            <hr id="lf">
+            <img src="../Imgs/Logos/Sol-RaioMin.png"  alt="logo sol pequena">
+            <hr id="lr">
+        </div>
+
+        <div class="ctn-photos">
+            <div class="carousel-section">  
+                <div class="carousel-container">
+                    <button class="carousel-nav prev" onclick="prevSlide()">
+                        <img src="../Icons/Icon-SetaE.png" width="20" alt="icone seta esquerda">
+                    </button>
+                    <button class="carousel-nav next" onclick="nextSlide()">
+                        <img src="../Icons/Icon-SetaD.png" width="20" alt="icone seta direita">
+                    </button>
+                    
+                    <div class="carousel-wrapper" id="carouselWrapper">
+                        <div class="carousel-card active">
+                            <img src="../Imgs/Serviços/Kit_Pia_1.jpg" alt="Box 1">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_2.jpg" alt="Box 2">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_3.jpg" alt="Box 3">
+                        </div>
+                        
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_4.jpg" alt="Box 4">
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_5.jpg" alt="Box 5">
+                        </div>
+
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_6.jpg" alt="Box 6">
+                        </div>
+                        <div class="carousel-card">
+                            <img src="../Imgs/Serviços/Kit_Pia_7.jpg" alt="Box 7">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-indicators">
+                    <span class="indicator" onclick="goToSlide(0)"></span>
+                    <span class="indicator" onclick="goToSlide(1)"></span>
+                    <span class="indicator" onclick="goToSlide(2)"></span>
+                    <span class="indicator active" onclick="goToSlide(3)"></span>
+                    <span class="indicator" onclick="goToSlide(4)"></span>
+                    <span class="indicator" onclick="goToSlide(5)"></span>
+                    <span class="indicator" onclick="goToSlide(6)"></span>
+                </div>
+                </div>
+        </div>
+
+        <div class="line-text">
+            <hr id="lft">
+            <h2>Peça o Seu Agora!</h2>
+            <hr id="lrt">
+        </div>
+
+        <div class="ctn-budget">
+            <h2>Entre em contato via WhatsApp para realizar um orçamento!</h2>
+            <a href="https://wa.me/5561986516347?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20para%20o%20serviço%20de%20Kit%20em%20Pia." 
+            target="_blank" 
+            class="link-direct" 
+            id="servM">
+                <button class="btn-orcamento">
+                    Solicitar Orçamento
+                    <img src="../Icons/Icon-WhatsApp-White.png" 
+                    id="Icon-WhatsApp" 
+                    alt="icone do whatsapp" 
+                    width="35px" 
+                    height="35px">
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="footer-cont">
+            <a href="#" class="link-direct">
+            <img src="../Imgs/Logos/Sol-Raio.png" alt="logo sol com raio" width="120px" id="icon-sol">
+            </a>
+
+            <div class="footer-info"> 
+                <div class="card-info-f p2">
+                    <h3 class="title-footer">Contato</h3>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/61986516347" target="_blank" class="link-direct">
+                                <img src="../Icons/Icon-WhatsApp.png" alt="icone whatsapp" width="20px">(61) 986516347
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://wa.me/6199560174" target="_blank" class="link-direct">
+                                <img src="../Icons/Icon-Telefone.png" alt="icone telefone" width="20px">(61) 986117724
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:vidracarianovohorizonte2016@gmail.com" target="_blank" class="link-direct">
+                                <img src="../Icons/Icon-Email.png" alt="icone email" width="20px">@contatoNH
+                            </a>
+                        <li>
+                            <a href="https://www.instagram.com/novohorizonte_vidracaria/" target="_blank" class="link-direct">
+                                <img src="../Icons/Icon-Instagram.png" alt="icone instagram" width="20px">@nh_vidracaria
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="card-info-f p1">
+                    <h3 class="title-footer">Nh Agradece</h3>
+                    <p>Agradecemos a sua visita! Conte com a nossa vidraçaria para transformar os seus ambientes com qualidade, transparência e durabilidade.</p>
+                </div> 
+
+                <div class="card-info-f p3">
+                    <h3 class="title-footer">redes socias</h3>
+                    <div class="ctn-sm">
+                        <a href="https://www.instagram.com/novohorizonte_vidracaria/" target="_blank" class="link-direct">
+                        <img src="../Icons/Icon-Instagram.png" alt="icone instagram" width="43px" id="icon-insta">  
+                        </a>
+
+                        <a href="https://www.youtube.com/@vidracarianovohorizonte_16" target="_blank" class="link-direct">
+                        <img src="../Icons/Icon-Youtube.png" alt="icone youtube" width="52px"> 
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=61578827833469&locale=pt_BR" target="_blank" class="link-direct">
+                        <img src="../Icons/Icon-Facebook.png" alt="icone facebook" width="50px"></a>
+                        </a>   
+                    </div>
+                </div> 
+            </div> 
+             
+             <div class="foo-descrition">
+                <hr>
+                <p>&copy; Vidraçaria Novo Horizonte – Todos os direitos reservados.</p>
+                <p>Desenvolvido por <a href="https://www.instagram.com/_.ataides._/" target="_blank" id="developer">ATAÍDES</a></p>    
+             </div>
+        </div>
+    </footer>
+    <script src="../js/Principal-Script.js"></script>
+    <script src="../js/Servico-Script.js"></script> 
+</body>
+</html> 
