@@ -183,7 +183,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center; 
-    background: url(../Imgs/Fundos/Fundo-Varanda.png) center no-repeat;   
+    background: url(../Imgs/Fundos/Fundo-KitPia.png) center no-repeat;   
 }
 
 /*Container da Logo e mensagem*/
@@ -656,7 +656,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/Fundos/Fundo-Varanda.png) center top;
+        background: url(../Imgs/Fundos/Fundo-KitPia.png) center top;
         background-size: auto 395px, cover;
     }  
 
@@ -855,7 +855,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 350px;
-        background: url(../Imgs/Fundos/Fundo-Varanda.png) center;
+        background: url(../Imgs/Fundos/Fundo-KitPia.png) center;
         background-size: auto 565px, cover;
     }  
 
@@ -1089,7 +1089,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/Fundos/Fundo-Varanda.png) center;
+        background: url(../Imgs/Fundos/Fundo-KitPia.png) center;
         background-size: auto 665px, cover;
     }  
 
@@ -1304,7 +1304,7 @@ footer{
     .ctn-serv{
         margin-top: -50px;
         height: 430px;
-        background: url(../Imgs/Fundos/Fundo-Varanda.png) center;
+        background: url(../Imgs/Fundos/Fundo-KitPia.png) center;
         background-size: auto 755px, cover;
     }  
 
@@ -1485,7 +1485,7 @@ footer{
     .ctn-serv {
         margin-top: -50px;
         height: 445px;
-        background: url(../Imgs/Fundos/Fundo-Varanda.png) center;
+        background: url(../Imgs/Fundos/Fundo-KitPia.png) center;
         background-size: auto 925px, cover;
         background-repeat: no-repeat;     
     }  
