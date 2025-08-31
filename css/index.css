@@ -702,6 +702,7 @@ footer{
     .info-operation {display: none;}
 
     body {padding: 60px 0 0 0 ;}
+    html, body {overflow-x: hidden;}
 
     .line-text {display: none;}
 
