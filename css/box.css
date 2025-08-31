@@ -24,6 +24,10 @@ body{
 
 a {-webkit-tap-highlight-color: transparent;}
 
+button, button * {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Menu mobile*/
 .nav-mobile {
     width: 100%; 

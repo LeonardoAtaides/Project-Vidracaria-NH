@@ -29,6 +29,10 @@ body{
 
 a {-webkit-tap-highlight-color: transparent;}
 
+button, button * {
+  -webkit-tap-highlight-color: transparent;
+}
+
 /* Menu mobile: padrão escondido */
 .nav-mobile {
     width: 100%; 
