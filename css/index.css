@@ -165,7 +165,7 @@ body{
 
 /*CONTAINER DA BARRA DE NEVEGAÇÃO*/
 .ctn-header{
-    position: fixed; /* <-- Fixa no topo */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -175,8 +175,8 @@ body{
     gap: 58%;
     align-items: center;
     background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
-    background-color: #182C48; /* cor de fallback, se a imagem não carregar */
-    z-index: 1100; /* fica acima do resto da página */
+    background-color: #182C48;
+    z-index: 1100; 
 }
 
 /*Logo da Barra de Navegação*/
