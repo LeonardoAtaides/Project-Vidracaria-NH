@@ -809,28 +809,28 @@ footer{
     
     /*TAMANHO DOS ICONS*/  
     /*Icone de Espelho*/
-    #icon-box { width: 65px; height: 70px;}
+    #icon-box { width: 60px; height: 65px;}
 
     /*Icone de Varanda*/
-    #icon-varanda {width: 75px; height: 70px;}
+    #icon-varanda {width: 70px; height: 65px;}
 
     /*Icone de Espelho*/
-    #icon-espelho{ width: 65px; height: 70px;}
+    #icon-espelho{ width: 60px; height: 65px;}
 
     /*Icone de Tampo de Mesa*/
-    #icon-tampo {width: 70px; height: 65px;}
+    #icon-tampo {width: 65px; height: 60px;}
 
     /*Icone do Kit Pia*/
-    #icon-kitpia {width: 75px;height: 70px;}
+    #icon-kitpia {width: 70px;height: 65px;}
 
     /*Icone de Janela*/
-    #icon-janela {width: 95px;height: auto;}
+    #icon-janela {width: 90px;height: auto;}
 
     /*Icone de Porta*/
-    #icon-porta {width: 45px; height: 70px;}
+    #icon-porta {width: 40px; height: 65px;}
 
     /*Icone de Pergolado*/
-    #icon-pergolado {width: 80px;height: 70px;}
+    #icon-pergolado {width: 75px;height: 65px;}
     /*----------------------------*/   
 
     /*Botão Veja Mais*/
