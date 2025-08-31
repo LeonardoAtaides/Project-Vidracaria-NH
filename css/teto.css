@@ -726,10 +726,13 @@ footer{
     #lrt {margin-left: 5px;}
     /*----------------------------*/
 
-    /** CAROUSSEL DO SERVIÇO**/
+    /* CAROUSSEL DO SERVIÇO*/
     /* Card do Caroussel*/
     .carousel-card {flex: 0 0 360px; height: 580px;}
     /*----------------------------*/
+
+     /*Removendo efeito Scale*/
+    .carousel-card:hover img {transform: none;}
 
     /*Margin para as Setas*/
     .carousel-nav.prev {left: 5px;}
@@ -925,10 +928,13 @@ footer{
     #lrt {margin-left: 5px;}
     /*----------------------------*/
 
-    /** CAROUSSEL DO SERVIÇO**/
+    /* CAROUSSEL DO SERVIÇO*/
     /* Card do Caroussel*/
     .carousel-card {flex: 0 0 360px; height: 580px;}
     /*----------------------------*/
+
+     /*Removendo efeito Scale*/
+    .carousel-card:hover img {transform: none;}
 
     /*Margin para as Setas*/
     .carousel-nav.prev {left: 5px;}
