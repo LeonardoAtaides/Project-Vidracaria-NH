@@ -83,6 +83,23 @@ button, button * {
     pointer-events: auto;
 }
 
+/* Fundo preto transparente */
+.nav-overlay {
+    position: fixed;
+    margin-top: 60px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease;
+    z-index: 900;
+}
+
+.nav-overlay.active {opacity: 1; visibility: visible;}
+
 /* Titulos Principais*/
 .titles{
     text-transform: uppercase;
@@ -648,6 +665,8 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
 
+    .nav-overlay { margin-top: 60px;}
+
     /*Logo da Barra de Navegação*/
     .logo a img {width:140px;height: auto;}
 
@@ -849,6 +868,8 @@ footer{
         gap: 58%;
         background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
+
+    .nav-overlay { margin-top: 60px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {width:150px;height: auto;}
@@ -1083,6 +1104,8 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
+    .nav-overlay { margin-top: 90px;}
+
     /*Logo da Barra de Navegação*/
     .logo a img {
         width:260px;
@@ -1298,6 +1321,8 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
+    .nav-overlay { margin-top: 90px;}
+
     /*Logo da Barra de Navegação*/
     .logo a img {
         width:260px;
@@ -1484,6 +1509,8 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
+    .nav-overlay { margin-top: 100px;}
+
     /*Logo da Barra de Navegação*/
     .logo a img {width:240px; height: auto;}
 
@@ -1662,6 +1689,8 @@ footer{
     /*Config da Barra de Navegação*/
     .nav {display: block;}
     .menu-toggle {display: none;}
+    .nav-mobile.active{display: none;}
+    .nav-overlay {display: none;} 
 
     .nav li a {font-size: 20px;}
 
@@ -1760,6 +1789,8 @@ footer{
     /*Config da Barra de Navegação*/
     .nav {display: block;}
     .menu-toggle {display: none;}
+    .nav-mobile.active{display: none;}
+    .nav-overlay {display: none;} 
     .nav li a {font-size: 20px;}
     /************************************/
 
@@ -1819,4 +1850,11 @@ footer{
     /*Copyright*/
     .foo-descrition p{font-size: 18px;}
 /************************************/
+}
+
+@media (min-width: 1600px) {
+    .nav {display: block;}
+    .menu-toggle {display: none;}
+    .nav-mobile.active{display: none;}
+    .nav-overlay {display: none;}
 }

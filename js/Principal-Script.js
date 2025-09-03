@@ -46,9 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
 const toggleBtn = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("nav-mobile");
 const navLinks = mobileNav.querySelectorAll("a");
+const navOverlay = document.querySelector(".nav-overlay"); // fundo preto
 
 toggleBtn.addEventListener("click", () => {
   mobileNav.classList.toggle("active");
+  navOverlay.classList.toggle("active"); // ativa o fundo
 
   if (mobileNav.classList.contains("active")) {
     toggleBtn.textContent = "✖"; 
@@ -57,13 +59,20 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
+// Fechar menu ao clicar nos links
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
+    navOverlay.classList.remove("active"); // remove fundo
     toggleBtn.textContent = "☰";
   });
 });
-// ---------------------------------//
 
+// Fechar menu ao clicar no fundo preto
+navOverlay.addEventListener("click", () => {
+  mobileNav.classList.remove("active");
+  navOverlay.classList.remove("active");
+  toggleBtn.textContent = "☰";
+});
 
 
