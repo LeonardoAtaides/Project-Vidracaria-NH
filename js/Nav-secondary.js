@@ -1,6 +1,6 @@
 
 window.addEventListener('DOMContentLoaded', () => {
-    const nav = document.querySelector('.nav-secundary');
+    const nav = document.querySelector('.nav-secundary'); // container com overflow-x
     const links = nav.querySelectorAll('a');
 
     const currentPage = window.location.pathname.split('/').pop();
@@ -8,22 +8,19 @@ window.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
         const linkPage = link.getAttribute('href').split('/').pop();
         if(linkPage === currentPage){
-            // Calcula posição do link dentro da navbar
-            const containerWidth = nav.offsetWidth;
-            const itemLeft = link.offsetLeft;
+            // Calcula a posição relativa do link dentro do nav
+            const itemLeft = link.offsetLeft; // posição do link dentro do <ul>
             const itemWidth = link.offsetWidth;
+            const containerWidth = nav.clientWidth;
 
-            // Ajusta o scroll para o link ficar visível
-            let scrollPos = itemLeft - (containerWidth / 2) + (itemWidth / 2);
+            // Ajusta scroll para centralizar o link
+            let scrollPos = itemLeft + itemWidth/2 - containerWidth/2;
 
-            // Evita scroll negativo (início da navbar)
-            if(scrollPos < 0) scrollPos = 0;
+            // Evita scroll negativo ou além do final
+            scrollPos = Math.max(0, Math.min(scrollPos, nav.scrollWidth - containerWidth));
 
-            // Evita ultrapassar o final da navbar
-            const maxScroll = nav.scrollWidth - containerWidth;
-            if(scrollPos > maxScroll) scrollPos = maxScroll;
-
-            nav.scrollTo({left: scrollPos, behavior: 'smooth'});
+            // Rola a navbar
+            nav.scrollTo({ left: scrollPos, behavior: 'smooth' });
         }
     });
 });
