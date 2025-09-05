@@ -1,15 +1,22 @@
-const links = document.querySelectorAll('.nav-secundary a');
+window.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('.nav-secundary');
+    const links = nav.querySelectorAll('a');
 
-links.forEach(link => {
-// Pega só o nome do arquivo do href do link
-const linkPage = link.getAttribute('href').split('/').pop();
-// Pega só o nome do arquivo da página atual
-const currentPage = window.location.pathname.split('/').pop();
+    const currentPage = window.location.pathname.split('/').pop();
 
-if(linkPage === currentPage){
-  link.classList.add('active'); // adiciona destaque
-  // Centraliza no scroll horizontal (mobile)
-  link.scrollIntoView({behavior: 'smooth', inline: 'center'});
-}
+    links.forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if(linkPage === currentPage){
+            link.classList.add('active');
+            // Scroll horizontal da navbar
+            // 'offsetLeft' pega a posição do item em relação ao container
+            const containerWidth = nav.offsetWidth;
+            const itemLeft = link.offsetLeft;
+            const itemWidth = link.offsetWidth;
+
+            // Centraliza o item ou aproxima do final se for último
+            const scrollPos = itemLeft - (containerWidth / 2) + (itemWidth / 2);
+            nav.scrollTo({left: scrollPos, behavior: 'smooth'});
+        }
+    });
 });
-
