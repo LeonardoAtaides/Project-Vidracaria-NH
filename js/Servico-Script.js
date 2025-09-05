@@ -1,9 +1,7 @@
 const carouselWrapper = document.getElementById('carouselWrapper');
 const cards = Array.from(document.querySelectorAll('.carousel-card'));
 const indicators = document.querySelectorAll('.indicator');
-
 const totalSlides = cards.length;
-
 
 carouselWrapper.innerHTML = '';
 const loopMultiplier = 100;
@@ -12,7 +10,6 @@ for (let i = 0; i < loopMultiplier; i++) {
     slidesLoop = slidesLoop.concat(cards.map(card => card.cloneNode(true)));
 }
 slidesLoop.forEach(card => carouselWrapper.appendChild(card));
-
 const allSlides = carouselWrapper.querySelectorAll('.carousel-card');
 
 const desiredStartIndex = Math.floor(totalSlides / 2);
@@ -25,12 +22,10 @@ function getCardWidth() {
 function updateCarousel(instant = false) {
     const cardWidth = getCardWidth();
     const containerWidth = carouselWrapper.parentElement.offsetWidth;
-
     const translateX = (containerWidth / 2 - cardWidth / 2) - (currentSlide * cardWidth);
     carouselWrapper.style.transition = instant ? 'none' : 'transform 0.4s ease';
     carouselWrapper.style.transform = `translateX(${translateX}px)`;
 
-    // Destacar slide central e vizinhos
     allSlides.forEach((slide, index) => {
         slide.style.transition = instant ? 'none' : 'transform 0.4s ease, opacity 0.4s ease';
         if (index === currentSlide) {
@@ -62,23 +57,26 @@ function prevSlide() {
 }
 
 let startX = 0;
+let startY = 0;
 let isDragging = false;
 
 carouselWrapper.addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
+    startY = e.touches[0].clientY;
     isDragging = true;
 });
 
 carouselWrapper.addEventListener('touchmove', e => {
     if (!isDragging) return;
-    e.preventDefault();
+    const diffX = Math.abs(startX - e.touches[0].clientX);
+    const diffY = Math.abs(startY - e.touches[0].clientY);
+    if (diffX > diffY) e.preventDefault();
 });
 
 carouselWrapper.addEventListener('touchend', e => {
     if (!isDragging) return;
     const endX = e.changedTouches[0].clientX;
     const diffX = startX - endX;
-
     if (Math.abs(diffX) > 50) {
         if (diffX > 0) nextSlide();
         else prevSlide();
@@ -93,5 +91,3 @@ document.addEventListener('keydown', e => {
 
 window.addEventListener('load', () => updateCarousel(true));
 window.addEventListener('resize', () => updateCarousel(true));
-
-
