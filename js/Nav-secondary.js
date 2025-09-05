@@ -1,11 +1,15 @@
-// Pega todos os links da navbar
-  const links = document.querySelectorAll('.nav-secundary a');
+const links = document.querySelectorAll('.nav-secundary a');
 
-  links.forEach(link => {
-    // Compara o href do link com o URL atual
-    if(link.href === window.location.href){
-      link.classList.add('active'); // Adiciona a classe 'active'
-      // Faz o scroll horizontal para centralizar o item
-      link.scrollIntoView({behavior: 'smooth', inline: 'center'});
-    }
-  });
+links.forEach(link => {
+// Pega só o nome do arquivo do href do link
+const linkPage = link.getAttribute('href').split('/').pop();
+// Pega só o nome do arquivo da página atual
+const currentPage = window.location.pathname.split('/').pop();
+
+if(linkPage === currentPage){
+  link.classList.add('active'); // adiciona destaque
+  // Centraliza no scroll horizontal (mobile)
+  link.scrollIntoView({behavior: 'smooth', inline: 'center'});
+}
+});
+
