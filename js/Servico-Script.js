@@ -4,6 +4,7 @@ const indicators = document.querySelectorAll('.indicator');
 
 const totalSlides = cards.length;
 
+
 carouselWrapper.innerHTML = '';
 const loopMultiplier = 100;
 let slidesLoop = [];
@@ -14,7 +15,8 @@ slidesLoop.forEach(card => carouselWrapper.appendChild(card));
 
 const allSlides = carouselWrapper.querySelectorAll('.carousel-card');
 
-let currentSlide = totalSlides * Math.floor(loopMultiplier / 2);
+const desiredStartIndex = Math.floor(totalSlides / 2);
+let currentSlide = totalSlides * Math.floor(loopMultiplier / 2) + desiredStartIndex;
 
 function getCardWidth() {
     return window.innerWidth < 768 ? 360 : 500;
@@ -24,7 +26,6 @@ function updateCarousel(instant = false) {
     const cardWidth = getCardWidth();
     const containerWidth = carouselWrapper.parentElement.offsetWidth;
 
-    // Centraliza o slide atual
     const translateX = (containerWidth / 2 - cardWidth / 2) - (currentSlide * cardWidth);
     carouselWrapper.style.transition = instant ? 'none' : 'transform 0.4s ease';
     carouselWrapper.style.transform = `translateX(${translateX}px)`;
