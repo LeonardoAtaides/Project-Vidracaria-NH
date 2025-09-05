@@ -1,93 +1,100 @@
-let currentSlide = 3;
-const totalSlides = 7;
 const carouselWrapper = document.getElementById('carouselWrapper');
-const cards = document.querySelectorAll('.carousel-card');
+const cards = Array.from(document.querySelectorAll('.carousel-card'));
 const indicators = document.querySelectorAll('.indicator');
 
-function updateCarousel() {
-    const isMobile = window.innerWidth < 768;
-    const cardWidth = isMobile ? 360 : 500;
+const totalSlides = cards.length;
 
-    const containerWidth = carouselWrapper.parentElement.offsetWidth;
-    const totalWidth = cardWidth * totalSlides;
-    const maxTranslateX = 0;
-    const minTranslateX = containerWidth - totalWidth;
-    let translateX = (containerWidth - cardWidth) / 2 - (currentSlide * cardWidth);
+// Criar sequência longa (100x) para permitir loop contínuo
+carouselWrapper.innerHTML = '';
+const loopMultiplier = 100;
+let slidesLoop = [];
+for (let i = 0; i < loopMultiplier; i++) {
+    slidesLoop = slidesLoop.concat(cards.map(card => card.cloneNode(true)));
+}
+slidesLoop.forEach(card => carouselWrapper.appendChild(card));
 
-    if (translateX > maxTranslateX) translateX = maxTranslateX;
-    if (translateX < minTranslateX) translateX = minTranslateX;
+const allSlides = carouselWrapper.querySelectorAll('.carousel-card');
 
-    carouselWrapper.style.transform = `translateX(${translateX}px)`;
+// Começamos no meio da sequência para permitir movimento para frente e trás
+let currentSlide = totalSlides * Math.floor(loopMultiplier / 2);
 
-    cards.forEach((card, index) => {
-        card.classList.toggle('active', index === currentSlide);
-    });
-
-    indicators.forEach((indicator, index) => {
-        indicator.classList.toggle('active', index === currentSlide);
-    });
+function getCardWidth() {
+    return window.innerWidth < 768 ? 360 : 500;
 }
 
-function updateCarouselInstant() {
-    carouselWrapper.style.transition = 'none'; 
-    updateCarousel();
-    requestAnimationFrame(() => {
-        carouselWrapper.style.transition = ''; 
+function updateCarousel(instant = false) {
+    const cardWidth = getCardWidth();
+    const containerWidth = carouselWrapper.parentElement.offsetWidth;
+
+    // Centraliza o slide atual
+    const translateX = (containerWidth / 2 - cardWidth / 2) - (currentSlide * cardWidth);
+    carouselWrapper.style.transition = instant ? 'none' : 'transform 0.4s ease';
+    carouselWrapper.style.transform = `translateX(${translateX}px)`;
+
+    // Destacar slide central e vizinhos
+    allSlides.forEach((slide, index) => {
+        slide.style.transition = instant ? 'none' : 'transform 0.4s ease, opacity 0.4s ease';
+        if (index === currentSlide) {
+            slide.style.transform = 'scale(1)';
+            slide.style.opacity = '1';
+        } else if (index === currentSlide - 1 || index === currentSlide + 1) {
+            slide.style.transform = 'scale(0.85)';
+            slide.style.opacity = '0.6';
+        } else {
+            slide.style.transform = 'scale(0.7)';
+            slide.style.opacity = '0.3';
+        }
+    });
+
+    // Atualiza indicadores via módulo
+    const activeIndex = currentSlide % totalSlides;
+    indicators.forEach((indicator, index) => {
+        indicator.classList.toggle('active', index === activeIndex);
     });
 }
 
 function nextSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
+    currentSlide++;
     updateCarousel();
 }
 
 function prevSlide() {
-    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    currentSlide--;
     updateCarousel();
 }
 
-function goToSlide(index) {
-    currentSlide = index;
-    updateCarousel();
-}
-
-window.addEventListener('load', updateCarouselInstant);
-window.addEventListener('resize', updateCarousel);
-
+// Eventos de toque
 let startX = 0;
 let isDragging = false;
 
-carouselWrapper.addEventListener('touchstart', (e) => {
+carouselWrapper.addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
     isDragging = true;
 });
 
-carouselWrapper.addEventListener('touchmove', (e) => {
+carouselWrapper.addEventListener('touchmove', e => {
     if (!isDragging) return;
     e.preventDefault();
 });
 
-carouselWrapper.addEventListener('touchend', (e) => {
+carouselWrapper.addEventListener('touchend', e => {
     if (!isDragging) return;
-
     const endX = e.changedTouches[0].clientX;
     const diffX = startX - endX;
 
     if (Math.abs(diffX) > 50) {
-        if (diffX > 0) {
-            nextSlide();
-        } else {
-            prevSlide();
-        }
+        if (diffX > 0) nextSlide();
+        else prevSlide();
     }
-
     isDragging = false;
 });
 
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'ArrowLeft') {
-        prevSlide();
-    } else if (e.key === 'ArrowRight') {
-        nextSlide();
-    }
+// Teclado
+document.addEventListener('keydown', e => {
+    if (e.key === 'ArrowLeft') prevSlide();
+    else if (e.key === 'ArrowRight') nextSlide();
 });
+
+// Inicialização sem animação
+window.addEventListener('load', () => updateCarousel(true));
+window.addEventListener('resize', () => updateCarousel(true));
