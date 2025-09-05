@@ -4,7 +4,6 @@ const indicators = document.querySelectorAll('.indicator');
 
 const totalSlides = cards.length;
 
-// Criar sequência longa (100x) para permitir loop contínuo
 carouselWrapper.innerHTML = '';
 const loopMultiplier = 100;
 let slidesLoop = [];
@@ -15,7 +14,6 @@ slidesLoop.forEach(card => carouselWrapper.appendChild(card));
 
 const allSlides = carouselWrapper.querySelectorAll('.carousel-card');
 
-// Começamos no meio da sequência para permitir movimento para frente e trás
 let currentSlide = totalSlides * Math.floor(loopMultiplier / 2);
 
 function getCardWidth() {
@@ -46,7 +44,6 @@ function updateCarousel(instant = false) {
         }
     });
 
-    // Atualiza indicadores via módulo
     const activeIndex = currentSlide % totalSlides;
     indicators.forEach((indicator, index) => {
         indicator.classList.toggle('active', index === activeIndex);
@@ -63,7 +60,6 @@ function prevSlide() {
     updateCarousel();
 }
 
-// Eventos de toque
 let startX = 0;
 let isDragging = false;
 
@@ -89,12 +85,10 @@ carouselWrapper.addEventListener('touchend', e => {
     isDragging = false;
 });
 
-// Teclado
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowLeft') prevSlide();
     else if (e.key === 'ArrowRight') nextSlide();
 });
 
-// Inicialização sem animação
 window.addEventListener('load', () => updateCarousel(true));
 window.addEventListener('resize', () => updateCarousel(true));
