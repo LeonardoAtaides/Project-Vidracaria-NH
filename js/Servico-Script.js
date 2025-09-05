@@ -93,3 +93,5 @@ document.addEventListener('keydown', e => {
 
 window.addEventListener('load', () => updateCarousel(true));
 window.addEventListener('resize', () => updateCarousel(true));
+
+
