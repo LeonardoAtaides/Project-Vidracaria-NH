@@ -1188,7 +1188,7 @@ footer{
 
     /** DIFERENCIAS **/
     /*Grid para os Cards*/
-    .grid-dif {flex-direction: column; gap: 35px;}
+    .grid-dif {flex-direction: column; gap: 30px;}
 
     /*Cards*/
     .card-dif {height: 260px;}
@@ -1197,7 +1197,7 @@ footer{
     .title-dif {font-size: 24px;}
 
     /*Descrição de Diferencias*/
-    .desc-dif {font-size: 18px;}
+    .desc-dif { width: 92%;font-size: 18px;}
 
     /*Linha Separadora dos Cards*/
     .sep-dif{ display: none;}
