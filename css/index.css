@@ -917,7 +917,7 @@ footer{
 
     /*Subitulo de Contato*/
     #subtitle-contact {
-        font-size: 22px;
+        font-size: 20px;
         color: var(--subtitle);
         text-align: center;
     }
@@ -1029,7 +1029,7 @@ footer{
 
     .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f ul {padding: 10px 0px;}
     .card-info-f li a {justify-content: flex-start;font-size: 16px;}
 
     .card-info-f p {font-size: 16px;text-align: left;}
@@ -1230,7 +1230,7 @@ footer{
 
     /*Subitulo de Contato*/
     #subtitle-contact {
-        font-size: 22px;
+        font-size: 24px;
         color: var(--subtitle);
         text-align: center;
     }
@@ -1339,7 +1339,7 @@ footer{
 
     .title-footer {font-size: 20px;text-align: left;}
 
-    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f ul {padding: 10px 0px;}
     .card-info-f li a {justify-content: flex-start;font-size: 16px;}
 
     .card-info-f p {font-size: 16px;text-align: left;}
@@ -1543,7 +1543,7 @@ footer{
 
     /*Subitulo de Contato*/
     #subtitle-contact{
-        font-size: 22px;
+        font-size: 26px;
         color: var(--subtitle);
         text-align: center;
     }
@@ -1653,7 +1653,7 @@ footer{
 
     .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f ul {padding: 10px 0px;}
 
     .card-info-f li a {justify-content: flex-start;font-size: 16px;}
 

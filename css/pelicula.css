@@ -832,7 +832,7 @@ footer{
 
     .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f ul {padding: 10px 0px;}
     .card-info-f li a {justify-content: flex-start; font-size: 16px;}
 
     .card-info-f p {font-size: 16px; text-align: left;}
@@ -1036,7 +1036,7 @@ footer{
 
     .title-footer {font-size: 20px; text-align: left;}
 
-    .card-info-f ul {padding: 10px 5px;}
+    .card-info-f ul {padding: 10px 0px;}
     .card-info-f li a {justify-content: flex-start; font-size: 16px;}
 
     .card-info-f p {font-size: 16px; text-align: left;}
