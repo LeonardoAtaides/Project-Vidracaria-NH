@@ -589,7 +589,7 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj ul {margin: 0; text-align: start;}
+    .ctn-texts-obj ul {margin: 0; text-align: start; padding: 0;}
     .ctn-texts-obj li {margin: 0; font-size:18px;}
     /************************************/
 
@@ -783,7 +783,7 @@ footer{
         font-size:18px;
     }
 
-    .ctn-texts-obj ul {margin: 0;text-align: start;}
+    .ctn-texts-obj ul {margin: 0;text-align: start; padding: 0;}
     .ctn-texts-obj li {margin: 0; font-size:18px;}
     /************************************/
 
