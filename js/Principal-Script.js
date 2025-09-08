@@ -54,19 +54,20 @@ toggleBtn.addEventListener("click", () => {
 
   if (mobileNav.classList.contains("active")) {
     toggleBtn.textContent = "✖";
-    toggleBtn.style.color = "white"; 
   } else {
     toggleBtn.textContent = "☰"; 
-    toggleBtn.style.color = "white";
   }
+
+  toggleBtn.style.setProperty("color", "white", "important");
 });
 
 // Fechar menu ao clicar nos links
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
-    navOverlay.classList.remove("active"); // remove fundo
+    navOverlay.classList.remove("active"); 
     toggleBtn.textContent = "☰";
+    toggleBtn.style.setProperty("color", "white", "important");
   });
 });
 
@@ -75,6 +76,7 @@ navOverlay.addEventListener("click", () => {
   mobileNav.classList.remove("active");
   navOverlay.classList.remove("active");
   toggleBtn.textContent = "☰";
+  toggleBtn.style.setProperty("color", "white", "important");
 });
 
 

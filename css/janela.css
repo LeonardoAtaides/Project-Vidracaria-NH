@@ -65,17 +65,21 @@ button, button * {
 
 /* Botão mobile */
 .menu-toggle {
-    display: block;          
-    width: 40px;            
-    height: 40px;            
-    font-size: 22px;         
-    line-height: 40px;      
-    text-align: center;      
+    display: flex;                
+    justify-content: center;
+    align-items: center;
+    width: 40px;                 
+    height: 40px;               
+    font-size: 22px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent; 
+    -webkit-user-select: none;              
+    user-select: none;
 }
+
 
 /* Exibir e animar o menu mobile */
 .nav-mobile.active {
