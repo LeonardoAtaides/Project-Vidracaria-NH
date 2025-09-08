@@ -419,6 +419,9 @@ button, button * {
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     gap: 0px;
     padding: 0;
+
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-y; 
 }
 /*----------------------------*/
 

@@ -53,9 +53,11 @@ toggleBtn.addEventListener("click", () => {
   navOverlay.classList.toggle("active"); // ativa o fundo
 
   if (mobileNav.classList.contains("active")) {
-    toggleBtn.textContent = "✖"; 
+    toggleBtn.textContent = "✖";
+    toggleBtn.style.color = "white"; 
   } else {
     toggleBtn.textContent = "☰"; 
+    toggleBtn.style.color = "white";
   }
 });
 

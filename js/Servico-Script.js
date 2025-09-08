@@ -71,7 +71,7 @@ carouselWrapper.addEventListener('touchmove', e => {
     const diffX = Math.abs(startX - e.touches[0].clientX);
     const diffY = Math.abs(startY - e.touches[0].clientY);
     if (diffX > diffY) e.preventDefault();
-});
+}, {passive: false});
 
 carouselWrapper.addEventListener('touchend', e => {
     if (!isDragging) return;
