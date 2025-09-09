@@ -68,19 +68,22 @@ a:active, button:active {
 
 /* Botão mobile */
 .menu-toggle {
-    display: flex;                
-    justify-content: center;
-    align-items: center;
-    width: 40px;                 
-    height: 40px;               
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    width: 40px;
+    height: 40px;
     font-size: 22px;
     background: none;
     border: none;
     color: white;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent; 
+    -webkit-tap-highlight-color: transparent;
     -webkit-user-select: none;              
     user-select: none;
+    line-height: 1; 
+    padding: 0;   
+    text-align: center;
 }
 
 

@@ -92,6 +92,7 @@ a:active, button:active {
     text-align: center;
 }
 
+
 /* Exibir e animar o menu mobile */
 .nav-mobile.active {
     max-height: 1000px;
