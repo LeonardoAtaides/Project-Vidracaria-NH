@@ -4,7 +4,7 @@ const indicators = document.querySelectorAll('.indicator');
 const totalSlides = cards.length;
 
 carouselWrapper.innerHTML = '';
-const loopMultiplier = 10;
+const loopMultiplier = 40;
 let slidesLoop = [];
 for (let i = 0; i < loopMultiplier; i++) {
     slidesLoop = slidesLoop.concat(cards.map(card => card.cloneNode(true)));
