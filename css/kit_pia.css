@@ -265,7 +265,7 @@ a:active, button:active {
 .nav-secundary{ 
     width: 100%;
     position: absolute;
-    margin-top: -40.5px;
+    margin-top: -41px;
     padding: 0;
     display: flex;
     justify-content: center;
