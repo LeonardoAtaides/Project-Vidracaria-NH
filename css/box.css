@@ -90,10 +90,10 @@ button, button *, a, a * {
 /* Fundo preto transparente */
 .nav-overlay {
     position: fixed;
-    top: 60px;
+    top: 60px;                 
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px); 
     background: rgba(0,0,0,0.6);
     opacity: 0;
     visibility: hidden;
@@ -1122,7 +1122,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay {top: 90px;}
+    .nav-overlay {top: 90px; height: calc(100% - 90px); }
 
     /************************************/
 
@@ -1338,7 +1338,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay {top: 90px;}
+    .nav-overlay {top: 90px; height: calc(100% - 90px); }
 
     /************************************/
 
@@ -1522,7 +1522,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay {top: 100px;}
+    .nav-overlay {top: 100px; height: calc(100% - 100px);}
 
     /** BANNER SERVIÇO **/
     /*Container da Img Fundo*/

@@ -1114,7 +1114,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay {top: 90px;}
+    .nav-overlay {top: 90px; height: calc(100% - 90px); }
 
     /*Logo da Barra de Navegação*/
     .logo a img {
@@ -1331,7 +1331,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay {top: 90px;}
+    .nav-overlay {top: 90px; height: calc(100% - 90px); }
 
     /*Logo da Barra de Navegação*/
     .logo a img {
@@ -1519,7 +1519,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay {top: 100px;}
+    .nav-overlay {top: 100px; height: calc(100% - 100px);}
 
     /*Logo da Barra de Navegação*/
     .logo a img {width:240px; height: auto;}
