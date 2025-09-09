@@ -22,9 +22,8 @@ body{
     background: var(--bg-body);
 }
 
-a {-webkit-tap-highlight-color: transparent;}
-
-button, button * {
+/* Remove fundo cinza ao tocar em links e botões no iOS */
+button, button *, a, a * {
   -webkit-tap-highlight-color: transparent;
 }
 /* Menu mobile*/
