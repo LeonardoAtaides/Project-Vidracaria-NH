@@ -42,41 +42,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // ---------------------------------//
 
-// Menu Mobile 
+// Menu Mobile
 const toggleBtn = document.getElementById("menu-toggle");
 const mobileNav = document.getElementById("nav-mobile");
 const navLinks = mobileNav.querySelectorAll("a");
 const navOverlay = document.querySelector(".nav-overlay"); // fundo preto
 
-toggleBtn.addEventListener("click", () => {
+// Função para abrir/fechar menu
+function toggleMenu(e) {
+  e.preventDefault(); // evita comportamentos estranhos no iOS
+
   mobileNav.classList.toggle("active");
-  navOverlay.classList.toggle("active"); // ativa o fundo
+  navOverlay.classList.toggle("active");
 
-  if (mobileNav.classList.contains("active")) {
-    toggleBtn.textContent = "✖";
-  } else {
-    toggleBtn.textContent = "☰"; 
-  }
+  // Troca o ícone do botão
+  toggleBtn.textContent = mobileNav.classList.contains("active") ? "✖" : "☰";
+}
 
-  toggleBtn.style.setProperty("color", "white", "important");
-});
+// Ativa menu ao clicar ou tocar
+toggleBtn.addEventListener("click", toggleMenu);
+toggleBtn.addEventListener("touchstart", toggleMenu);
 
 // Fechar menu ao clicar nos links
 navLinks.forEach(link => {
   link.addEventListener("click", () => {
     mobileNav.classList.remove("active");
-    navOverlay.classList.remove("active"); 
+    navOverlay.classList.remove("active");
     toggleBtn.textContent = "☰";
-    toggleBtn.style.setProperty("color", "white", "important");
+  });
+
+  link.addEventListener("touchstart", () => {
+    mobileNav.classList.remove("active");
+    navOverlay.classList.remove("active");
+    toggleBtn.textContent = "☰";
   });
 });
 
-// Fechar menu ao clicar no fundo preto
+// Fechar menu ao clicar/tocar no fundo preto
 navOverlay.addEventListener("click", () => {
   mobileNav.classList.remove("active");
   navOverlay.classList.remove("active");
   toggleBtn.textContent = "☰";
-  toggleBtn.style.setProperty("color", "white", "important");
 });
 
-
+navOverlay.addEventListener("touchstart", () => {
+  mobileNav.classList.remove("active");
+  navOverlay.classList.remove("active");
+  toggleBtn.textContent = "☰";
+});
