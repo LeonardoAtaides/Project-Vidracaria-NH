@@ -56,7 +56,7 @@ function toggleMenu(e) {
   navOverlay.classList.toggle("active");
 
   // Troca o ícone do botão
-  toggleBtn.textContent = mobileNav.classList.contains("active") ? "✖" : "☰";
+  toggleBtn.textContent = mobileNav.classList.contains("active") ? "x" : "☰";
 }
 
 // Ativa menu ao clicar ou tocar
