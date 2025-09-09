@@ -23,8 +23,12 @@ body{
 }
 
 /* Remove fundo cinza ao tocar em links e botões no iOS */
-button, button *, a, a * {
+* {
   -webkit-tap-highlight-color: transparent;
+}
+a:active, button:active {
+    background-color: transparent;
+    -webkit-tap-highlight-color: transparent;
 }
 
 /* Menu mobile*/
@@ -102,7 +106,7 @@ button, button *, a, a * {
     z-index: 900;
 }
 
-.nav-overlay.active {opacity: 1; visibility: visible;}
+.nav-overlay.active { display: block;  opacity: 1; visibility: visible;}
 
 /* Titulos Principais*/
 .titles{
