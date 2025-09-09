@@ -365,6 +365,7 @@ a:active, button:active {
 .ctn-video iframe{
     width: 978px;
     height: 550px;
+     box-shadow: 0 0 8px 2px #ffc800;
 }
 
 /************************************/
@@ -1007,7 +1008,7 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe {width:90%; height: 400px;}
+    .ctn-video iframe {width:89%; height: 388px;}
     /************************************/  
 
     /** FOOTER **/
@@ -1320,7 +1321,7 @@ footer{
     }
 
     /*tamanhho do player*/
-    .ctn-video iframe {width:95%; height: 520px;}
+    .ctn-video iframe {width:89%; height: 505px;}
     /************************************/     
  
     /** FOOTER **/
