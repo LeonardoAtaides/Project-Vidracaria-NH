@@ -100,8 +100,7 @@ button, button *, a, a * {
     width: 100%;
     height: calc(100% - 60px); 
     background: rgba(0,0,0,0.6);
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     transition: opacity 0.3s ease;
     z-index: 900;
 }
