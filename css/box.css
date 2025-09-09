@@ -83,7 +83,7 @@ button, button * {
 
 /* Exibir e animar o menu mobile */
 .nav-mobile.active {
-    max-height: 500px;
+    max-height: 1000px;
     opacity: 1;
     pointer-events: auto;
 }
