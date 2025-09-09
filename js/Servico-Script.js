@@ -4,16 +4,16 @@ const indicators = document.querySelectorAll('.indicator');
 const totalSlides = cards.length;
 
 carouselWrapper.innerHTML = '';
-const loopMultiplier = 30;
+const loopMultiplier = 10; 
 let slidesLoop = [];
+
 for (let i = 0; i < loopMultiplier; i++) {
     slidesLoop = slidesLoop.concat(cards.map(card => card.cloneNode(true)));
 }
 slidesLoop.forEach(card => carouselWrapper.appendChild(card));
 const allSlides = carouselWrapper.querySelectorAll('.carousel-card');
 
-const desiredStartIndex = Math.floor(totalSlides / 2);
-let currentSlide = totalSlides * Math.floor(loopMultiplier / 2) + desiredStartIndex;
+let currentSlide = 3; 
 
 function getCardWidth() {
     return window.innerWidth < 768 ? 360 : 500;
@@ -48,30 +48,24 @@ function updateCarousel(instant = false) {
 
 function nextSlide() {
     currentSlide++;
+    if (currentSlide >= allSlides.length) currentSlide = 3;
     updateCarousel();
 }
 
 function prevSlide() {
     currentSlide--;
+    if (currentSlide < 0) currentSlide = allSlides.length - 1; 
     updateCarousel();
 }
 
+
 let startX = 0;
-let startY = 0;
 let isDragging = false;
 
 carouselWrapper.addEventListener('touchstart', e => {
     startX = e.touches[0].clientX;
-    startY = e.touches[0].clientY;
     isDragging = true;
 });
-
-carouselWrapper.addEventListener('touchmove', e => {
-    if (!isDragging) return;
-    const diffX = Math.abs(startX - e.touches[0].clientX);
-    const diffY = Math.abs(startY - e.touches[0].clientY);
-    if (diffX > diffY) e.preventDefault();
-}, {passive: false});
 
 carouselWrapper.addEventListener('touchend', e => {
     if (!isDragging) return;
@@ -84,10 +78,12 @@ carouselWrapper.addEventListener('touchend', e => {
     isDragging = false;
 });
 
+
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowLeft') prevSlide();
     else if (e.key === 'ArrowRight') nextSlide();
 });
+
 
 window.addEventListener('load', () => updateCarousel(true));
 window.addEventListener('resize', () => updateCarousel(true));
