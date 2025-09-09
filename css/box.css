@@ -91,8 +91,7 @@ button, button * {
 /* Fundo preto transparente */
 .nav-overlay {
     position: fixed;
-    margin-top: 60px;
-    top: 0;
+    top: 60px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -684,7 +683,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay { margin-top: 60px;}
+    .nav-overlay {top: 60px;}
      /*----------------------------*/   
 
     /** BANNER SERVIÇO **/
@@ -887,7 +886,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay { margin-top: 60px;}
+    .nav-overlay {top: 60px;}
      /*----------------------------*/   
 
     /** BANNER SERVIÇO **/
@@ -1124,7 +1123,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay { margin-top: 90px;}
+    .nav-overlay {top: 90px;}
 
     /************************************/
 
@@ -1340,7 +1339,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay { margin-top: 90px;}
+    .nav-overlay {top: 90px;}
 
     /************************************/
 
@@ -1524,7 +1523,7 @@ footer{
     /*Config da Barra de Navegação*/
     .menu-toggle {display: block;}
     .nav {display: none;}
-    .nav-overlay { margin-top: 100px;}
+    .nav-overlay {top: 100px;}
 
     /** BANNER SERVIÇO **/
     /*Container da Img Fundo*/

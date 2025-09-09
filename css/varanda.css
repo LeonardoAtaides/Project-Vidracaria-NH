@@ -676,7 +676,7 @@ footer{
         gap: 50%;
         background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
-    .nav-overlay { margin-top: 60px;}
+    .nav-overlay {top: 60px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {width:140px;height: auto;}
@@ -880,7 +880,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
 
-    .nav-overlay { margin-top: 60px;}
+    .nav-overlay {top: 60px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {width:150px;height: auto;}
@@ -1115,7 +1115,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay { margin-top: 90px;}
+    .nav-overlay {top: 90px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {
@@ -1332,7 +1332,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay { margin-top: 90px;}
+    .nav-overlay {top: 90px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {
@@ -1520,7 +1520,7 @@ footer{
         background: url(../Imgs/Fundos/Fundo-header.png) bottom repeat-x;
     }
 
-    .nav-overlay { margin-top: 100px;}
+    .nav-overlay {top: 100px;}
 
     /*Logo da Barra de Navegação*/
     .logo a img {width:240px; height: auto;}
