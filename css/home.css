@@ -797,7 +797,7 @@ footer{
         height: 60px;
         display: flex;
         justify-content:center;
-        gap: 48%;
+        gap: 46%;
         background: url(../Imgs/Fundos/Fundo-header-mb.png) repeat-x;
     }
 
