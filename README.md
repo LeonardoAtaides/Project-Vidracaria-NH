@@ -12,7 +12,7 @@
 >Esse projeto representa minha evolução como desenvolvedor e minha primeira experiência completa, desde o planejamento até a publicação final. 🚀
 
 ---
-<h1>Estrutura de Pastas</h1>
+<h1>📁 Estrutura de Pastas</h1>
 
 > 📁 Projeto <br/>
 > ├── 📁 Icons <br/>
